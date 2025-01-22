@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department_Expense__c</fullName>
+    <label>Department Expense</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RGC Research, Business &amp; Operations Mgmt</fullName>
+                <default>false</default>
+                <label>RGC Research, Business &amp; Operations Mgmt</label>
+            </value>
+            <value>
+                <fullName>Sequencing &amp; Lab Operations</fullName>
+                <default>false</default>
+                <label>Sequencing &amp; Lab Operations</label>
+            </value>
+            <value>
+                <fullName>Analytical Genetics</fullName>
+                <default>false</default>
+                <label>Analytical Genetics</label>
+            </value>
+            <value>
+                <fullName>Genome Informatics &amp; Data Engineering</fullName>
+                <default>false</default>
+                <label>Genome Informatics &amp; Data Engineering</label>
+            </value>
+            <value>
+                <fullName>Therapeutic Area Genetics</fullName>
+                <default>false</default>
+                <label>Therapeutic Area Genetics</label>
+            </value>
+            <value>
+                <fullName>RGC Management</fullName>
+                <default>false</default>
+                <label>RGC Management</label>
+            </value>
+            <value>
+                <fullName>RGC Biology</fullName>
+                <default>false</default>
+                <label>RGC Biology</label>
+            </value>
+            <value>
+                <fullName>Clinical Informatics</fullName>
+                <default>false</default>
+                <label>Clinical Informatics</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

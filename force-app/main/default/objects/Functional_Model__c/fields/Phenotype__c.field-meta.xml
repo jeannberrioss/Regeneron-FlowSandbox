@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phenotype__c</fullName>
+    <label>Phenotype</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asthma</fullName>
+                <default>false</default>
+                <label>Asthma</label>
+            </value>
+            <value>
+                <fullName>Autoimmune Disease</fullName>
+                <default>false</default>
+                <label>Autoimmune Disease</label>
+            </value>
+            <value>
+                <fullName>Blood Pressure</fullName>
+                <default>false</default>
+                <label>Blood Pressure</label>
+            </value>
+            <value>
+                <fullName>Brain Malformations</fullName>
+                <default>false</default>
+                <label>Brain Malformations</label>
+            </value>
+            <value>
+                <fullName>CADASIL</fullName>
+                <default>false</default>
+                <label>CADASIL</label>
+            </value>
+            <value>
+                <fullName>Cardiomyopathy</fullName>
+                <default>false</default>
+                <label>Cardiomyopathy</label>
+            </value>
+            <value>
+                <fullName>Cartilage loss</fullName>
+                <default>false</default>
+                <label>Cartilage loss</label>
+            </value>
+            <value>
+                <fullName>Chronic Liver Disease</fullName>
+                <default>false</default>
+                <label>Chronic Liver Disease</label>
+            </value>
+            <value>
+                <fullName>Chronic Obstructive Pulmonary Disease</fullName>
+                <default>false</default>
+                <label>Chronic Obstructive Pulmonary Disease</label>
+            </value>
+            <value>
+                <fullName>Cognition</fullName>
+                <default>false</default>
+                <label>Cognition</label>
+            </value>
+            <value>
+                <fullName>COPD</fullName>
+                <default>false</default>
+                <label>COPD</label>
+            </value>
+            <value>
+                <fullName>COPD, mucus clearance</fullName>
+                <default>false</default>
+                <label>COPD, mucus clearance</label>
+            </value>
+            <value>
+                <fullName>Coronary Artery Disease</fullName>
+                <default>false</default>
+                <label>Coronary Artery Disease</label>
+            </value>
+            <value>
+                <fullName>Depression</fullName>
+                <default>false</default>
+                <label>Depression</label>
+            </value>
+            <value>
+                <fullName>eBMD</fullName>
+                <default>false</default>
+                <label>eBMD</label>
+            </value>
+            <value>
+                <fullName>Energy expenditure</fullName>
+                <default>false</default>
+                <label>Energy expenditure</label>
+            </value>
+            <value>
+                <fullName>Fibromyalgia</fullName>
+                <default>false</default>
+                <label>Fibromyalgia</label>
+            </value>
+            <value>
+                <fullName>Glaucoma</fullName>
+                <default>false</default>
+                <label>Glaucoma</label>
+            </value>
+            <value>
+                <fullName>Glycemic traits</fullName>
+                <default>false</default>
+                <label>Glycemic traits</label>
+            </value>
+            <value>
+                <fullName>Hearing loss</fullName>
+                <default>false</default>
+                <label>Hearing loss</label>
+            </value>
+            <value>
+                <fullName>Height and Muscle Mass</fullName>
+                <default>false</default>
+                <label>Height and Muscle Mass</label>
+            </value>
+            <value>
+                <fullName>Hypothyroidism</fullName>
+                <default>false</default>
+                <label>Hypothyroidism</label>
+            </value>
+            <value>
+                <fullName>IBD</fullName>
+                <default>false</default>
+                <label>IBD</label>
+            </value>
+            <value>
+                <fullName>Kidney and Liver Function</fullName>
+                <default>false</default>
+                <label>Kidney and Liver Function</label>
+            </value>
+            <value>
+                <fullName>LDL Cholesterol</fullName>
+                <default>false</default>
+                <label>LDL Cholesterol</label>
+            </value>
+            <value>
+                <fullName>Liver Disease</fullName>
+                <default>false</default>
+                <label>Liver Disease</label>
+            </value>
+            <value>
+                <fullName>Nasal Polyps</fullName>
+                <default>false</default>
+                <label>Nasal Polyps</label>
+            </value>
+            <value>
+                <fullName>Neurodevelopmental Disorder</fullName>
+                <default>false</default>
+                <label>Neurodevelopmental Disorder</label>
+            </value>
+            <value>
+                <fullName>Obesity</fullName>
+                <default>false</default>
+                <label>Obesity</label>
+            </value>
+            <value>
+                <fullName>Obesity (protection)</fullName>
+                <default>false</default>
+                <label>Obesity (protection)</label>
+            </value>
+            <value>
+                <fullName>Obesity and diabetes</fullName>
+                <default>false</default>
+                <label>Obesity and diabetes</label>
+            </value>
+            <value>
+                <fullName>Oct</fullName>
+                <default>false</default>
+                <label>Oct</label>
+            </value>
+            <value>
+                <fullName>PAH and Congenital Heart Disease</fullName>
+                <default>false</default>
+                <label>PAH and Congenital Heart Disease</label>
+            </value>
+            <value>
+                <fullName>PSC/IBD</fullName>
+                <default>false</default>
+                <label>PSC/IBD</label>
+            </value>
+            <value>
+                <fullName>Psoriasis</fullName>
+                <default>false</default>
+                <label>Psoriasis</label>
+            </value>
+            <value>
+                <fullName>Pulmonary Arterial Hypertension</fullName>
+                <default>false</default>
+                <label>Pulmonary Arterial Hypertension</label>
+            </value>
+            <value>
+                <fullName>Pulmonary Disease</fullName>
+                <default>false</default>
+                <label>Pulmonary Disease</label>
+            </value>
+            <value>
+                <fullName>Rare Disease</fullName>
+                <default>false</default>
+                <label>Rare Disease</label>
+            </value>
+            <value>
+                <fullName>Rare Disease: ganglioside deficiency</fullName>
+                <default>false</default>
+                <label>Rare Disease: ganglioside deficiency</label>
+            </value>
+            <value>
+                <fullName>Reduction in diastolic blood pressure</fullName>
+                <default>false</default>
+                <label>Reduction in diastolic blood pressure</label>
+            </value>
+            <value>
+                <fullName>Respiratory Infections</fullName>
+                <default>false</default>
+                <label>Respiratory Infections</label>
+            </value>
+            <value>
+                <fullName>Steel Syndrome</fullName>
+                <default>false</default>
+                <label>Steel Syndrome</label>
+            </value>
+            <value>
+                <fullName>Type2 Diabetes</fullName>
+                <default>false</default>
+                <label>Type2 Diabetes</label>
+            </value>
+            <value>
+                <fullName>Varicose veins</fullName>
+                <default>false</default>
+                <label>Varicose veins</label>
+            </value>
+            <value>
+                <fullName>Vasculitis</fullName>
+                <default>false</default>
+                <label>Vasculitis</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

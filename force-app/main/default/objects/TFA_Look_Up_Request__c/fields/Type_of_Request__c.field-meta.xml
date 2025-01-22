@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type_of_Request__c</fullName>
+    <label>Type of Request</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>External</fullName>
+                <default>false</default>
+                <label>External</label>
+            </value>
+            <value>
+                <fullName>Sr Mgmt</fullName>
+                <default>false</default>
+                <label>Sr Mgmt</label>
+            </value>
+            <value>
+                <fullName>Target Nomination</fullName>
+                <default>false</default>
+                <label>Target Nomination</label>
+            </value>
+            <value>
+                <fullName>Existing Therapeutic: pre-IPA</fullName>
+                <default>false</default>
+                <label>Existing Therapeutic: pre-IPA</label>
+            </value>
+            <value>
+                <fullName>Existing Therapeutic: post-IPA</fullName>
+                <default>false</default>
+                <label>Existing Therapeutic: post-IPA</label>
+            </value>
+            <value>
+                <fullName>Clinical</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Existing Therapeutic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

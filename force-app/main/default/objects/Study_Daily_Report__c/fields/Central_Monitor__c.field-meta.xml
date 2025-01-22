@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Central_Monitor__c</fullName>
+    <label>Central Monitor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alexander Kansky</fullName>
+                <default>false</default>
+                <label>Alexander Kansky</label>
+            </value>
+            <value>
+                <fullName>Anne Smith</fullName>
+                <default>false</default>
+                <label>Anne Smith</label>
+            </value>
+            <value>
+                <fullName>Christopher Chamak</fullName>
+                <default>false</default>
+                <label>Christopher Chamak</label>
+            </value>
+            <value>
+                <fullName>Elin Cate</fullName>
+                <default>false</default>
+                <label>Elin Cate</label>
+            </value>
+            <value>
+                <fullName>Fung-Yee To</fullName>
+                <default>false</default>
+                <label>Fung-Yee To</label>
+            </value>
+            <value>
+                <fullName>Jeanelle De Villiers</fullName>
+                <default>false</default>
+                <label>Jeanelle De Villiers</label>
+            </value>
+            <value>
+                <fullName>Jongwhee Lee</fullName>
+                <default>false</default>
+                <label>Jongwhee Lee</label>
+            </value>
+            <value>
+                <fullName>Mary Hasinsky</fullName>
+                <default>false</default>
+                <label>Mary Hasinsky</label>
+            </value>
+            <value>
+                <fullName>Nicholas Ross</fullName>
+                <default>false</default>
+                <label>Nicholas Ross</label>
+            </value>
+            <value>
+                <fullName>Nikita Nayudu</fullName>
+                <default>false</default>
+                <label>Nikita Nayudu</label>
+            </value>
+            <value>
+                <fullName>Violet Vincent</fullName>
+                <default>false</default>
+                <label>Violet Vincent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

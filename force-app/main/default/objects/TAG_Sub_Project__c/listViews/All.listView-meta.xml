@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Parent_TAG_Project__c</columns>
+    <columns>TherapeuticArea__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Key_Findings__c</columns>
+    <columns>Project_Aim__c</columns>
+    <columns>Phenotype__c</columns>
+    <columns>Activity_Date__c</columns>
+    <columns>Next_Steps__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TherapeuticArea__c</field>
+        <operation>equals</operation>
+        <value>Cardiovascular/Fibrosis,Connective Tissue Diseases,&quot;Obesity, Muscle &amp; Metabolism&quot;</value>
+    </filters>
+    <label>All</label>
+</ListView>

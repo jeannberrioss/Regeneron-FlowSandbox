@@ -1,0 +1,3 @@
+SELECT Id, Name, Email, IsActive, Profile.Name,
+(SELECT permissionset.name FROM permissionsetassignments WHERE permissionset.name NOT IN ('X00eHp0000035oUtIAI','X00ex00000018ozT_128_09_43_34_1'))
+FROM User WHERE IsActive = true AND Profile.Name != NULL ORDER BY Profile.Name DESC

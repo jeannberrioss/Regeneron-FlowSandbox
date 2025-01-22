@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>RGC_Authorship__c</columns>
+    <columns>Publication_Type__c</columns>
+    <columns>Publication_Forum__c</columns>
+    <columns>Date_Submitted__c</columns>
+    <columns>Status__c</columns>
+    <columns>Publication_Date__c</columns>
+    <columns>Publication_Venue__c</columns>
+    <columns>Lead_Author__c</columns>
+    <columns>Therapeutic_Focus_Area__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proceed_Based_on_Initial_Assessment__c</fullName>
+    <description>Formerly Proceed Based on Initial Assessment JG 09.02.20</description>
+    <label>Assessment Completed Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

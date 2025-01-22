@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Collaborator_Key__c</columns>
+    <columns>Collaborator_Institution_Name__c</columns>
+    <columns>Collaboration_Stage__c</columns>
+    <columns>Collaboration_Opportunity_Name__c</columns>
+    <columns>Research_Plan_Link__c</columns>
+    <columns>Specific_Aims__c</columns>
+    <columns>Total_Committed__c</columns>
+    <columns>Study_Rationale__c</columns>
+    <columns>Collaboration_Opportunity_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

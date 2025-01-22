@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Operations_Lead__c</fullName>
+    <label>Program Operations Lead</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_Program Operations Leader (GEN)</fullName>
+                <default>false</default>
+                <label>_Program Operations Leader (GEN)</label>
+            </value>
+            <value>
+                <fullName>Alison Brown</fullName>
+                <default>false</default>
+                <label>Alison Brown</label>
+            </value>
+            <value>
+                <fullName>Allison Mulcahy</fullName>
+                <default>false</default>
+                <label>Allison Mulcahy</label>
+            </value>
+            <value>
+                <fullName>Anit Bajwa</fullName>
+                <default>false</default>
+                <label>Anit Bajwa</label>
+            </value>
+            <value>
+                <fullName>Anna Labrosciano</fullName>
+                <default>false</default>
+                <label>Anna Labrosciano</label>
+            </value>
+            <value>
+                <fullName>Charlotte Lyon</fullName>
+                <default>false</default>
+                <label>Charlotte Lyon</label>
+            </value>
+            <value>
+                <fullName>Christina Perry</fullName>
+                <default>false</default>
+                <label>Christina Perry</label>
+            </value>
+            <value>
+                <fullName>Christopher Powell</fullName>
+                <default>false</default>
+                <label>Christopher Powell</label>
+            </value>
+            <value>
+                <fullName>David Parker</fullName>
+                <default>false</default>
+                <label>David Parker</label>
+            </value>
+            <value>
+                <fullName>Daya Gulabani</fullName>
+                <default>false</default>
+                <label>Daya Gulabani</label>
+            </value>
+            <value>
+                <fullName>Dominique Duchesne</fullName>
+                <default>false</default>
+                <label>Dominique Duchesne</label>
+            </value>
+            <value>
+                <fullName>Grainne Power</fullName>
+                <default>false</default>
+                <label>Grainne Power</label>
+            </value>
+            <value>
+                <fullName>Ingeborg Heirman</fullName>
+                <default>false</default>
+                <label>Ingeborg Heirman</label>
+            </value>
+            <value>
+                <fullName>Jaclyn Patterson</fullName>
+                <default>false</default>
+                <label>Jaclyn Patterson</label>
+            </value>
+            <value>
+                <fullName>Jeannie Yo</fullName>
+                <default>false</default>
+                <label>Jeannie Yo</label>
+            </value>
+            <value>
+                <fullName>Katharine Nunnink</fullName>
+                <default>false</default>
+                <label>Katharine Nunnink</label>
+            </value>
+            <value>
+                <fullName>Keri Aitchison</fullName>
+                <default>false</default>
+                <label>Keri Aitchison</label>
+            </value>
+            <value>
+                <fullName>Kristy Macci</fullName>
+                <default>false</default>
+                <label>Kristy Macci</label>
+            </value>
+            <value>
+                <fullName>Maria Rubino</fullName>
+                <default>false</default>
+                <label>Maria Rubino</label>
+            </value>
+            <value>
+                <fullName>Maria Rubino Cornhill</fullName>
+                <default>false</default>
+                <label>Maria Rubino Cornhill</label>
+            </value>
+            <value>
+                <fullName>Michelle Wong</fullName>
+                <default>false</default>
+                <label>Michelle Wong</label>
+            </value>
+            <value>
+                <fullName>Moetaz Albizem</fullName>
+                <default>false</default>
+                <label>Moetaz Albizem</label>
+            </value>
+            <value>
+                <fullName>Nazmul Haque</fullName>
+                <default>false</default>
+                <label>Nazmul Haque</label>
+            </value>
+            <value>
+                <fullName>Ngan Trinh</fullName>
+                <default>false</default>
+                <label>Ngan Trinh</label>
+            </value>
+            <value>
+                <fullName>Ori Yellin</fullName>
+                <default>false</default>
+                <label>Ori Yellin</label>
+            </value>
+            <value>
+                <fullName>Paula Harding</fullName>
+                <default>false</default>
+                <label>Paula Harding</label>
+            </value>
+            <value>
+                <fullName>Paul Curtis</fullName>
+                <default>false</default>
+                <label>Paul Curtis</label>
+            </value>
+            <value>
+                <fullName>Shaun Langdon</fullName>
+                <default>false</default>
+                <label>Shaun Langdon</label>
+            </value>
+            <value>
+                <fullName>Siobhan Nolan</fullName>
+                <default>false</default>
+                <label>Siobhan Nolan</label>
+            </value>
+            <value>
+                <fullName>Susie Dorricott</fullName>
+                <default>false</default>
+                <label>Susie Dorricott</label>
+            </value>
+            <value>
+                <fullName>Vilma Hernandez</fullName>
+                <default>false</default>
+                <label>Vilma Hernandez</label>
+            </value>
+            <value>
+                <fullName>Wilson Caldwell</fullName>
+                <default>false</default>
+                <label>Wilson Caldwell</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

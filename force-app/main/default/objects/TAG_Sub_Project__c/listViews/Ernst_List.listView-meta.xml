@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ernst_List</fullName>
+    <columns>NAME</columns>
+    <columns>TAG_SubProject_Name_Link_RT__c</columns>
+    <columns>HPT_Date__c</columns>
+    <columns>Phenotype__c</columns>
+    <columns>TherapeuticArea__c</columns>
+    <columns>TAG__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TAG__c</field>
+        <operation>equals</operation>
+        <value>Oncology</value>
+    </filters>
+    <label>Ernst List</label>
+</ListView>

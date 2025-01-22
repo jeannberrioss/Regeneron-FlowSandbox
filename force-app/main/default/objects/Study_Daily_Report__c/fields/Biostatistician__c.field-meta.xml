@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Biostatistician__c</fullName>
+    <label>Biostatistician</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_Biostatistician (GEN)</fullName>
+                <default>false</default>
+                <label>_Biostatistician (GEN)</label>
+            </value>
+            <value>
+                <fullName>Alpana Waldron-External</fullName>
+                <default>false</default>
+                <label>Alpana Waldron-External</label>
+            </value>
+            <value>
+                <fullName>Andrew Magyar</fullName>
+                <default>false</default>
+                <label>Andrew Magyar</label>
+            </value>
+            <value>
+                <fullName>Arvind Tripathi-External</fullName>
+                <default>false</default>
+                <label>Arvind Tripathi-External</label>
+            </value>
+            <value>
+                <fullName>Bin Yao</fullName>
+                <default>false</default>
+                <label>Bin Yao</label>
+            </value>
+            <value>
+                <fullName>Bo Gao</fullName>
+                <default>false</default>
+                <label>Bo Gao</label>
+            </value>
+            <value>
+                <fullName>Bradley Dain-External</fullName>
+                <default>false</default>
+                <label>Bradley Dain-External</label>
+            </value>
+            <value>
+                <fullName>Divya Singh - External</fullName>
+                <default>false</default>
+                <label>Divya Singh - External</label>
+            </value>
+            <value>
+                <fullName>Furong Sun</fullName>
+                <default>false</default>
+                <label>Furong Sun</label>
+            </value>
+            <value>
+                <fullName>Haitao Gao</fullName>
+                <default>false</default>
+                <label>Haitao Gao</label>
+            </value>
+            <value>
+                <fullName>Haixin Zhang</fullName>
+                <default>false</default>
+                <label>Haixin Zhang</label>
+            </value>
+            <value>
+                <fullName>Jenni Mou</fullName>
+                <default>false</default>
+                <label>Jenni Mou</label>
+            </value>
+            <value>
+                <fullName>Jessica Cai</fullName>
+                <default>false</default>
+                <label>Jessica Cai</label>
+            </value>
+            <value>
+                <fullName>Jian Zhao</fullName>
+                <default>false</default>
+                <label>Jian Zhao</label>
+            </value>
+            <value>
+                <fullName>Jingjin Li</fullName>
+                <default>false</default>
+                <label>Jingjin Li</label>
+            </value>
+            <value>
+                <fullName>Jingning Mei</fullName>
+                <default>false</default>
+                <label>Jingning Mei</label>
+            </value>
+            <value>
+                <fullName>Jing Xiao</fullName>
+                <default>false</default>
+                <label>Jing Xiao</label>
+            </value>
+            <value>
+                <fullName>Kathryn Miller</fullName>
+                <default>false</default>
+                <label>Kathryn Miller</label>
+            </value>
+            <value>
+                <fullName>Kimmi-Yiziying Chen-External</fullName>
+                <default>false</default>
+                <label>Kimmi-Yiziying Chen-External</label>
+            </value>
+            <value>
+                <fullName>Kuo-Chen Chan</fullName>
+                <default>false</default>
+                <label>Kuo-Chen Chan</label>
+            </value>
+            <value>
+                <fullName>Kusha Mohammadi</fullName>
+                <default>false</default>
+                <label>Kusha Mohammadi</label>
+            </value>
+            <value>
+                <fullName>Linzhi Xu</fullName>
+                <default>false</default>
+                <label>Linzhi Xu</label>
+            </value>
+            <value>
+                <fullName>Michelle DeVeaux</fullName>
+                <default>false</default>
+                <label>Michelle DeVeaux</label>
+            </value>
+            <value>
+                <fullName>Neena Sarkar</fullName>
+                <default>false</default>
+                <label>Neena Sarkar</label>
+            </value>
+            <value>
+                <fullName>Nilsen Miller</fullName>
+                <default>false</default>
+                <label>Nilsen Miller</label>
+            </value>
+            <value>
+                <fullName>Peijie Hou</fullName>
+                <default>false</default>
+                <label>Peijie Hou</label>
+            </value>
+            <value>
+                <fullName>Peisi Kan - External</fullName>
+                <default>false</default>
+                <label>Peisi Kan - External</label>
+            </value>
+            <value>
+                <fullName>Pranab Mitra</fullName>
+                <default>false</default>
+                <label>Pranab Mitra</label>
+            </value>
+            <value>
+                <fullName>Qiong Zhao</fullName>
+                <default>false</default>
+                <label>Qiong Zhao</label>
+            </value>
+            <value>
+                <fullName>Rachel Jia</fullName>
+                <default>false</default>
+                <label>Rachel Jia</label>
+            </value>
+            <value>
+                <fullName>Shane Lee</fullName>
+                <default>false</default>
+                <label>Shane Lee</label>
+            </value>
+            <value>
+                <fullName>Shuquan Chen</fullName>
+                <default>false</default>
+                <label>Shuquan Chen</label>
+            </value>
+            <value>
+                <fullName>Sina Sanei-External</fullName>
+                <default>false</default>
+                <label>Sina Sanei-External</label>
+            </value>
+            <value>
+                <fullName>Siyu Li</fullName>
+                <default>false</default>
+                <label>Siyu Li</label>
+            </value>
+            <value>
+                <fullName>Suk Young Yoo</fullName>
+                <default>false</default>
+                <label>Suk Young Yoo</label>
+            </value>
+            <value>
+                <fullName>Wanxue Zou</fullName>
+                <default>false</default>
+                <label>Wanxue Zou</label>
+            </value>
+            <value>
+                <fullName>Wenjun Zheng</fullName>
+                <default>false</default>
+                <label>Wenjun Zheng</label>
+            </value>
+            <value>
+                <fullName>Will Eagan</fullName>
+                <default>false</default>
+                <label>Will Eagan</label>
+            </value>
+            <value>
+                <fullName>Xian Sun</fullName>
+                <default>false</default>
+                <label>Xian Sun</label>
+            </value>
+            <value>
+                <fullName>Xing Bai-External</fullName>
+                <default>false</default>
+                <label>Xing Bai-External</label>
+            </value>
+            <value>
+                <fullName>Yen-Chieh Cheng</fullName>
+                <default>false</default>
+                <label>Yen-Chieh Cheng</label>
+            </value>
+            <value>
+                <fullName>Yiping Sun</fullName>
+                <default>false</default>
+                <label>Yiping Sun</label>
+            </value>
+            <value>
+                <fullName>Yuanfang Xu</fullName>
+                <default>false</default>
+                <label>Yuanfang Xu</label>
+            </value>
+            <value>
+                <fullName>Yuping Dong</fullName>
+                <default>false</default>
+                <label>Yuping Dong</label>
+            </value>
+            <value>
+                <fullName>Yuyang Xiao-External</fullName>
+                <default>false</default>
+                <label>Yuyang Xiao-External</label>
+            </value>
+            <value>
+                <fullName>Zen Chen</fullName>
+                <default>false</default>
+                <label>Zen Chen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

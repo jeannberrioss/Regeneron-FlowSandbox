@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RGC_Analyst__c</fullName>
+    <label>RGC Analyst</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alan Shuldiner</fullName>
+                <default>false</default>
+                <label>Alan Shuldiner</label>
+            </value>
+            <value>
+                <fullName>Alessandro Di Gioia</fullName>
+                <default>false</default>
+                <label>Alessandro Di Gioia</label>
+            </value>
+            <value>
+                <fullName>Claudia Gonzaga-Jauregui</fullName>
+                <default>false</default>
+                <label>Claudia Gonzaga-Jauregui</label>
+            </value>
+            <value>
+                <fullName>Cris Van Hout</fullName>
+                <default>false</default>
+                <label>Cris Van Hout</label>
+            </value>
+            <value>
+                <fullName>Harikiran Nistala</fullName>
+                <default>false</default>
+                <label>Harikiran Nistala</label>
+            </value>
+            <value>
+                <fullName>Jan Freudenberg</fullName>
+                <default>false</default>
+                <label>Jan Freudenberg</label>
+            </value>
+            <value>
+                <fullName>Jonas Bovjin</fullName>
+                <default>false</default>
+                <label>Jonas Bovjin</label>
+            </value>
+            <value>
+                <fullName>Joshua Backman</fullName>
+                <default>false</default>
+                <label>Joshua Backman</label>
+            </value>
+            <value>
+                <fullName>Juan Rodriguez-Flores</fullName>
+                <default>false</default>
+                <label>Juan Rodriguez-Flores</label>
+            </value>
+            <value>
+                <fullName>Julie Horowitz</fullName>
+                <default>false</default>
+                <label>Julie Horowitz</label>
+            </value>
+            <value>
+                <fullName>Katherine Siminovich</fullName>
+                <default>false</default>
+                <label>Katherine Siminovich</label>
+            </value>
+            <value>
+                <fullName>Kavita Praveen</fullName>
+                <default>false</default>
+                <label>Kavita Praveen</label>
+            </value>
+            <value>
+                <fullName>Luca Lotta</fullName>
+                <default>false</default>
+                <label>Luca Lotta</label>
+            </value>
+            <value>
+                <fullName>Manuel Ferreira</fullName>
+                <default>false</default>
+                <label>Manuel Ferreira</label>
+            </value>
+            <value>
+                <fullName>Nehal</fullName>
+                <default>false</default>
+                <label>Nehal</label>
+            </value>
+            <value>
+                <fullName>Niek Verweig</fullName>
+                <default>false</default>
+                <label>Niek Verweig</label>
+            </value>
+            <value>
+                <fullName>Olu Sosna</fullName>
+                <default>false</default>
+                <label>Olu Sosna</label>
+            </value>
+            <value>
+                <fullName>Parsa Akbari</fullName>
+                <default>false</default>
+                <label>Parsa Akbari</label>
+            </value>
+            <value>
+                <fullName>Shane McCarthy</fullName>
+                <default>false</default>
+                <label>Shane McCarthy</label>
+            </value>
+            <value>
+                <fullName>Shannon Bruse</fullName>
+                <default>false</default>
+                <label>Shannon Bruse</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

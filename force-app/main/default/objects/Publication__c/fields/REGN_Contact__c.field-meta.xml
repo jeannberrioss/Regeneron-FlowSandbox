@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>REGN_Contact__c</fullName>
+    <label>REGN Contact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A. Blumenfeld</fullName>
+                <default>false</default>
+                <label>A. Blumenfeld</label>
+            </value>
+            <value>
+                <fullName>Alan R. Shuldiner</fullName>
+                <default>false</default>
+                <label>Alan R. Shuldiner</label>
+            </value>
+            <value>
+                <fullName>Alan Shuldiner</fullName>
+                <default>false</default>
+                <label>Alan Shuldiner</label>
+            </value>
+            <value>
+                <fullName>Alejandra King</fullName>
+                <default>false</default>
+                <label>Alejandra King</label>
+            </value>
+            <value>
+                <fullName>Alicia Hawes</fullName>
+                <default>false</default>
+                <label>Alicia Hawes</label>
+            </value>
+            <value>
+                <fullName>Andrew Marderstein</fullName>
+                <default>false</default>
+                <label>Andrew Marderstein</label>
+            </value>
+            <value>
+                <fullName>Aris Baras</fullName>
+                <default>false</default>
+                <label>Aris Baras</label>
+            </value>
+            <value>
+                <fullName>Aris N. Economides</fullName>
+                <default>false</default>
+                <label>Aris N. Economides</label>
+            </value>
+            <value>
+                <fullName>Brian Cocca</fullName>
+                <default>false</default>
+                <label>Brian Cocca</label>
+            </value>
+            <value>
+                <fullName>Charles Paulding</fullName>
+                <default>false</default>
+                <label>Charles Paulding</label>
+            </value>
+            <value>
+                <fullName>Christopher Sprangel</fullName>
+                <default>false</default>
+                <label>Christopher Sprangel</label>
+            </value>
+            <value>
+                <fullName>Chuan Gao</fullName>
+                <default>false</default>
+                <label>Chuan Gao</label>
+            </value>
+            <value>
+                <fullName>Claudia Gonzaga-Jauregui</fullName>
+                <default>false</default>
+                <label>Claudia Gonzaga-Jauregui</label>
+            </value>
+            <value>
+                <fullName>Claudia Schurmann</fullName>
+                <default>false</default>
+                <label>Claudia Schurmann</label>
+            </value>
+            <value>
+                <fullName>Colm O’Dushlaine</fullName>
+                <default>false</default>
+                <label>Colm O’Dushlaine</label>
+            </value>
+            <value>
+                <fullName>Cris Van Hout</fullName>
+                <default>false</default>
+                <label>Cris Van Hout</label>
+            </value>
+            <value>
+                <fullName>Dadong Li</fullName>
+                <default>false</default>
+                <label>Dadong Li</label>
+            </value>
+            <value>
+                <fullName>Eli Stahl</fullName>
+                <default>false</default>
+                <label>Eli Stahl</label>
+            </value>
+            <value>
+                <fullName>Eric Jorgenson</fullName>
+                <default>false</default>
+                <label>Eric Jorgenson</label>
+            </value>
+            <value>
+                <fullName>Evan Maxwell</fullName>
+                <default>false</default>
+                <label>Evan Maxwell</label>
+            </value>
+            <value>
+                <fullName>Frederick Dewey</fullName>
+                <default>false</default>
+                <label>Frederick Dewey</label>
+            </value>
+            <value>
+                <fullName>Gannie Tzoneva</fullName>
+                <default>false</default>
+                <label>Gannie Tzoneva</label>
+            </value>
+            <value>
+                <fullName>Giovanni Coppola</fullName>
+                <default>false</default>
+                <label>Giovanni Coppola</label>
+            </value>
+            <value>
+                <fullName>Giusy Della Gatta</fullName>
+                <default>false</default>
+                <label>Giusy Della Gatta</label>
+            </value>
+            <value>
+                <fullName>Goncalo Abecasis</fullName>
+                <default>false</default>
+                <label>Goncalo Abecasis</label>
+            </value>
+            <value>
+                <fullName>Harikirah Nistala</fullName>
+                <default>false</default>
+                <label>Harikirah Nistala</label>
+            </value>
+            <value>
+                <fullName>Hye In Kim</fullName>
+                <default>false</default>
+                <label>Hye In Kim</label>
+            </value>
+            <value>
+                <fullName>Ingrid Burecki</fullName>
+                <default>false</default>
+                <label>Ingrid Burecki</label>
+            </value>
+            <value>
+                <fullName>Ishani Bansal</fullName>
+                <default>false</default>
+                <label>Ishani Bansal</label>
+            </value>
+            <value>
+                <fullName>Jan Freudenberg</fullName>
+                <default>false</default>
+                <label>Jan Freudenberg</label>
+            </value>
+            <value>
+                <fullName>Jeffrey Reid</fullName>
+                <default>false</default>
+                <label>Jeffrey Reid</label>
+            </value>
+            <value>
+                <fullName>Jeffrey Staples</fullName>
+                <default>false</default>
+                <label>Jeffrey Staples</label>
+            </value>
+            <value>
+                <fullName>John Overton</fullName>
+                <default>false</default>
+                <label>John Overton</label>
+            </value>
+            <value>
+                <fullName>John Penn</fullName>
+                <default>false</default>
+                <label>John Penn</label>
+            </value>
+            <value>
+                <fullName>Jonathan H. Chung</fullName>
+                <default>false</default>
+                <label>Jonathan H. Chung</label>
+            </value>
+            <value>
+                <fullName>Jonathan Marchini</fullName>
+                <default>false</default>
+                <label>Jonathan Marchini</label>
+            </value>
+            <value>
+                <fullName>Joshua Backman</fullName>
+                <default>false</default>
+                <label>Joshua Backman</label>
+            </value>
+            <value>
+                <fullName>Juan Rodriguez-Flores</fullName>
+                <default>false</default>
+                <label>Juan Rodriguez-Flores</label>
+            </value>
+            <value>
+                <fullName>Judith Altarejos</fullName>
+                <default>false</default>
+                <label>Judith Altarejos</label>
+            </value>
+            <value>
+                <fullName>Julianna Sullivan</fullName>
+                <default>false</default>
+                <label>Julianna Sullivan</label>
+            </value>
+            <value>
+                <fullName>Julie Horowitz</fullName>
+                <default>false</default>
+                <label>Julie Horowitz</label>
+            </value>
+            <value>
+                <fullName>Kavita Praveen</fullName>
+                <default>false</default>
+                <label>Kavita Praveen</label>
+            </value>
+            <value>
+                <fullName>Lauren Gurski</fullName>
+                <default>false</default>
+                <label>Lauren Gurski</label>
+            </value>
+            <value>
+                <fullName>Leland Bernard</fullName>
+                <default>false</default>
+                <label>Leland Bernard</label>
+            </value>
+            <value>
+                <fullName>Luca Lotta</fullName>
+                <default>false</default>
+                <label>Luca Lotta</label>
+            </value>
+            <value>
+                <fullName>Lukas Habegger</fullName>
+                <default>false</default>
+                <label>Lukas Habegger</label>
+            </value>
+            <value>
+                <fullName>Lyndon Mitnaul</fullName>
+                <default>false</default>
+                <label>Lyndon Mitnaul</label>
+            </value>
+            <value>
+                <fullName>Manuel Ferreira</fullName>
+                <default>false</default>
+                <label>Manuel Ferreira</label>
+            </value>
+            <value>
+                <fullName>Marcus Jones</fullName>
+                <default>false</default>
+                <label>Marcus Jones</label>
+            </value>
+            <value>
+                <fullName>Michael Cantor</fullName>
+                <default>false</default>
+                <label>Michael Cantor</label>
+            </value>
+            <value>
+                <fullName>Nehal Gosalia</fullName>
+                <default>false</default>
+                <label>Nehal Gosalia</label>
+            </value>
+            <value>
+                <fullName>Neik Verweij</fullName>
+                <default>false</default>
+                <label>Neik Verweij</label>
+            </value>
+            <value>
+                <fullName>Noura Abul-Husn</fullName>
+                <default>false</default>
+                <label>Noura Abul-Husn</label>
+            </value>
+            <value>
+                <fullName>Omri Gottesman</fullName>
+                <default>false</default>
+                <label>Omri Gottesman</label>
+            </value>
+            <value>
+                <fullName>Patrick Sin-Chan</fullName>
+                <default>false</default>
+                <label>Patrick Sin-Chan</label>
+            </value>
+            <value>
+                <fullName>Shannon Bruse</fullName>
+                <default>false</default>
+                <label>Shannon Bruse</label>
+            </value>
+            <value>
+                <fullName>Suganthi Balasubramanian</fullName>
+                <default>false</default>
+                <label>Suganthi Balasubramanian</label>
+            </value>
+            <value>
+                <fullName>Tanya Teslovich</fullName>
+                <default>false</default>
+                <label>Tanya Teslovich</label>
+            </value>
+            <value>
+                <fullName>Will Salerno</fullName>
+                <default>false</default>
+                <label>Will Salerno</label>
+            </value>
+            <value>
+                <fullName>Wu Biming</fullName>
+                <default>false</default>
+                <label>Wu Biming</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

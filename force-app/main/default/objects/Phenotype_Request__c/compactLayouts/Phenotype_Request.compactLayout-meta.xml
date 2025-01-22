@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phenotype_Request</fullName>
+    <fields>Email__c</fields>
+    <fields>Request_Status__c</fields>
+    <fields>Cohort__c</fields>
+    <fields>Custom_RGC_Phenotype_Name__c</fields>
+    <fields>Data_Dictionary__c</fields>
+    <fields>Phenotype_Stage__c</fields>
+    <fields>Type_of_Phenotype__c</fields>
+    <fields>Description__c</fields>
+    <label>Phenotype Request</label>
+</CompactLayout>

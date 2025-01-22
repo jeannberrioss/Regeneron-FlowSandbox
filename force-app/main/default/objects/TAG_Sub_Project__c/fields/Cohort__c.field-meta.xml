@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cohort__c</fullName>
+    <label>Cohort [LEGACY]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accelerated Cures</fullName>
+                <default>false</default>
+                <label>Accelerated Cures</label>
+            </value>
+            <value>
+                <fullName>AECOM</fullName>
+                <default>false</default>
+                <label>AECOM</label>
+            </value>
+            <value>
+                <fullName>Ancestry</fullName>
+                <default>false</default>
+                <label>Ancestry</label>
+            </value>
+            <value>
+                <fullName>AncestryDNA</fullName>
+                <default>false</default>
+                <label>AncestryDNA</label>
+            </value>
+            <value>
+                <fullName>Bariatric surgery, GHS</fullName>
+                <default>false</default>
+                <label>Bariatric surgery, GHS</label>
+            </value>
+            <value>
+                <fullName>BCH</fullName>
+                <default>false</default>
+                <label>BCH</label>
+            </value>
+            <value>
+                <fullName>Boston Childrens</fullName>
+                <default>false</default>
+                <label>Boston Childrens</label>
+            </value>
+            <value>
+                <fullName>CCHMC</fullName>
+                <default>false</default>
+                <label>CCHMC</label>
+            </value>
+            <value>
+                <fullName>CNCD</fullName>
+                <default>false</default>
+                <label>CNCD</label>
+            </value>
+            <value>
+                <fullName>EcoGene 21</fullName>
+                <default>false</default>
+                <label>EcoGene 21</label>
+            </value>
+            <value>
+                <fullName>Edinburgh</fullName>
+                <default>false</default>
+                <label>Edinburgh</label>
+            </value>
+            <value>
+                <fullName>FinnGen</fullName>
+                <default>false</default>
+                <label>FinnGen</label>
+            </value>
+            <value>
+                <fullName>GGC</fullName>
+                <default>false</default>
+                <label>GGC</label>
+            </value>
+            <value>
+                <fullName>GHS</fullName>
+                <default>false</default>
+                <label>GHS</label>
+            </value>
+            <value>
+                <fullName>GHS 145K</fullName>
+                <default>false</default>
+                <label>GHS 145K</label>
+            </value>
+            <value>
+                <fullName>GHS for DRIFT</fullName>
+                <default>false</default>
+                <label>GHS for DRIFT</label>
+            </value>
+            <value>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+                <label>Iowa</label>
+            </value>
+            <value>
+                <fullName>IU</fullName>
+                <default>false</default>
+                <label>IU</label>
+            </value>
+            <value>
+                <fullName>Kiel</fullName>
+                <default>false</default>
+                <label>Kiel</label>
+            </value>
+            <value>
+                <fullName>Leuven</fullName>
+                <default>false</default>
+                <label>Leuven</label>
+            </value>
+            <value>
+                <fullName>Mario Negri</fullName>
+                <default>false</default>
+                <label>Mario Negri</label>
+            </value>
+            <value>
+                <fullName>Mayo</fullName>
+                <default>false</default>
+                <label>Mayo</label>
+            </value>
+            <value>
+                <fullName>Michigan</fullName>
+                <default>false</default>
+                <label>Michigan</label>
+            </value>
+            <value>
+                <fullName>Mt. Sinai</fullName>
+                <default>false</default>
+                <label>Mt. Sinai</label>
+            </value>
+            <value>
+                <fullName>NHGRI</fullName>
+                <default>false</default>
+                <label>NHGRI</label>
+            </value>
+            <value>
+                <fullName>NIDDK</fullName>
+                <default>false</default>
+                <label>NIDDK</label>
+            </value>
+            <value>
+                <fullName>NIMH</fullName>
+                <default>false</default>
+                <label>NIMH</label>
+            </value>
+            <value>
+                <fullName>Northwestern</fullName>
+                <default>false</default>
+                <label>Northwestern</label>
+            </value>
+            <value>
+                <fullName>Oxford</fullName>
+                <default>false</default>
+                <label>Oxford</label>
+            </value>
+            <value>
+                <fullName>TAICHI</fullName>
+                <default>false</default>
+                <label>TAICHI</label>
+            </value>
+            <value>
+                <fullName>TSK</fullName>
+                <default>false</default>
+                <label>TSK</label>
+            </value>
+            <value>
+                <fullName>TUM</fullName>
+                <default>false</default>
+                <label>TUM</label>
+            </value>
+            <value>
+                <fullName>UAB</fullName>
+                <default>false</default>
+                <label>UAB</label>
+            </value>
+            <value>
+                <fullName>Uconn</fullName>
+                <default>false</default>
+                <label>Uconn</label>
+            </value>
+            <value>
+                <fullName>UKB</fullName>
+                <default>false</default>
+                <label>UKB</label>
+            </value>
+            <value>
+                <fullName>UKB + GHS for DRIFT</fullName>
+                <default>false</default>
+                <label>UKB + GHS for DRIFT</label>
+            </value>
+            <value>
+                <fullName>UKB 150k</fullName>
+                <default>false</default>
+                <label>UKB 150k</label>
+            </value>
+            <value>
+                <fullName>UKB 300k</fullName>
+                <default>false</default>
+                <label>UKB 300k</label>
+            </value>
+            <value>
+                <fullName>UKB 450k</fullName>
+                <default>false</default>
+                <label>UKB 450k</label>
+            </value>
+            <value>
+                <fullName>UMD</fullName>
+                <default>false</default>
+                <label>UMD</label>
+            </value>
+            <value>
+                <fullName>UPenn-Danish</fullName>
+                <default>false</default>
+                <label>UPenn-Danish</label>
+            </value>
+            <value>
+                <fullName>UPENN-PMBB</fullName>
+                <default>false</default>
+                <label>UPENN-PMBB</label>
+            </value>
+            <value>
+                <fullName>Utah</fullName>
+                <default>false</default>
+                <label>Utah</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

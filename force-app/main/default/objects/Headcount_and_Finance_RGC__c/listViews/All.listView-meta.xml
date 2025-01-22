@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Budgeted_Head_Count__c</columns>
+    <columns>Current_Head_Count__c</columns>
+    <columns>In_Recruitment__c</columns>
+    <columns>Open_Head_Count__c</columns>
+    <columns>Hired__c</columns>
+    <columns>Unfilled__c</columns>
+    <columns>Department__c</columns>
+    <columns>Pending_Starts__c</columns>
+    <columns>Total_Employed__c</columns>
+    <columns>Unfilled_HC__c</columns>
+    <columns>Replacement_Positions__c</columns>
+    <columns>X2021_Recruitment__c</columns>
+    <columns>X2022_Recruitment__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Status_Only_For_Support_Team</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF( AND( $User.Internal_Support_Team__c == FALSE, ISCHANGED( Internal_Status__c ) ), TRUE, FALSE)</errorConditionFormula>
+    <errorMessage>Only an Internal Support Team member can update Internal Status.</errorMessage>
+</ValidationRule>

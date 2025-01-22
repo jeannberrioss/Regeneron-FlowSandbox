@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense__c</fullName>
+    <label>Expense</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PEOPLE EXPENSE</fullName>
+                <default>false</default>
+                <label>PEOPLE EXPENSE</label>
+            </value>
+            <value>
+                <fullName>LAB SUPPLIES</fullName>
+                <default>false</default>
+                <label>LAB SUPPLIES</label>
+            </value>
+            <value>
+                <fullName>OUTSIDE TESTING SERVICES</fullName>
+                <default>false</default>
+                <label>OUTSIDE TESTING SERVICES</label>
+            </value>
+            <value>
+                <fullName>IT EXTERNAL EXPENSES</fullName>
+                <default>false</default>
+                <label>IT EXTERNAL EXPENSES</label>
+            </value>
+            <value>
+                <fullName>DEPRECIATION</fullName>
+                <default>false</default>
+                <label>DEPRECIATION</label>
+            </value>
+            <value>
+                <fullName>LICENSES, RESEARCH CONTRACTS, REGULATORY FEES</fullName>
+                <default>false</default>
+                <label>LICENSES, RESEARCH CONTRACTS, REGULATORY FEES</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

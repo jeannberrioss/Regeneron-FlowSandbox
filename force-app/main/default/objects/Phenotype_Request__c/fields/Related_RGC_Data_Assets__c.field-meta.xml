@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_RGC_Data_Assets__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Related RGC Data Assets</label>
+    <referenceTo>RGC_Data_Assets__c</referenceTo>
+    <relationshipLabel>Phenotype Requests</relationshipLabel>
+    <relationshipName>Phenotype_Requests</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sample_Deliveries_Expected_This_Month</fullName>
+    <columns>Collaboration_Opportunity__c</columns>
+    <columns>NAME</columns>
+    <columns>Forecasted_Date__c</columns>
+    <columns>Forecasted_Number_of_Samples__c</columns>
+    <columns>Date_Samples_Received__c</columns>
+    <columns>Number_of_Samples_Received__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Forecasted_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Received__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Sample Deliveries Expected This Month</label>
+</ListView>

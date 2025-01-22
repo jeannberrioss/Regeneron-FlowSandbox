@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Production_Runs</fullName>
+    <columns>NAME</columns>
+    <columns>Production_Asset_Type__c</columns>
+    <columns>Phenotype_Data_Received__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Production_Asset_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Phenotype Matrix</value>
+    </filters>
+    <label>Production Runs</label>
+</ListView>

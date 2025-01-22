@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Manager__c</fullName>
+    <label>Data Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_FSP Data Manager (GEN)</fullName>
+                <default>false</default>
+                <label>_FSP Data Manager (GEN)</label>
+            </value>
+            <value>
+                <fullName>_Oversight Data Manager (GEN)</fullName>
+                <default>false</default>
+                <label>_Oversight Data Manager (GEN)</label>
+            </value>
+            <value>
+                <fullName>_PDM/ODM (GEN)</fullName>
+                <default>false</default>
+                <label>_PDM/ODM (GEN)</label>
+            </value>
+            <value>
+                <fullName>_Program Data Manager (GEN)</fullName>
+                <default>false</default>
+                <label>_Program Data Manager (GEN)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RGC_TAG_Champion__c</fullName>
+    <label>RGC Champion [LEGACY]</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alan Shuldiner</fullName>
+                <default>false</default>
+                <label>Alan Shuldiner</label>
+            </value>
+            <value>
+                <fullName>Alessandro</fullName>
+                <default>false</default>
+                <label>Alessandro</label>
+            </value>
+            <value>
+                <fullName>Charles Paulding</fullName>
+                <default>false</default>
+                <label>Charles Paulding</label>
+            </value>
+            <value>
+                <fullName>Claudia Gonzaga-Jauregui</fullName>
+                <default>false</default>
+                <label>Claudia Gonzaga-Jauregui</label>
+            </value>
+            <value>
+                <fullName>Eric Jorgensen</fullName>
+                <default>false</default>
+                <label>Eric Jorgensen</label>
+            </value>
+            <value>
+                <fullName>Gannie Tzoneva</fullName>
+                <default>false</default>
+                <label>Gannie Tzoneva</label>
+            </value>
+            <value>
+                <fullName>George Hindy</fullName>
+                <default>false</default>
+                <label>George Hindy</label>
+            </value>
+            <value>
+                <fullName>Giovanni Coppola</fullName>
+                <default>false</default>
+                <label>Giovanni Coppola</label>
+            </value>
+            <value>
+                <fullName>Goncalo Abecasis</fullName>
+                <default>false</default>
+                <label>Goncalo Abecasis</label>
+            </value>
+            <value>
+                <fullName>Jan Freudenberg</fullName>
+                <default>false</default>
+                <label>Jan Freudenberg</label>
+            </value>
+            <value>
+                <fullName>Jonas Bovjin</fullName>
+                <default>false</default>
+                <label>Jonas Bovjin</label>
+            </value>
+            <value>
+                <fullName>Jonas Nielson</fullName>
+                <default>false</default>
+                <label>Jonas Nielson</label>
+            </value>
+            <value>
+                <fullName>Juan Rodriguez-Flores</fullName>
+                <default>false</default>
+                <label>Juan Rodriguez-Flores</label>
+            </value>
+            <value>
+                <fullName>Julie Horowitz</fullName>
+                <default>false</default>
+                <label>Julie Horowitz</label>
+            </value>
+            <value>
+                <fullName>Katherine Siminovich</fullName>
+                <default>false</default>
+                <label>Katherine Siminovich</label>
+            </value>
+            <value>
+                <fullName>Kavita Praveen</fullName>
+                <default>false</default>
+                <label>Kavita Praveen</label>
+            </value>
+            <value>
+                <fullName>Luca Lotta</fullName>
+                <default>false</default>
+                <label>Luca Lotta</label>
+            </value>
+            <value>
+                <fullName>Manuel Ferreira</fullName>
+                <default>false</default>
+                <label>Manuel Ferreira</label>
+            </value>
+            <value>
+                <fullName>Mary Haas</fullName>
+                <default>false</default>
+                <label>Mary Haas</label>
+            </value>
+            <value>
+                <fullName>Moeen</fullName>
+                <default>false</default>
+                <label>Moeen</label>
+            </value>
+            <value>
+                <fullName>Niek Verweij</fullName>
+                <default>false</default>
+                <label>Niek Verweij</label>
+            </value>
+            <value>
+                <fullName>Nila Banerjee</fullName>
+                <default>false</default>
+                <label>Nila Banerjee</label>
+            </value>
+            <value>
+                <fullName>Patrick Shuldiner</fullName>
+                <default>false</default>
+                <label>Patrick Shuldiner</label>
+            </value>
+            <value>
+                <fullName>Sahar Gelfman</fullName>
+                <default>false</default>
+                <label>Sahar Gelfman</label>
+            </value>
+            <value>
+                <fullName>Suganthi</fullName>
+                <default>false</default>
+                <label>Suganthi</label>
+            </value>
+            <value>
+                <fullName>Tanima De</fullName>
+                <default>false</default>
+                <label>Tanima De</label>
+            </value>
+            <value>
+                <fullName>Veera Rajagopal</fullName>
+                <default>false</default>
+                <label>Veera Rajagopal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

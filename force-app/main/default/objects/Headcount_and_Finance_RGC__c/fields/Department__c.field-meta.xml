@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <label>Department</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0288-Research Mgmt &amp; Operations</fullName>
+                <default>false</default>
+                <label>0288-Research Mgmt &amp; Operations</label>
+            </value>
+            <value>
+                <fullName>0400-Sequencing &amp; Lab Operations</fullName>
+                <default>false</default>
+                <label>0400-Sequencing &amp; Lab Operations</label>
+            </value>
+            <value>
+                <fullName>0410-Genome Informatics &amp; Data Engineering</fullName>
+                <default>false</default>
+                <label>0410-Genome Informatics &amp; Data Engineering</label>
+            </value>
+            <value>
+                <fullName>0420-Analytical Genetics</fullName>
+                <default>false</default>
+                <label>0420-Analytical Genetics</label>
+            </value>
+            <value>
+                <fullName>0430-Therapeutic Area Genetics</fullName>
+                <default>false</default>
+                <label>0430-Therapeutic Area Genetics</label>
+            </value>
+            <value>
+                <fullName>0440-RGC Biology</fullName>
+                <default>false</default>
+                <label>0440-RGC Biology</label>
+            </value>
+            <value>
+                <fullName>0450-Clinical Informatics</fullName>
+                <default>false</default>
+                <label>0450-Clinical Informatics</label>
+            </value>
+            <value>
+                <fullName>0490-RGC Management</fullName>
+                <default>false</default>
+                <label>0490-RGC Management</label>
+            </value>
+            <value>
+                <fullName>0495-RGC Research, Business &amp; Operations Mgmt</fullName>
+                <default>false</default>
+                <label>0495-RGC Research, Business &amp; Operations Mgmt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

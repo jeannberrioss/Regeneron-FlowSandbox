@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Drug_Candidate__c</columns>
+    <columns>RGC_Pharmacogenetics__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Study_Title__c</columns>
+    <columns>Study_Status_COMPASS__c</columns>
+    <columns>TA__c</columns>
+    <columns>TA_Operations_Lead__c</columns>
+    <columns>TA_Sub_Class__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TA__c</field>
+        <operation>equals</operation>
+        <value>Oncology</value>
+    </filters>
+    <label>All</label>
+</ListView>

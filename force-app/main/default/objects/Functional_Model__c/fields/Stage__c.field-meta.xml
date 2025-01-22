@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Allele Generation</fullName>
+                <default>false</default>
+                <label>Allele Generation</label>
+            </value>
+            <value>
+                <fullName>Cataloged</fullName>
+                <default>false</default>
+                <label>Cataloged</label>
+            </value>
+            <value>
+                <fullName>Complete</fullName>
+                <default>false</default>
+                <label>Complete</label>
+            </value>
+            <value>
+                <fullName>Design</fullName>
+                <default>false</default>
+                <label>Design</label>
+            </value>
+            <value>
+                <fullName>Microinjection</fullName>
+                <default>false</default>
+                <label>Microinjection</label>
+            </value>
+            <value>
+                <fullName>Mouse Production</fullName>
+                <default>false</default>
+                <label>Mouse Production</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Phenotyping</fullName>
+                <default>false</default>
+                <label>Phenotyping</label>
+            </value>
+            <value>
+                <fullName>Phenotyping - External</fullName>
+                <default>false</default>
+                <label>Phenotyping - External</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

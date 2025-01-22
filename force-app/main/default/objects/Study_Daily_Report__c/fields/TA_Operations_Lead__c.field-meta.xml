@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TA_Operations_Lead__c</fullName>
+    <label>TA Operations Lead</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amy Harman</fullName>
+                <default>false</default>
+                <label>Amy Harman</label>
+            </value>
+            <value>
+                <fullName>Cynthia Pan</fullName>
+                <default>false</default>
+                <label>Cynthia Pan</label>
+            </value>
+            <value>
+                <fullName>David Parker</fullName>
+                <default>false</default>
+                <label>David Parker</label>
+            </value>
+            <value>
+                <fullName>Derek Depelteau</fullName>
+                <default>false</default>
+                <label>Derek Depelteau</label>
+            </value>
+            <value>
+                <fullName>Jaclyn Patterson</fullName>
+                <default>false</default>
+                <label>Jaclyn Patterson</label>
+            </value>
+            <value>
+                <fullName>Keri Aitchison</fullName>
+                <default>false</default>
+                <label>Keri Aitchison</label>
+            </value>
+            <value>
+                <fullName>Miriam Kore</fullName>
+                <default>false</default>
+                <label>Miriam Kore</label>
+            </value>
+            <value>
+                <fullName>Moetaz Albizem</fullName>
+                <default>false</default>
+                <label>Moetaz Albizem</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

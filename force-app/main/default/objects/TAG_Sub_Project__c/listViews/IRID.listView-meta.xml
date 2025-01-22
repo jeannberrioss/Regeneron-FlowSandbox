@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IRID</fullName>
+    <columns>CREATED_DATE</columns>
+    <columns>Activity_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Parent_TAG_Project__c</columns>
+    <columns>TherapeuticArea__c</columns>
+    <columns>TAG_SubProject_Name_Link_RT__c</columns>
+    <columns>Key_Findings__c</columns>
+    <columns>Phenotype__c</columns>
+    <columns>Project_Aim__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Broad_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TAG__c</field>
+        <operation>includes</operation>
+        <value>&quot;Immune, Respiratory &amp; Infectious Diseases&quot;</value>
+    </filters>
+    <label>IRID</label>
+</ListView>

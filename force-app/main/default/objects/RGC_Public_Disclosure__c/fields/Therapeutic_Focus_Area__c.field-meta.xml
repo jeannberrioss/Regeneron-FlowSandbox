@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Therapeutic_Focus_Area__c</fullName>
+    <label>Therapeutic Focus Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aging</fullName>
+                <default>false</default>
+                <label>Aging</label>
+            </value>
+            <value>
+                <fullName>Agnostic</fullName>
+                <default>false</default>
+                <label>Agnostic</label>
+            </value>
+            <value>
+                <fullName>Auditory</fullName>
+                <default>false</default>
+                <label>Auditory</label>
+            </value>
+            <value>
+                <fullName>Cancer</fullName>
+                <default>false</default>
+                <label>Cancer</label>
+            </value>
+            <value>
+                <fullName>Cardiovascular</fullName>
+                <default>false</default>
+                <label>Cardiovascular</label>
+            </value>
+            <value>
+                <fullName>Immune/Respir</fullName>
+                <default>false</default>
+                <label>Immune/Respir</label>
+            </value>
+            <value>
+                <fullName>Infectious Diseases</fullName>
+                <default>false</default>
+                <label>Infectious Diseases</label>
+            </value>
+            <value>
+                <fullName>Muscle &amp; Metabolism</fullName>
+                <default>false</default>
+                <label>Muscle &amp; Metabolism</label>
+            </value>
+            <value>
+                <fullName>Neuroscience</fullName>
+                <default>false</default>
+                <label>Neuroscience</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Rare Diseases</fullName>
+                <default>false</default>
+                <label>Rare Diseases</label>
+            </value>
+            <value>
+                <fullName>Skeletal Disease</fullName>
+                <default>false</default>
+                <label>Skeletal Disease</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

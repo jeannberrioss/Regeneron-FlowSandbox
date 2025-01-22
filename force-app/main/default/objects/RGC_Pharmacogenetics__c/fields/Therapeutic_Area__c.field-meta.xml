@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Therapeutic_Area__c</fullName>
+    <label>Therapeutic Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Infectious Disease; Vaccines (Infectious Disease)</fullName>
+                <default>false</default>
+                <label>Infectious Disease; Vaccines (Infectious Disease)</label>
+            </value>
+            <value>
+                <fullName>Cardiovascular</fullName>
+                <default>false</default>
+                <label>Cardiovascular</label>
+            </value>
+            <value>
+                <fullName>Autoimmune/Inflammation</fullName>
+                <default>false</default>
+                <label>Autoimmune/Inflammation</label>
+            </value>
+            <value>
+                <fullName>Infectious Disease</fullName>
+                <default>false</default>
+                <label>Infectious Disease</label>
+            </value>
+            <value>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+                <label>Oncology</label>
+            </value>
+            <value>
+                <fullName>CNS</fullName>
+                <default>false</default>
+                <label>CNS</label>
+            </value>
+            <value>
+                <fullName>Metabolic/Endocrinology; Ophthalmology</fullName>
+                <default>false</default>
+                <label>Metabolic/Endocrinology; Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Infectious Disease; Oncology</fullName>
+                <default>false</default>
+                <label>Infectious Disease; Oncology</label>
+            </value>
+            <value>
+                <fullName>Cardiovascular; Metabolic/Endocrinology</fullName>
+                <default>false</default>
+                <label>Cardiovascular; Metabolic/Endocrinology</label>
+            </value>
+            <value>
+                <fullName>CNS; Metabolic/Endocrinology</fullName>
+                <default>false</default>
+                <label>CNS; Metabolic/Endocrinology</label>
+            </value>
+            <value>
+                <fullName>Autoimmune/Inflammation; CNS</fullName>
+                <default>false</default>
+                <label>Autoimmune/Inflammation; CNS</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Autoimmune/Inflammation; Infectious Disease</fullName>
+                <default>false</default>
+                <label>Autoimmune/Inflammation; Infectious Disease</label>
+            </value>
+            <value>
+                <fullName>Metabolic/Endocrinology</fullName>
+                <default>false</default>
+                <label>Metabolic/Endocrinology</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

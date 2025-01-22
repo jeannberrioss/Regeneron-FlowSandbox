@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Phenotypes</fullName>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>Submitter__c</columns>
+    <columns>Submission_Title__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>What_request_are_you_submitting__c</field>
+        <operation>equals</operation>
+        <value>Custom Phenotype Request</value>
+    </filters>
+    <label>Custom Phenotypes</label>
+</ListView>

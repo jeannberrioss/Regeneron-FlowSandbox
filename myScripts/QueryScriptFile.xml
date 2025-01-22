@@ -1,0 +1,12 @@
+// Query all CUSTOM object to check (IF) FHT Enabled = TRUE at OBJECT-LEVEL (USE TOOLING API)
+
+SELECT KeyPrefix, QualifiedApiName, Label, IsFieldHistoryTracked FROM EntityDefinition WHERE KeyPrefix LIKE 'a__%' AND IsFieldHistoryTracked = true LIMIT 100"
+
+// Query all CUSTOM object to check (IF) FHT Enabled = FALSE at OBJECT-LEVEL (USE TOOLING API)
+
+SELECT KeyPrefix, QualifiedApiName, Label, IsFieldHistoryTracked FROM EntityDefinition WHERE KeyPrefix LIKE 'a__%' AND IsFieldHistoryTracked = false LIMIT 100"
+
+// Deploy Apex Classes To Remote Org + Validate them from -x Path/To/FileName
+
+sf project deploy validate -x ./manifest/SendVerificationEmail-DeploymentMetadata.xml -l RunSpecifiedTests -t SendVerificationEmailActionTest SendVerificationEmailAction
+

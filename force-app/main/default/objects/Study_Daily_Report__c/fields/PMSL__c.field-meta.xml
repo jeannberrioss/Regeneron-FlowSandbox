@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMSL__c</fullName>
+    <label>PMSL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ana Gonzalez</fullName>
+                <default>false</default>
+                <label>Ana Gonzalez</label>
+            </value>
+            <value>
+                <fullName>Andrea Hooper</fullName>
+                <default>false</default>
+                <label>Andrea Hooper</label>
+            </value>
+            <value>
+                <fullName>Annamaria Farrell</fullName>
+                <default>false</default>
+                <label>Annamaria Farrell</label>
+            </value>
+            <value>
+                <fullName>Julie Horowitz</fullName>
+                <default>false</default>
+                <label>Julie Horowitz</label>
+            </value>
+            <value>
+                <fullName>Karoline Meagher</fullName>
+                <default>false</default>
+                <label>Karoline Meagher</label>
+            </value>
+            <value>
+                <fullName>Kerry Casey</fullName>
+                <default>false</default>
+                <label>Kerry Casey</label>
+            </value>
+            <value>
+                <fullName>Lorna Farrelly</fullName>
+                <default>false</default>
+                <label>Lorna Farrelly</label>
+            </value>
+            <value>
+                <fullName>Poulabi Banerjee</fullName>
+                <default>false</default>
+                <label>Poulabi Banerjee</label>
+            </value>
+            <value>
+                <fullName>Satyajit Karnik</fullName>
+                <default>false</default>
+                <label>Satyajit Karnik</label>
+            </value>
+            <value>
+                <fullName>Travis Bernardo</fullName>
+                <default>false</default>
+                <label>Travis Bernardo</label>
+            </value>
+            <value>
+                <fullName>Xiping Cheng</fullName>
+                <default>false</default>
+                <label>Xiping Cheng</label>
+            </value>
+            <value>
+                <fullName>Jennifer Hamilton</fullName>
+                <default>false</default>
+                <label>Jennifer Hamilton</label>
+            </value>
+            <value>
+                <fullName>Anita Boyapati</fullName>
+                <default>false</default>
+                <label>Anita Boyapati</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

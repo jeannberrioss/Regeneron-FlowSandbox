@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Modeling_Lead__c</fullName>
+    <label>Modeling Lead</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Andrew Baik</fullName>
+                <default>false</default>
+                <label>Andrew Baik</label>
+            </value>
+            <value>
+                <fullName>Ann-Hwee Lee</fullName>
+                <default>false</default>
+                <label>Ann-Hwee Lee</label>
+            </value>
+            <value>
+                <fullName>Aris Economides</fullName>
+                <default>false</default>
+                <label>Aris Economides</label>
+            </value>
+            <value>
+                <fullName>Asiel Benitez</fullName>
+                <default>false</default>
+                <label>Asiel Benitez</label>
+            </value>
+            <value>
+                <fullName>Dan Chalothorn</fullName>
+                <default>false</default>
+                <label>Dan Chalothorn</label>
+            </value>
+            <value>
+                <fullName>Elias Pavlopoulos</fullName>
+                <default>false</default>
+                <label>Elias Pavlopoulos</label>
+            </value>
+            <value>
+                <fullName>FM (Kiran)</fullName>
+                <default>false</default>
+                <label>FM (Kiran)</label>
+            </value>
+            <value>
+                <fullName>For collaborator</fullName>
+                <default>false</default>
+                <label>For collaborator</label>
+            </value>
+            <value>
+                <fullName>Gaurang Patel</fullName>
+                <default>false</default>
+                <label>Gaurang Patel</label>
+            </value>
+            <value>
+                <fullName>Giusy Della Gatta</fullName>
+                <default>false</default>
+                <label>Giusy Della Gatta</label>
+            </value>
+            <value>
+                <fullName>Jamie Orengo</fullName>
+                <default>false</default>
+                <label>Jamie Orengo</label>
+            </value>
+            <value>
+                <fullName>Judith Altarejos</fullName>
+                <default>false</default>
+                <label>Judith Altarejos</label>
+            </value>
+            <value>
+                <fullName>Kalyan Nannuru</fullName>
+                <default>false</default>
+                <label>Kalyan Nannuru</label>
+            </value>
+            <value>
+                <fullName>Kate Cygnar</fullName>
+                <default>false</default>
+                <label>Kate Cygnar</label>
+            </value>
+            <value>
+                <fullName>Kiran Nistala</fullName>
+                <default>false</default>
+                <label>Kiran Nistala</label>
+            </value>
+            <value>
+                <fullName>Kishor</fullName>
+                <default>false</default>
+                <label>Kishor</label>
+            </value>
+            <value>
+                <fullName>Kristen Howell</fullName>
+                <default>false</default>
+                <label>Kristen Howell</label>
+            </value>
+            <value>
+                <fullName>Lori Khrimian</fullName>
+                <default>false</default>
+                <label>Lori Khrimian</label>
+            </value>
+            <value>
+                <fullName>Matt Sleeman</fullName>
+                <default>false</default>
+                <label>Matt Sleeman</label>
+            </value>
+            <value>
+                <fullName>Meghan Drummond</fullName>
+                <default>false</default>
+                <label>Meghan Drummond</label>
+            </value>
+            <value>
+                <fullName>Michael Dunn</fullName>
+                <default>false</default>
+                <label>Michael Dunn</label>
+            </value>
+            <value>
+                <fullName>Neuro</fullName>
+                <default>false</default>
+                <label>Neuro</label>
+            </value>
+            <value>
+                <fullName>Nick Gale</fullName>
+                <default>false</default>
+                <label>Nick Gale</label>
+            </value>
+            <value>
+                <fullName>Nicole Alessandri-Haber</fullName>
+                <default>false</default>
+                <label>Nicole Alessandri-Haber</label>
+            </value>
+            <value>
+                <fullName>Scott MacDonell</fullName>
+                <default>false</default>
+                <label>Scott MacDonell</label>
+            </value>
+            <value>
+                <fullName>Shek Man Chim</fullName>
+                <default>false</default>
+                <label>Shek Man Chim</label>
+            </value>
+            <value>
+                <fullName>Silvia Smaldone</fullName>
+                <default>false</default>
+                <label>Silvia Smaldone</label>
+            </value>
+            <value>
+                <fullName>Sokol Haxhinasto</fullName>
+                <default>false</default>
+                <label>Sokol Haxhinasto</label>
+            </value>
+            <value>
+                <fullName>Soo Min (M&amp;M)</fullName>
+                <default>false</default>
+                <label>Soo Min (M&amp;M)</label>
+            </value>
+            <value>
+                <fullName>Valerio Donato</fullName>
+                <default>false</default>
+                <label>Valerio Donato</label>
+            </value>
+            <value>
+                <fullName>Vika Gusarova</fullName>
+                <default>false</default>
+                <label>Vika Gusarova</label>
+            </value>
+            <value>
+                <fullName>Xiping Cheng</fullName>
+                <default>false</default>
+                <label>Xiping Cheng</label>
+            </value>
+            <value>
+                <fullName>Yinglin Gao</fullName>
+                <default>false</default>
+                <label>Yinglin Gao</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

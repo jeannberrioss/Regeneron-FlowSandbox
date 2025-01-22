@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Linked_IssueRequest__c</fullName>
+    <label>Linked Issue/Request</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Duplicate Of</fullName>
+                <default>false</default>
+                <label>Duplicate Of</label>
+            </value>
+            <value>
+                <fullName>Related To</fullName>
+                <default>false</default>
+                <label>Related To</label>
+            </value>
+            <value>
+                <fullName>Caused By</fullName>
+                <default>false</default>
+                <label>Caused By</label>
+            </value>
+            <value>
+                <fullName>Depends On</fullName>
+                <default>false</default>
+                <label>Depends On</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

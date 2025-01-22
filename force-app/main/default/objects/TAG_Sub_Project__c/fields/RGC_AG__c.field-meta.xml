@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RGC_AG__c</fullName>
+    <label>RGC AG</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adam Locke</fullName>
+                <default>false</default>
+                <label>Adam Locke</label>
+            </value>
+            <value>
+                <fullName>Alex Li</fullName>
+                <default>false</default>
+                <label>Alex Li</label>
+            </value>
+            <value>
+                <fullName>Carlo Sidore</fullName>
+                <default>false</default>
+                <label>Carlo Sidore</label>
+            </value>
+            <value>
+                <fullName>Charlie Paulding</fullName>
+                <default>false</default>
+                <label>Charlie Paulding</label>
+            </value>
+            <value>
+                <fullName>Cris Van Hout</fullName>
+                <default>false</default>
+                <label>Cris Van Hout</label>
+            </value>
+            <value>
+                <fullName>Dylan Ferreira</fullName>
+                <default>false</default>
+                <label>Dylan Ferreira</label>
+            </value>
+            <value>
+                <fullName>Eli Stahl</fullName>
+                <default>false</default>
+                <label>Eli Stahl</label>
+            </value>
+            <value>
+                <fullName>Jack Kosmicki</fullName>
+                <default>false</default>
+                <label>Jack Kosmicki</label>
+            </value>
+            <value>
+                <fullName>Jonathan Marchini</fullName>
+                <default>false</default>
+                <label>Jonathan Marchini</label>
+            </value>
+            <value>
+                <fullName>Joshua Backman</fullName>
+                <default>false</default>
+                <label>Joshua Backman</label>
+            </value>
+            <value>
+                <fullName>Lauren Gurski</fullName>
+                <default>false</default>
+                <label>Lauren Gurski</label>
+            </value>
+            <value>
+                <fullName>Manuel Ferreira</fullName>
+                <default>false</default>
+                <label>Manuel Ferreira</label>
+            </value>
+            <value>
+                <fullName>Maria Suciu</fullName>
+                <default>false</default>
+                <label>Maria Suciu</label>
+            </value>
+            <value>
+                <fullName>Michael Kessler</fullName>
+                <default>false</default>
+                <label>Michael Kessler</label>
+            </value>
+            <value>
+                <fullName>Olu Sosina</fullName>
+                <default>false</default>
+                <label>Olu Sosina</label>
+            </value>
+            <value>
+                <fullName>Parsa Akbari</fullName>
+                <default>false</default>
+                <label>Parsa Akbari</label>
+            </value>
+            <value>
+                <fullName>Shane McCarthy</fullName>
+                <default>false</default>
+                <label>Shane McCarthy</label>
+            </value>
+            <value>
+                <fullName>Suganthi</fullName>
+                <default>false</default>
+                <label>Suganthi</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

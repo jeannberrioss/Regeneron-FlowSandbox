@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_request_are_you_submitting__c</fullName>
+    <label>What request are you submitting?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Custom Clinical Data Request</fullName>
+                <default>false</default>
+                <label>Custom Clinical Data Request</label>
+            </value>
+            <value>
+                <fullName>Custom Phenotype Request</fullName>
+                <default>false</default>
+                <label>Custom Phenotype Request</label>
+            </value>
+            <value>
+                <fullName>ROAD Topic Submission</fullName>
+                <default>false</default>
+                <label>ROAD Topic Submission</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

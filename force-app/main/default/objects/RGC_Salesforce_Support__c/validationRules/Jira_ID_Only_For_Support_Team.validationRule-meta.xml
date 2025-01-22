@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Jira_ID_Only_For_Support_Team</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR (
+
+IF( AND( $User.Internal_Support_Team__c == FALSE, ISCHANGED(  Jira_ID__c  ) ), TRUE, FALSE),
+
+IF( AND( $User.Internal_Support_Team__c == FALSE, ISNEW(),NOT(ISBLANK (Jira_ID__c  ) )), TRUE, FALSE))</errorConditionFormula>
+    <errorMessage>Only an Internal Support Team member can update Jira ID.</errorMessage>
+</ValidationRule>

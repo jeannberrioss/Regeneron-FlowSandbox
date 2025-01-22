@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ECD_Medical_Director__c</fullName>
+    <label>ECD Medical Director</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_ECD Medical Director (GEN)</fullName>
+                <default>false</default>
+                <label>_ECD Medical Director (GEN)</label>
+            </value>
+            <value>
+                <fullName>Aaron Kithcart</fullName>
+                <default>false</default>
+                <label>Aaron Kithcart</label>
+            </value>
+            <value>
+                <fullName>Andreja Avbersek</fullName>
+                <default>false</default>
+                <label>Andreja Avbersek</label>
+            </value>
+            <value>
+                <fullName>Charles Harris</fullName>
+                <default>false</default>
+                <label>Charles Harris</label>
+            </value>
+            <value>
+                <fullName>Cynthia Portal Celhay</fullName>
+                <default>false</default>
+                <label>Cynthia Portal Celhay</label>
+            </value>
+            <value>
+                <fullName>Georgios Kalliolias</fullName>
+                <default>false</default>
+                <label>Georgios Kalliolias</label>
+            </value>
+            <value>
+                <fullName>Jonathan Weyne</fullName>
+                <default>false</default>
+                <label>Jonathan Weyne</label>
+            </value>
+            <value>
+                <fullName>Meagan O&apos;Brien</fullName>
+                <default>false</default>
+                <label>Meagan O&apos;Brien</label>
+            </value>
+            <value>
+                <fullName>Odelya Pagovich</fullName>
+                <default>false</default>
+                <label>Odelya Pagovich</label>
+            </value>
+            <value>
+                <fullName>Oren Levy</fullName>
+                <default>false</default>
+                <label>Oren Levy</label>
+            </value>
+            <value>
+                <fullName>Selin Somersan-Karakaya</fullName>
+                <default>false</default>
+                <label>Selin Somersan-Karakaya</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

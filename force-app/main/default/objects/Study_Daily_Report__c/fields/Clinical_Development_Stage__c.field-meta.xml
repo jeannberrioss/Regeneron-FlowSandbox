@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clinical_Development_Stage__c</fullName>
+    <label>Clinical Development Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ECD</fullName>
+                <default>false</default>
+                <label>ECD</label>
+            </value>
+            <value>
+                <fullName>LCD</fullName>
+                <default>false</default>
+                <label>LCD</label>
+            </value>
+            <value>
+                <fullName>Medical Affairs (MA)</fullName>
+                <default>false</default>
+                <label>Medical Affairs (MA)</label>
+            </value>
+            <value>
+                <fullName>NSD</fullName>
+                <default>false</default>
+                <label>NSD</label>
+            </value>
+            <value>
+                <fullName>PAS</fullName>
+                <default>false</default>
+                <label>PAS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

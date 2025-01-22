@@ -1,0 +1,15 @@
+/** TwoFactorMethodsInfo Permission Set Required **/
+
+// Query Script #1 - This query will show all users who have AND don’t have verified emails.
+
+SELECT Id, UserID, User.Name, HasUserVerifiedEmailAddress FROM TwoFactorMethodsInfo WHERE HasUserVerifiedEmailAddress IN (true, false) ORDER BY HasUserVerifiedEmailAddress DESC
+
+// Query Script #2 - Same as above but on CLI + Human-readable output.
+
+sf data query -q "SELECT Id, UserID, User.Name, HasUserVerifiedEmailAddress FROM TwoFactorMethodsInfo WHERE HasUserVerifiedEmailAddress IN (true, false)" -r human
+
+// Query Script #3 - Same as above but on CLI + CSV export.
+
+Run this query script in SF CLI extension to BULK EXPORT all users who have and have not verified their emails in a standalone CSV file. Ensure that you leverage the “-r” flag to “CSV” for as CSV-formatted export in the destination of your choice (local pc or OneDrive).
+
+sf data export bulk -q "SELECT Id, UserID, User.Name, HasUserVerifiedEmailAddress FROM TwoFactorMethodsInfo WHERE HasUserVerifiedEmailAddress IN (true, false) ORDER BY HasUserVerifiedEmailAddress DESC" --output-file RegeneronProd-AllVerifiedAllUnverifiedUsers.csv -r csv

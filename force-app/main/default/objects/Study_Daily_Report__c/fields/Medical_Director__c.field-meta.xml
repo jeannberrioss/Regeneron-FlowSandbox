@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Medical_Director__c</fullName>
+    <label>Medical Director</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_ECD Medical Director (GEN)</fullName>
+                <default>false</default>
+                <label>_ECD Medical Director (GEN)</label>
+            </value>
+            <value>
+                <fullName>_II Medical Director (GEN)</fullName>
+                <default>false</default>
+                <label>_II Medical Director (GEN)</label>
+            </value>
+            <value>
+                <fullName>_ONC Medical Director (GEN)</fullName>
+                <default>false</default>
+                <label>_ONC Medical Director (GEN)</label>
+            </value>
+            <value>
+                <fullName>_TA Medical Director (GEN)</fullName>
+                <default>false</default>
+                <label>_TA Medical Director (GEN)</label>
+            </value>
+            <value>
+                <fullName>Aaron Kithcart</fullName>
+                <default>false</default>
+                <label>Aaron Kithcart</label>
+            </value>
+            <value>
+                <fullName>Aditya Athanikar</fullName>
+                <default>false</default>
+                <label>Aditya Athanikar</label>
+            </value>
+            <value>
+                <fullName>Afshin Farzaneh-Far</fullName>
+                <default>false</default>
+                <label>Afshin Farzaneh-Far</label>
+            </value>
+            <value>
+                <fullName>Allen Radin</fullName>
+                <default>false</default>
+                <label>Allen Radin</label>
+            </value>
+            <value>
+                <fullName>Alyson Berliner</fullName>
+                <default>false</default>
+                <label>Alyson Berliner</label>
+            </value>
+            <value>
+                <fullName>Andrea Marcus</fullName>
+                <default>false</default>
+                <label>Andrea Marcus</label>
+            </value>
+            <value>
+                <fullName>Andrew Korotzer</fullName>
+                <default>false</default>
+                <label>Andrew Korotzer</label>
+            </value>
+            <value>
+                <fullName>Angeliki Giannelou</fullName>
+                <default>false</default>
+                <label>Angeliki Giannelou</label>
+            </value>
+            <value>
+                <fullName>Arsalan Shabbir</fullName>
+                <default>false</default>
+                <label>Arsalan Shabbir</label>
+            </value>
+            <value>
+                <fullName>Ashish Bansal</fullName>
+                <default>false</default>
+                <label>Ashish Bansal</label>
+            </value>
+            <value>
+                <fullName>Benjamin Olenchock</fullName>
+                <default>false</default>
+                <label>Benjamin Olenchock</label>
+            </value>
+            <value>
+                <fullName>Benjamin Ortiz</fullName>
+                <default>false</default>
+                <label>Benjamin Ortiz</label>
+            </value>
+            <value>
+                <fullName>Brad Shumel</fullName>
+                <default>false</default>
+                <label>Brad Shumel</label>
+            </value>
+            <value>
+                <fullName>Charles Harris</fullName>
+                <default>false</default>
+                <label>Charles Harris</label>
+            </value>
+            <value>
+                <fullName>Cynthia Portal Celhay</fullName>
+                <default>false</default>
+                <label>Cynthia Portal Celhay</label>
+            </value>
+            <value>
+                <fullName>David Lederer</fullName>
+                <default>false</default>
+                <label>David Lederer</label>
+            </value>
+            <value>
+                <fullName>Deepti Deshpande</fullName>
+                <default>false</default>
+                <label>Deepti Deshpande</label>
+            </value>
+            <value>
+                <fullName>Eduardo Forleo Neto</fullName>
+                <default>false</default>
+                <label>Eduardo Forleo Neto</label>
+            </value>
+            <value>
+                <fullName>Elizabeth Miller</fullName>
+                <default>false</default>
+                <label>Elizabeth Miller</label>
+            </value>
+            <value>
+                <fullName>Ethan Marin</fullName>
+                <default>false</default>
+                <label>Ethan Marin</label>
+            </value>
+            <value>
+                <fullName>Flonza Isa</fullName>
+                <default>false</default>
+                <label>Flonza Isa</label>
+            </value>
+            <value>
+                <fullName>Georgios Kalliolias</fullName>
+                <default>false</default>
+                <label>Georgios Kalliolias</label>
+            </value>
+            <value>
+                <fullName>Giuseppe Gullo</fullName>
+                <default>false</default>
+                <label>Giuseppe Gullo</label>
+            </value>
+            <value>
+                <fullName>Heather Magnan</fullName>
+                <default>false</default>
+                <label>Heather Magnan</label>
+            </value>
+            <value>
+                <fullName>Helen Cicirello</fullName>
+                <default>false</default>
+                <label>Helen Cicirello</label>
+            </value>
+            <value>
+                <fullName>Jaman Maroni</fullName>
+                <default>false</default>
+                <label>Jaman Maroni</label>
+            </value>
+            <value>
+                <fullName>Jonathan Weyne</fullName>
+                <default>false</default>
+                <label>Jonathan Weyne</label>
+            </value>
+            <value>
+                <fullName>Kathryn Gillis</fullName>
+                <default>false</default>
+                <label>Kathryn Gillis</label>
+            </value>
+            <value>
+                <fullName>Kimberly Reed</fullName>
+                <default>false</default>
+                <label>Kimberly Reed</label>
+            </value>
+            <value>
+                <fullName>Manish Ponda</fullName>
+                <default>false</default>
+                <label>Manish Ponda</label>
+            </value>
+            <value>
+                <fullName>Matthew Fury</fullName>
+                <default>false</default>
+                <label>Matthew Fury</label>
+            </value>
+            <value>
+                <fullName>Meagan O&apos;Brien</fullName>
+                <default>false</default>
+                <label>Meagan O&apos;Brien</label>
+            </value>
+            <value>
+                <fullName>Melissa Mathias</fullName>
+                <default>false</default>
+                <label>Melissa Mathias</label>
+            </value>
+            <value>
+                <fullName>Nikhil Singh</fullName>
+                <default>false</default>
+                <label>Nikhil Singh</label>
+            </value>
+            <value>
+                <fullName>Oren Levy</fullName>
+                <default>false</default>
+                <label>Oren Levy</label>
+            </value>
+            <value>
+                <fullName>Petra Rietschel</fullName>
+                <default>false</default>
+                <label>Petra Rietschel</label>
+            </value>
+            <value>
+                <fullName>Priscila Hermont B Goncalves</fullName>
+                <default>false</default>
+                <label>Priscila Hermont B Goncalves</label>
+            </value>
+            <value>
+                <fullName>Qiufei Ma</fullName>
+                <default>false</default>
+                <label>Qiufei Ma</label>
+            </value>
+            <value>
+                <fullName>Sabina Sandigursky</fullName>
+                <default>false</default>
+                <label>Sabina Sandigursky</label>
+            </value>
+            <value>
+                <fullName>Selin Somersan-Karakaya</fullName>
+                <default>false</default>
+                <label>Selin Somersan-Karakaya</label>
+            </value>
+            <value>
+                <fullName>Shahid Siddiqui</fullName>
+                <default>false</default>
+                <label>Shahid Siddiqui</label>
+            </value>
+            <value>
+                <fullName>Stephen DiMartino</fullName>
+                <default>false</default>
+                <label>Stephen DiMartino</label>
+            </value>
+            <value>
+                <fullName>Stephen Donahue</fullName>
+                <default>false</default>
+                <label>Stephen Donahue</label>
+            </value>
+            <value>
+                <fullName>Thomas Norton</fullName>
+                <default>false</default>
+                <label>Thomas Norton</label>
+            </value>
+            <value>
+                <fullName>Thomas Uldrick</fullName>
+                <default>false</default>
+                <label>Thomas Uldrick</label>
+            </value>
+            <value>
+                <fullName>Timothy Bowler</fullName>
+                <default>false</default>
+                <label>Timothy Bowler</label>
+            </value>
+            <value>
+                <fullName>Tolga Baykal</fullName>
+                <default>false</default>
+                <label>Tolga Baykal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

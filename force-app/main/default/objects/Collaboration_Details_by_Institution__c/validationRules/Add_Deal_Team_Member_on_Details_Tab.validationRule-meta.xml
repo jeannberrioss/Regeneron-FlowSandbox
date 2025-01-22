@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Add_Deal_Team_Member_on_Details_Tab</fullName>
+    <active>false</active>
+    <description>Atleast one deal them member should be present to update Budget field,Please add deal team member on Details tab</description>
+    <errorConditionFormula>AND(OR(
+ISCHANGED(Total_Cost_Collaborator_Proposed__c),
+ISCHANGED(Cost_per_Year_Collaborator_Proposed__c),
+ISCHANGED(Total_Cost_Agreed__c),
+ISCHANGED(Cost_per_Year_Agreed__c),
+ISCHANGED(Total_Cost_RGC_Proposed__c),
+ISCHANGED(Cost_per_Year_RGC_Proposed__c)
+),AND(ISBLANK(Collaboration_Opportunity__r.RGC_Champion__c),ISBLANK( Collaboration_Opportunity__r.RGC_Co_Champion__c ),ISBLANK(Collaboration_Opportunity__r.PBO_Associate__c),ISBLANK( Collaboration_Opportunity__r.RPM_Leader__c ),ISBLANK( Collaboration_Opportunity__r.Legal_Leader__c ),ISBLANK( Collaboration_Opportunity__r.Budget_Leader__c ),ISBLANK( Collaboration_Opportunity__r.RGC_Co_Champion1__c ),ISBLANK( Collaboration_Opportunity__r.RGC_Co_Champion2__c ) ))</errorConditionFormula>
+    <errorMessage>Atleast one deal them member should be present to update Budget field,Please add deal team member on Details tab</errorMessage>
+</ValidationRule>

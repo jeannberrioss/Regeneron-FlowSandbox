@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Study_Population__c</fullName>
+    <label>Study Population</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adolescents (12 to 18 Years)</fullName>
+                <default>false</default>
+                <label>Adolescents (12 to 18 Years)</label>
+            </value>
+            <value>
+                <fullName>Adolescents and Adults (12 years and Older)</fullName>
+                <default>false</default>
+                <label>Adolescents and Adults (12 years and Older)</label>
+            </value>
+            <value>
+                <fullName>Adults (above 18 Years)</fullName>
+                <default>false</default>
+                <label>Adults (above 18 Years)</label>
+            </value>
+            <value>
+                <fullName>Children (2 to 11 Years)</fullName>
+                <default>false</default>
+                <label>Children (2 to 11 Years)</label>
+            </value>
+            <value>
+                <fullName>Children and Adolescents (6 to 16 Years)</fullName>
+                <default>false</default>
+                <label>Children and Adolescents (6 to 16 Years)</label>
+            </value>
+            <value>
+                <fullName>Children to Adults (6 years and Older)</fullName>
+                <default>false</default>
+                <label>Children to Adults (6 years and Older)</label>
+            </value>
+            <value>
+                <fullName>Infants and Toddlers (28 days to 23 months)</fullName>
+                <default>false</default>
+                <label>Infants and Toddlers (28 days to 23 months)</label>
+            </value>
+            <value>
+                <fullName>Infants to Adolescents (6 months to 18 years)</fullName>
+                <default>false</default>
+                <label>Infants to Adolescents (6 months to 18 years)</label>
+            </value>
+            <value>
+                <fullName>Infants to Children (6 months to 6 years)</fullName>
+                <default>false</default>
+                <label>Infants to Children (6 months to 6 years)</label>
+            </value>
+            <value>
+                <fullName>Japanese Adults (above 18 Years)</fullName>
+                <default>false</default>
+                <label>Japanese Adults (above 18 Years)</label>
+            </value>
+            <value>
+                <fullName>Normal Healthy Volunteers</fullName>
+                <default>false</default>
+                <label>Normal Healthy Volunteers</label>
+            </value>
+            <value>
+                <fullName>Pre  term Newborn Infants</fullName>
+                <default>false</default>
+                <label>Pre  term Newborn Infants</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

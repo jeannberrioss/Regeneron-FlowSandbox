@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RGC_Team__c</fullName>
+    <label>RGC Team</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Analytical Genomics and Data Sciences</fullName>
+                <default>false</default>
+                <label>Analytical Genomics and Data Sciences</label>
+            </value>
+            <value>
+                <fullName>Clinical Informatics</fullName>
+                <default>false</default>
+                <label>Clinical Informatics</label>
+            </value>
+            <value>
+                <fullName>Founders and Special Populations</fullName>
+                <default>false</default>
+                <label>Founders and Special Populations</label>
+            </value>
+            <value>
+                <fullName>Genome informatics and Data Engineering</fullName>
+                <default>false</default>
+                <label>Genome informatics and Data Engineering</label>
+            </value>
+            <value>
+                <fullName>Therapeutic Area Genetics</fullName>
+                <default>false</default>
+                <label>Therapeutic Area Genetics</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RGC_Role__c</fullName>
+    <label>RGC Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Clinical Informatics Analyst</fullName>
+                <default>false</default>
+                <label>Clinical Informatics Analyst</label>
+            </value>
+            <value>
+                <fullName>AGDS Analyst</fullName>
+                <default>false</default>
+                <label>AGDS Analyst</label>
+            </value>
+            <value>
+                <fullName>TAG Analyst</fullName>
+                <default>false</default>
+                <label>TAG Analyst</label>
+            </value>
+            <value>
+                <fullName>GIDE Analyst</fullName>
+                <default>false</default>
+                <label>GIDE Analyst</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

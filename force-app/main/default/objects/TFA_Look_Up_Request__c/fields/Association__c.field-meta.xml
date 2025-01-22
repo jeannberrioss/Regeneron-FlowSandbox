@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Association__c</fullName>
+    <label>Association</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Age</fullName>
+                <default>false</default>
+                <label>Age</label>
+            </value>
+            <value>
+                <fullName>Allergy</fullName>
+                <default>false</default>
+                <label>Allergy</label>
+            </value>
+            <value>
+                <fullName>Asthma</fullName>
+                <default>false</default>
+                <label>Asthma</label>
+            </value>
+            <value>
+                <fullName>Atopic dermatitis</fullName>
+                <default>false</default>
+                <label>Atopic dermatitis</label>
+            </value>
+            <value>
+                <fullName>Blood Pressure</fullName>
+                <default>false</default>
+                <label>Blood Pressure</label>
+            </value>
+            <value>
+                <fullName>Bone Mineral Density</fullName>
+                <default>false</default>
+                <label>Bone Mineral Density</label>
+            </value>
+            <value>
+                <fullName>CAD</fullName>
+                <default>false</default>
+                <label>CAD</label>
+            </value>
+            <value>
+                <fullName>Coagulation</fullName>
+                <default>false</default>
+                <label>Coagulation</label>
+            </value>
+            <value>
+                <fullName>COPD</fullName>
+                <default>false</default>
+                <label>COPD</label>
+            </value>
+            <value>
+                <fullName>DTE</fullName>
+                <default>false</default>
+                <label>DTE</label>
+            </value>
+            <value>
+                <fullName>Fibrotic disease</fullName>
+                <default>false</default>
+                <label>Fibrotic disease</label>
+            </value>
+            <value>
+                <fullName>Fungal Infections</fullName>
+                <default>false</default>
+                <label>Fungal Infections</label>
+            </value>
+            <value>
+                <fullName>Hand Grip Strength</fullName>
+                <default>false</default>
+                <label>Hand Grip Strength</label>
+            </value>
+            <value>
+                <fullName>Infection</fullName>
+                <default>false</default>
+                <label>Infection</label>
+            </value>
+            <value>
+                <fullName>Liver Disease</fullName>
+                <default>false</default>
+                <label>Liver Disease</label>
+            </value>
+            <value>
+                <fullName>Lysosomal Disease</fullName>
+                <default>false</default>
+                <label>Lysosomal Disease</label>
+            </value>
+            <value>
+                <fullName>MI</fullName>
+                <default>false</default>
+                <label>MI</label>
+            </value>
+            <value>
+                <fullName>PAH</fullName>
+                <default>false</default>
+                <label>PAH</label>
+            </value>
+            <value>
+                <fullName>PheWAS</fullName>
+                <default>false</default>
+                <label>PheWAS</label>
+            </value>
+            <value>
+                <fullName>Renal Disease</fullName>
+                <default>false</default>
+                <label>Renal Disease</label>
+            </value>
+            <value>
+                <fullName>Scleroderma</fullName>
+                <default>false</default>
+                <label>Scleroderma</label>
+            </value>
+            <value>
+                <fullName>Skin Disorders</fullName>
+                <default>false</default>
+                <label>Skin Disorders</label>
+            </value>
+            <value>
+                <fullName>Type 1 Diabetes</fullName>
+                <default>false</default>
+                <label>Type 1 Diabetes</label>
+            </value>
+            <value>
+                <fullName>Type 2 Diabetes</fullName>
+                <default>false</default>
+                <label>Type 2 Diabetes</label>
+            </value>
+            <value>
+                <fullName>VTE</fullName>
+                <default>false</default>
+                <label>VTE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

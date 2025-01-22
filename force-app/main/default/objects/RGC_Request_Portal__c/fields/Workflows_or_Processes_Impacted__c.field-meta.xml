@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Workflows_or_Processes_Impacted__c</fullName>
+    <label>Workflows or Processes Impacted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RGC Analyses</fullName>
+                <default>false</default>
+                <label>RGC Analyses</label>
+            </value>
+            <value>
+                <fullName>Browser Uploads</fullName>
+                <default>false</default>
+                <label>Browser Uploads</label>
+            </value>
+            <value>
+                <fullName>RGC Production Pipeline</fullName>
+                <default>false</default>
+                <label>RGC Production Pipeline</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

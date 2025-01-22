@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TAPM__c</fullName>
+    <label>TAPM</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_TA Project Mgmt (GEN)</fullName>
+                <default>false</default>
+                <label>_TA Project Mgmt (GEN)</label>
+            </value>
+            <value>
+                <fullName>Antonio Irizarry</fullName>
+                <default>false</default>
+                <label>Antonio Irizarry</label>
+            </value>
+            <value>
+                <fullName>Bradford Horton</fullName>
+                <default>false</default>
+                <label>Bradford Horton</label>
+            </value>
+            <value>
+                <fullName>Deganit Shechter</fullName>
+                <default>false</default>
+                <label>Deganit Shechter</label>
+            </value>
+            <value>
+                <fullName>Evelyn Gasparino</fullName>
+                <default>false</default>
+                <label>Evelyn Gasparino</label>
+            </value>
+            <value>
+                <fullName>Kellie Giles</fullName>
+                <default>false</default>
+                <label>Kellie Giles</label>
+            </value>
+            <value>
+                <fullName>Laura Capicchioni</fullName>
+                <default>false</default>
+                <label>Laura Capicchioni</label>
+            </value>
+            <value>
+                <fullName>Lee Sayers</fullName>
+                <default>false</default>
+                <label>Lee Sayers</label>
+            </value>
+            <value>
+                <fullName>Linda Pan</fullName>
+                <default>false</default>
+                <label>Linda Pan</label>
+            </value>
+            <value>
+                <fullName>Marissa Mezzancello</fullName>
+                <default>false</default>
+                <label>Marissa Mezzancello</label>
+            </value>
+            <value>
+                <fullName>Michele Mackenzie</fullName>
+                <default>false</default>
+                <label>Michele Mackenzie</label>
+            </value>
+            <value>
+                <fullName>Monica Alexander</fullName>
+                <default>false</default>
+                <label>Monica Alexander</label>
+            </value>
+            <value>
+                <fullName>Samantha Dickon</fullName>
+                <default>false</default>
+                <label>Samantha Dickon</label>
+            </value>
+            <value>
+                <fullName>Somang Kim</fullName>
+                <default>false</default>
+                <label>Somang Kim</label>
+            </value>
+            <value>
+                <fullName>Tanya Klein</fullName>
+                <default>false</default>
+                <label>Tanya Klein</label>
+            </value>
+            <value>
+                <fullName>Victoria Serrano</fullName>
+                <default>false</default>
+                <label>Victoria Serrano</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

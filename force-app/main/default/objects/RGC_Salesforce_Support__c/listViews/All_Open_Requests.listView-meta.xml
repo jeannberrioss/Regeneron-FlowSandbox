@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Open_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>Subject__c</columns>
+    <columns>Description__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Created_on_Behalf_Of__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Status__c</columns>
+    <columns>Support_Request_Type__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Jira_ID__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>contains</operation>
+        <value>New,In Review,On Hold</value>
+    </filters>
+    <label>All Open Requests</label>
+</ListView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Precision_Medicine_Operations__c</fullName>
+    <label>Precision Medicine Operations</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_Precision Medicine Operations (GEN)</fullName>
+                <default>false</default>
+                <label>_Precision Medicine Operations (GEN)</label>
+            </value>
+            <value>
+                <fullName>Lisa Hersh</fullName>
+                <default>false</default>
+                <label>Lisa Hersh</label>
+            </value>
+            <value>
+                <fullName>Michel Tarabocchia</fullName>
+                <default>false</default>
+                <label>Michel Tarabocchia</label>
+            </value>
+            <value>
+                <fullName>Rachid Hamid</fullName>
+                <default>false</default>
+                <label>Rachid Hamid</label>
+            </value>
+            <value>
+                <fullName>Shiwani Tiwari</fullName>
+                <default>false</default>
+                <label>Shiwani Tiwari</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

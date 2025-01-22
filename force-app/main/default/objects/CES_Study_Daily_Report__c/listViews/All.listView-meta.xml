@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CES_Design_Type__c</columns>
+    <columns>CES_Study_Type__c</columns>
+    <columns>Clinical_Outsourcing_Representative__c</columns>
+    <columns>f_Data_Available__c</columns>
+    <columns>f_Study_Report_Completed__c</columns>
+    <columns>Key_Data_Available__c</columns>
+    <columns>Number_of_Planned_Sites__c</columns>
+    <columns>Number_of_Planned_Patients__c</columns>
+    <columns>Therapeutic_Area__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Therapeutic_Area__c</field>
+        <operation>equals</operation>
+        <value>Oncology</value>
+    </filters>
+    <label>All</label>
+</ListView>

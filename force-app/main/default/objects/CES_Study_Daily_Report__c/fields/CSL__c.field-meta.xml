@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSL__c</fullName>
+    <label>CSL</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_Clinical Study Leader (GEN)</fullName>
+                <default>false</default>
+                <label>_Clinical Study Leader (GEN)</label>
+            </value>
+            <value>
+                <fullName>Alexis Wistermayer</fullName>
+                <default>false</default>
+                <label>Alexis Wistermayer</label>
+            </value>
+            <value>
+                <fullName>Ana-Maria Visoiu-Knapp</fullName>
+                <default>false</default>
+                <label>Ana-Maria Visoiu-Knapp</label>
+            </value>
+            <value>
+                <fullName>Dhanesh Patel-External</fullName>
+                <default>false</default>
+                <label>Dhanesh Patel-External</label>
+            </value>
+            <value>
+                <fullName>Ileana Alexander</fullName>
+                <default>false</default>
+                <label>Ileana Alexander</label>
+            </value>
+            <value>
+                <fullName>Jessica D&apos;Antonio</fullName>
+                <default>false</default>
+                <label>Jessica D&apos;Antonio</label>
+            </value>
+            <value>
+                <fullName>Maria Gurbo-External</fullName>
+                <default>false</default>
+                <label>Maria Gurbo-External</label>
+            </value>
+            <value>
+                <fullName>Sarah Maitland-Jones-External</fullName>
+                <default>false</default>
+                <label>Sarah Maitland-Jones-External</label>
+            </value>
+            <value>
+                <fullName>Vinh Nuce</fullName>
+                <default>false</default>
+                <label>Vinh Nuce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

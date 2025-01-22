@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>What_request_are_you_submitting__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Look-up Requested</fullName>
+                <default>false</default>
+                <label>Look-up Requested</label>
+            </value>
+            <value>
+                <fullName>Assigned</fullName>
+                <default>false</default>
+                <label>Assigned</label>
+            </value>
+            <value>
+                <fullName>Analysis Ongoing</fullName>
+                <default>false</default>
+                <label>Analysis Ongoing</label>
+            </value>
+            <value>
+                <fullName>Completed - Follow-up Needed</fullName>
+                <default>false</default>
+                <label>Completed - Follow-up Needed</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Under Review</fullName>
+                <default>false</default>
+                <label>Under Review</label>
+            </value>
+            <value>
+                <fullName>In progress</fullName>
+                <default>false</default>
+                <label>In progress</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Custom Phenotype Request</controllingFieldValue>
+            <controllingFieldValue>ROAD Topic Submission</controllingFieldValue>
+            <controllingFieldValue>Custom Clinical Data Request</controllingFieldValue>
+            <valueName>Completed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Custom Phenotype Request</controllingFieldValue>
+            <controllingFieldValue>ROAD Topic Submission</controllingFieldValue>
+            <controllingFieldValue>Custom Clinical Data Request</controllingFieldValue>
+            <valueName>Under Review</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Custom Phenotype Request</controllingFieldValue>
+            <controllingFieldValue>ROAD Topic Submission</controllingFieldValue>
+            <controllingFieldValue>Custom Clinical Data Request</controllingFieldValue>
+            <valueName>In progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ROAD Topic Submission</controllingFieldValue>
+            <valueName>Assigned</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

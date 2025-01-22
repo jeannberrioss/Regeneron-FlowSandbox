@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Instructions__c</fullName>
+    <defaultValue>&apos;Add any helpful screenshots above. To attach files, upload to &quot;Notes &amp; Attachments&quot; after your request is saved.&apos;</defaultValue>
+    <externalId>false</externalId>
+    <inlineHelpText>Add any necessary screenshots above. To attach a file, upload to &quot;Notes &amp; Attachments&quot; after you save your request.</inlineHelpText>
+    <label>Instructions</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TAPM__c</fullName>
+    <label>TAPM</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hemant Patel</fullName>
+                <default>false</default>
+                <label>Hemant Patel</label>
+            </value>
+            <value>
+                <fullName>Laura Capicchioni</fullName>
+                <default>false</default>
+                <label>Laura Capicchioni</label>
+            </value>
+            <value>
+                <fullName>Nicole Dossin</fullName>
+                <default>false</default>
+                <label>Nicole Dossin</label>
+            </value>
+            <value>
+                <fullName>Samantha Dickon</fullName>
+                <default>false</default>
+                <label>Samantha Dickon</label>
+            </value>
+            <value>
+                <fullName>Somang Kim</fullName>
+                <default>false</default>
+                <label>Somang Kim</label>
+            </value>
+            <value>
+                <fullName>Tanya Klein</fullName>
+                <default>false</default>
+                <label>Tanya Klein</label>
+            </value>
+            <value>
+                <fullName>Tatanisha Rodgers-Laguerre</fullName>
+                <default>false</default>
+                <label>Tatanisha Rodgers-Laguerre</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

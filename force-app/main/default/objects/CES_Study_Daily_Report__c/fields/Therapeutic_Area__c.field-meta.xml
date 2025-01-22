@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Therapeutic_Area__c</fullName>
+    <label>Therapeutic Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aging</fullName>
+                <default>false</default>
+                <label>Aging</label>
+            </value>
+            <value>
+                <fullName>Cardiovascular and Metabolism</fullName>
+                <default>false</default>
+                <label>Cardiovascular and Metabolism</label>
+            </value>
+            <value>
+                <fullName>General Medicine_Metabolic and Muscle Disease</fullName>
+                <default>false</default>
+                <label>General Medicine_Metabolic and Muscle Disease</label>
+            </value>
+            <value>
+                <fullName>Hearing</fullName>
+                <default>false</default>
+                <label>Hearing</label>
+            </value>
+            <value>
+                <fullName>Immunology and Inflammation</fullName>
+                <default>false</default>
+                <label>Immunology and Inflammation</label>
+            </value>
+            <value>
+                <fullName>Immuno-Oncology</fullName>
+                <default>false</default>
+                <label>Immuno-Oncology</label>
+            </value>
+            <value>
+                <fullName>Infectious Disease</fullName>
+                <default>false</default>
+                <label>Infectious Disease</label>
+            </value>
+            <value>
+                <fullName>Muscular Metabolism</fullName>
+                <default>false</default>
+                <label>Muscular Metabolism</label>
+            </value>
+            <value>
+                <fullName>Neurology</fullName>
+                <default>false</default>
+                <label>Neurology</label>
+            </value>
+            <value>
+                <fullName>Oncology</fullName>
+                <default>false</default>
+                <label>Oncology</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Skeletal</fullName>
+                <default>false</default>
+                <label>Skeletal</label>
+            </value>
+            <value>
+                <fullName>(No T.A.)</fullName>
+                <default>false</default>
+                <label>(No T.A.)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

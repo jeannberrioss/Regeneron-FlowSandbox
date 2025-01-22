@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collaboration_Stage__c</fullName>
+    <label>Collaboration Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1- Early Discussions</fullName>
+                <default>false</default>
+                <label>1- Early Discussions</label>
+            </value>
+            <value>
+                <fullName>2- Due Diligence</fullName>
+                <default>false</default>
+                <label>2- Due Diligence</label>
+            </value>
+            <value>
+                <fullName>3- Research &amp; Ops Planning</fullName>
+                <default>false</default>
+                <label>3- Research &amp; Ops Planning</label>
+            </value>
+            <value>
+                <fullName>4- Agreement</fullName>
+                <default>false</default>
+                <label>4- Agreement</label>
+            </value>
+            <value>
+                <fullName>5- Collaboration Signoff</fullName>
+                <default>false</default>
+                <label>5- Collaboration Signoff</label>
+            </value>
+            <value>
+                <fullName>6- Signatures &amp; Execution</fullName>
+                <default>false</default>
+                <label>6- Signatures &amp; Execution</label>
+            </value>
+            <value>
+                <fullName>7- Active</fullName>
+                <default>false</default>
+                <label>7- Active</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

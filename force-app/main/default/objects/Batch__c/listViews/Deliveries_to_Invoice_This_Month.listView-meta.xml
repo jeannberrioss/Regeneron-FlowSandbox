@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deliveries_to_Invoice_This_Month</fullName>
+    <columns>Collaboration_Opportunity__c</columns>
+    <columns>NAME</columns>
+    <columns>Date_Samples_Received__c</columns>
+    <columns>Number_of_Samples_Received__c</columns>
+    <columns>Invoice_Date__c</columns>
+    <columns>Invoice_Amount__c</columns>
+    <columns>Invoice_Number__c</columns>
+    <columns>Received__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Date_Samples_Received__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Received__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Deliveries to Invoice This Month</label>
+</ListView>

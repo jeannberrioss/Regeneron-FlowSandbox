@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QML__c</fullName>
+    <label>QML</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Amanda Rozner</fullName>
+                <default>false</default>
+                <label>Amanda Rozner</label>
+            </value>
+            <value>
+                <fullName>Gail Boyer</fullName>
+                <default>false</default>
+                <label>Gail Boyer</label>
+            </value>
+            <value>
+                <fullName>Joel Wolf</fullName>
+                <default>false</default>
+                <label>Joel Wolf</label>
+            </value>
+            <value>
+                <fullName>John Blanchette</fullName>
+                <default>false</default>
+                <label>John Blanchette</label>
+            </value>
+            <value>
+                <fullName>Kechelsa Rawlins</fullName>
+                <default>false</default>
+                <label>Kechelsa Rawlins</label>
+            </value>
+            <value>
+                <fullName>Lumi Nemteanu</fullName>
+                <default>false</default>
+                <label>Lumi Nemteanu</label>
+            </value>
+            <value>
+                <fullName>Marc Dickens</fullName>
+                <default>false</default>
+                <label>Marc Dickens</label>
+            </value>
+            <value>
+                <fullName>Margaret Seaman</fullName>
+                <default>false</default>
+                <label>Margaret Seaman</label>
+            </value>
+            <value>
+                <fullName>Martin Delgado</fullName>
+                <default>false</default>
+                <label>Martin Delgado</label>
+            </value>
+            <value>
+                <fullName>Natalie Frappier</fullName>
+                <default>false</default>
+                <label>Natalie Frappier</label>
+            </value>
+            <value>
+                <fullName>Philippe Beltran</fullName>
+                <default>false</default>
+                <label>Philippe Beltran</label>
+            </value>
+            <value>
+                <fullName>Sheree Hairston</fullName>
+                <default>false</default>
+                <label>Sheree Hairston</label>
+            </value>
+            <value>
+                <fullName>Teresa Zubel</fullName>
+                <default>false</default>
+                <label>Teresa Zubel</label>
+            </value>
+            <value>
+                <fullName>Vicki Buss</fullName>
+                <default>false</default>
+                <label>Vicki Buss</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

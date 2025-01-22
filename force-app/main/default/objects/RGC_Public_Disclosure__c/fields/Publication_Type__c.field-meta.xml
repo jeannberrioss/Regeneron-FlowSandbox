@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publication_Type__c</fullName>
+    <label>Publication Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abstract</fullName>
+                <default>false</default>
+                <label>Abstract</label>
+            </value>
+            <value>
+                <fullName>Lecture</fullName>
+                <default>false</default>
+                <label>Lecture</label>
+            </value>
+            <value>
+                <fullName>Letter</fullName>
+                <default>false</default>
+                <label>Letter</label>
+            </value>
+            <value>
+                <fullName>Manuscript</fullName>
+                <default>false</default>
+                <label>Manuscript</label>
+            </value>
+            <value>
+                <fullName>Oral Presentation</fullName>
+                <default>false</default>
+                <label>Oral Presentation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Platform</fullName>
+                <default>false</default>
+                <label>Platform</label>
+            </value>
+            <value>
+                <fullName>Poster</fullName>
+                <default>false</default>
+                <label>Poster</label>
+            </value>
+            <value>
+                <fullName>Results Sharing</fullName>
+                <default>false</default>
+                <label>Results Sharing</label>
+            </value>
+            <value>
+                <fullName>Seminar Talk</fullName>
+                <default>false</default>
+                <label>Seminar Talk</label>
+            </value>
+            <value>
+                <fullName>Student Manuscript</fullName>
+                <default>false</default>
+                <label>Student Manuscript</label>
+            </value>
+            <value>
+                <fullName>Student Paper</fullName>
+                <default>false</default>
+                <label>Student Paper</label>
+            </value>
+            <value>
+                <fullName>Student Presentation</fullName>
+                <default>false</default>
+                <label>Student Presentation</label>
+            </value>
+            <value>
+                <fullName>Student Research Project</fullName>
+                <default>false</default>
+                <label>Student Research Project</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

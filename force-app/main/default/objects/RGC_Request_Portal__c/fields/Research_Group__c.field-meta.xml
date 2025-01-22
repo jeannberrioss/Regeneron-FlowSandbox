@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Research_Group__c</fullName>
+    <label>Research Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RGC- Regeneron Genetics Center</fullName>
+                <default>false</default>
+                <label>RGC- Regeneron Genetics Center</label>
+            </value>
+            <value>
+                <fullName>ADC &amp; ARC</fullName>
+                <default>false</default>
+                <label>ADC &amp; ARC</label>
+            </value>
+            <value>
+                <fullName>Analytical Chemistry</fullName>
+                <default>false</default>
+                <label>Analytical Chemistry</label>
+            </value>
+            <value>
+                <fullName>Assay Development / Bioassay</fullName>
+                <default>false</default>
+                <label>Assay Development / Bioassay</label>
+            </value>
+            <value>
+                <fullName>Bioanalytical Strategy Group</fullName>
+                <default>false</default>
+                <label>Bioanalytical Strategy Group</label>
+            </value>
+            <value>
+                <fullName>Biostatistics and Data Management</fullName>
+                <default>false</default>
+                <label>Biostatistics and Data Management</label>
+            </value>
+            <value>
+                <fullName>Bispecifics</fullName>
+                <default>false</default>
+                <label>Bispecifics</label>
+            </value>
+            <value>
+                <fullName>Blood Fibrosis</fullName>
+                <default>false</default>
+                <label>Blood Fibrosis</label>
+            </value>
+            <value>
+                <fullName>Clinical – Cardiovascular &amp; Metabolism</fullName>
+                <default>false</default>
+                <label>Clinical – Cardiovascular &amp; Metabolism</label>
+            </value>
+            <value>
+                <fullName>Clinical – Immunology &amp; Inflammation</fullName>
+                <default>false</default>
+                <label>Clinical – Immunology &amp; Inflammation</label>
+            </value>
+            <value>
+                <fullName>Clinical – Oncology &amp; Translational Sciences</fullName>
+                <default>false</default>
+                <label>Clinical – Oncology &amp; Translational Sciences</label>
+            </value>
+            <value>
+                <fullName>Early Clinical Development and Experimental Sciences</fullName>
+                <default>false</default>
+                <label>Early Clinical Development and Experimental Sciences</label>
+            </value>
+            <value>
+                <fullName>Genomic Engineering Technology</fullName>
+                <default>false</default>
+                <label>Genomic Engineering Technology</label>
+            </value>
+            <value>
+                <fullName>Global Study Strategy &amp; Optimization</fullName>
+                <default>false</default>
+                <label>Global Study Strategy &amp; Optimization</label>
+            </value>
+            <value>
+                <fullName>Infectious Diseases</fullName>
+                <default>false</default>
+                <label>Infectious Diseases</label>
+            </value>
+            <value>
+                <fullName>IOPS</fullName>
+                <default>false</default>
+                <label>IOPS</label>
+            </value>
+            <value>
+                <fullName>IOPS – Devices</fullName>
+                <default>false</default>
+                <label>IOPS – Devices</label>
+            </value>
+            <value>
+                <fullName>Molecular Profiling and Bioinformatics</fullName>
+                <default>false</default>
+                <label>Molecular Profiling and Bioinformatics</label>
+            </value>
+            <value>
+                <fullName>Neuroscience</fullName>
+                <default>false</default>
+                <label>Neuroscience</label>
+            </value>
+            <value>
+                <fullName>OB, Metabolic &amp; Muscle Diseases</fullName>
+                <default>false</default>
+                <label>OB, Metabolic &amp; Muscle Diseases</label>
+            </value>
+            <value>
+                <fullName>Oligo Therapy</fullName>
+                <default>false</default>
+                <label>Oligo Therapy</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>PDPC – Analytical Chemistry</fullName>
+                <default>false</default>
+                <label>PDPC – Analytical Chemistry</label>
+            </value>
+            <value>
+                <fullName>PDPC – Bioanalytical Sciences</fullName>
+                <default>false</default>
+                <label>PDPC – Bioanalytical Sciences</label>
+            </value>
+            <value>
+                <fullName>PDPC – Formulation Development</fullName>
+                <default>false</default>
+                <label>PDPC – Formulation Development</label>
+            </value>
+            <value>
+                <fullName>PDPC – Preclinical Manufacturing &amp; Process Development</fullName>
+                <default>false</default>
+                <label>PDPC – Preclinical Manufacturing &amp; Process Development</label>
+            </value>
+            <value>
+                <fullName>PES – Protein Expression Sciences</fullName>
+                <default>false</default>
+                <label>PES – Protein Expression Sciences</label>
+            </value>
+            <value>
+                <fullName>Pharmacology / PK</fullName>
+                <default>false</default>
+                <label>Pharmacology / PK</label>
+            </value>
+            <value>
+                <fullName>Pharmacometrics</fullName>
+                <default>false</default>
+                <label>Pharmacometrics</label>
+            </value>
+            <value>
+                <fullName>PMPD – Preclinical Manufacturing &amp; Process Development</fullName>
+                <default>false</default>
+                <label>PMPD – Preclinical Manufacturing &amp; Process Development</label>
+            </value>
+            <value>
+                <fullName>PMPD - Analytical Chemistry</fullName>
+                <default>false</default>
+                <label>PMPD - Analytical Chemistry</label>
+            </value>
+            <value>
+                <fullName>PMPD – Bioreactor</fullName>
+                <default>false</default>
+                <label>PMPD – Bioreactor</label>
+            </value>
+            <value>
+                <fullName>PMPD - Cell Culture</fullName>
+                <default>false</default>
+                <label>PMPD - Cell Culture</label>
+            </value>
+            <value>
+                <fullName>PMPD – Purification</fullName>
+                <default>false</default>
+                <label>PMPD – Purification</label>
+            </value>
+            <value>
+                <fullName>Preclinical Development &amp; Protein Chemistry</fullName>
+                <default>false</default>
+                <label>Preclinical Development &amp; Protein Chemistry</label>
+            </value>
+            <value>
+                <fullName>Pre-Therapeutic Target Discovery</fullName>
+                <default>false</default>
+                <label>Pre-Therapeutic Target Discovery</label>
+            </value>
+            <value>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+                <label>Quality Assurance</label>
+            </value>
+            <value>
+                <fullName>Regulatory Affairs</fullName>
+                <default>false</default>
+                <label>Regulatory Affairs</label>
+            </value>
+            <value>
+                <fullName>Research – Cardio / Renal Diseases</fullName>
+                <default>false</default>
+                <label>Research – Cardio / Renal Diseases</label>
+            </value>
+            <value>
+                <fullName>Research – Inflammation &amp; Immune Diseases</fullName>
+                <default>false</default>
+                <label>Research – Inflammation &amp; Immune Diseases</label>
+            </value>
+            <value>
+                <fullName>Research – Oncology and Angiogenesis</fullName>
+                <default>false</default>
+                <label>Research – Oncology and Angiogenesis</label>
+            </value>
+            <value>
+                <fullName>Skeletal Diseases</fullName>
+                <default>false</default>
+                <label>Skeletal Diseases</label>
+            </value>
+            <value>
+                <fullName>Target Gene Delivery</fullName>
+                <default>false</default>
+                <label>Target Gene Delivery</label>
+            </value>
+            <value>
+                <fullName>Target Information Group</fullName>
+                <default>false</default>
+                <label>Target Information Group</label>
+            </value>
+            <value>
+                <fullName>Therapeutic Proteins</fullName>
+                <default>false</default>
+                <label>Therapeutic Proteins</label>
+            </value>
+            <value>
+                <fullName>Therapeutic Proteins - Proteomics</fullName>
+                <default>false</default>
+                <label>Therapeutic Proteins - Proteomics</label>
+            </value>
+            <value>
+                <fullName>VelociGene</fullName>
+                <default>false</default>
+                <label>VelociGene</label>
+            </value>
+            <value>
+                <fullName>VelocImmune</fullName>
+                <default>false</default>
+                <label>VelocImmune</label>
+            </value>
+            <value>
+                <fullName>VI-NEXT</fullName>
+                <default>false</default>
+                <label>VI-NEXT</label>
+            </value>
+            <value>
+                <fullName>Viral Vector Technologies</fullName>
+                <default>false</default>
+                <label>Viral Vector Technologies</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

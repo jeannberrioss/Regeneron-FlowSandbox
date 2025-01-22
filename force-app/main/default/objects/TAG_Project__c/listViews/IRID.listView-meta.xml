@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IRID</fullName>
+    <columns>NAME</columns>
+    <columns>Broad_Phenotype__c</columns>
+    <columns>TAG_Global__c</columns>
+    <columns>Therapeutic_Area_Global__c</columns>
+    <columns>Broad_Status__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>TAG_Meeting_Updates__c</columns>
+    <columns>TAG_Project_Name_Link_RT__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TAG_Global__c</field>
+        <operation>includes</operation>
+        <value>&quot;Immune, Respiratory &amp; Infectious Diseases&quot;</value>
+    </filters>
+    <label>IRID</label>
+</ListView>

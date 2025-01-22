@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operation_Name_is_Month</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(IF((CONTAINS( Name, &quot;January&quot;)), false, true),
+IF((CONTAINS( Name, &quot;February&quot;)), false, true),
+IF((CONTAINS( Name, &quot;March&quot;)), false, true),
+IF((CONTAINS( Name, &quot;April&quot;)), false, true),
+IF((CONTAINS( Name, &quot;May&quot;)), false, true),
+IF((CONTAINS( Name, &quot;June&quot;)), false, true),
+IF((CONTAINS( Name, &quot;July&quot;)), false, true),
+IF((CONTAINS( Name, &quot;August&quot;)), false, true),
+IF((CONTAINS( Name, &quot;September&quot;)), false, true),
+IF((CONTAINS( Name, &quot;October&quot;)), false, true),
+IF((CONTAINS( Name, &quot;November&quot;)), false, true),
+IF((CONTAINS( Name, &quot;December&quot;)), false, true)
+)</errorConditionFormula>
+    <errorMessage>Operation Queue Name must include Month and Year (ie. &quot;January 2022&quot;)</errorMessage>
+</ValidationRule>

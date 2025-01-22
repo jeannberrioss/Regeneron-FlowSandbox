@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phenotype_Assets</fullName>
+    <columns>NAME</columns>
+    <columns>Production_Asset_Type__c</columns>
+    <columns>EHR__c</columns>
+    <columns>Number_of_Binary_Traits__c</columns>
+    <columns>Number_of_Quantitative_Traits__c</columns>
+    <columns>DNAnexus_ID__c</columns>
+    <columns>OMOP_Data_Available__c</columns>
+    <columns>Datasets_Registered__c</columns>
+    <columns>ETA_completed_Registration__c</columns>
+    <columns>Lab_Results__c</columns>
+    <columns>Longitudinal__c</columns>
+    <columns>Medications__c</columns>
+    <columns>Procedures__c</columns>
+    <columns>Standard_Dx__c</columns>
+    <columns>Vital_Signs__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Production_Asset_Type__c</field>
+        <operation>equals</operation>
+        <value>Phenotype Matrix</value>
+    </filters>
+    <label>Phenotype Assets</label>
+</ListView>

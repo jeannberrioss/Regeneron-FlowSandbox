@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Tested_Drug__c</fullName>
+    <label>Primary Tested Drug</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>fasinumab</fullName>
+                <default>false</default>
+                <label>fasinumab</label>
+            </value>
+            <value>
+                <fullName>NTLA-2001</fullName>
+                <default>false</default>
+                <label>NTLA-2001</label>
+            </value>
+            <value>
+                <fullName>dupilumab (SC)
+itepekimab</fullName>
+                <default>false</default>
+                <label>dupilumab (SC)
+itepekimab</label>
+            </value>
+            <value>
+                <fullName>evinacumab</fullName>
+                <default>false</default>
+                <label>evinacumab</label>
+            </value>
+            <value>
+                <fullName>rinucumab</fullName>
+                <default>false</default>
+                <label>rinucumab</label>
+            </value>
+            <value>
+                <fullName>HPV vaccine, ISA Pharmaceuticals</fullName>
+                <default>false</default>
+                <label>HPV vaccine, ISA Pharmaceuticals</label>
+            </value>
+            <value>
+                <fullName>REGN-5069</fullName>
+                <default>false</default>
+                <label>REGN-5069</label>
+            </value>
+            <value>
+                <fullName>garetosmab</fullName>
+                <default>false</default>
+                <label>garetosmab</label>
+            </value>
+            <value>
+                <fullName>REGN-5381
+REGN-9035</fullName>
+                <default>false</default>
+                <label>REGN-5381
+REGN-9035</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+fianlimab</fullName>
+                <default>false</default>
+                <label>cemiplimab
+fianlimab</label>
+            </value>
+            <value>
+                <fullName>motixafortide
+cemiplimab</fullName>
+                <default>false</default>
+                <label>motixafortide
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>evinacumab (IV)</fullName>
+                <default>false</default>
+                <label>evinacumab (IV)</label>
+            </value>
+            <value>
+                <fullName>REGN-5713-5714-5715</fullName>
+                <default>false</default>
+                <label>REGN-5713-5714-5715</label>
+            </value>
+            <value>
+                <fullName>dupilumab (IV)</fullName>
+                <default>false</default>
+                <label>dupilumab (IV)</label>
+            </value>
+            <value>
+                <fullName>vusolimogene oderparepvec</fullName>
+                <default>false</default>
+                <label>vusolimogene oderparepvec</label>
+            </value>
+            <value>
+                <fullName>REGN-5054</fullName>
+                <default>false</default>
+                <label>REGN-5054</label>
+            </value>
+            <value>
+                <fullName>REGN-7075</fullName>
+                <default>false</default>
+                <label>REGN-7075</label>
+            </value>
+            <value>
+                <fullName>aflibercept ophthalmic solution</fullName>
+                <default>false</default>
+                <label>aflibercept ophthalmic solution</label>
+            </value>
+            <value>
+                <fullName>undisclosed - immunosuppressive drug
+methotrexate
+undisclosed – atopic dermatitis drug
+dupilumab
+cyclosporine, unspecified
+corticosteroids
+undisclosed-immunomodulator</fullName>
+                <default>false</default>
+                <label>undisclosed - immunosuppressive drug
+methotrexate
+undisclosed – atopic dermatitis drug
+dupilumab
+cyclosporine, unspecified
+corticosteroids
+undisclosed-immunomodulator</label>
+            </value>
+            <value>
+                <fullName>pexastimogene devacirepvec (IV)
+pexastimogene devacirepvec (intratumoral)
+cemiplimab</fullName>
+                <default>false</default>
+                <label>pexastimogene devacirepvec (IV)
+pexastimogene devacirepvec (intratumoral)
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>REGN-5458</fullName>
+                <default>false</default>
+                <label>REGN-5458</label>
+            </value>
+            <value>
+                <fullName>sarilumab (sc)</fullName>
+                <default>false</default>
+                <label>sarilumab (sc)</label>
+            </value>
+            <value>
+                <fullName>isatuximab
+cemiplimab</fullName>
+                <default>false</default>
+                <label>isatuximab
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>REGN-5459</fullName>
+                <default>false</default>
+                <label>REGN-5459</label>
+            </value>
+            <value>
+                <fullName>fianlimab</fullName>
+                <default>false</default>
+                <label>fianlimab</label>
+            </value>
+            <value>
+                <fullName>prednisone
+everolimus
+sirolimus
+cemiplimab</fullName>
+                <default>false</default>
+                <label>prednisone
+everolimus
+sirolimus
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>infliximab (iv)
+adalimumab (SC)
+etanercept (SC)
+certolizumab pegol (SC)
+golimumab (subcutaneous)
+undisclosed - anti-TNF alpha</fullName>
+                <default>false</default>
+                <label>infliximab (iv)
+adalimumab (SC)
+etanercept (SC)
+certolizumab pegol (SC)
+golimumab (subcutaneous)
+undisclosed - anti-TNF alpha</label>
+            </value>
+            <value>
+                <fullName>REGN-9933</fullName>
+                <default>false</default>
+                <label>REGN-9933</label>
+            </value>
+            <value>
+                <fullName>odronextamab</fullName>
+                <default>false</default>
+                <label>odronextamab</label>
+            </value>
+            <value>
+                <fullName>cemdisiran
+pozelimab</fullName>
+                <default>false</default>
+                <label>cemdisiran
+pozelimab</label>
+            </value>
+            <value>
+                <fullName>alirocumab (sc solution)</fullName>
+                <default>false</default>
+                <label>alirocumab (sc solution)</label>
+            </value>
+            <value>
+                <fullName>rilonacept</fullName>
+                <default>false</default>
+                <label>rilonacept</label>
+            </value>
+            <value>
+                <fullName>aflibercept (IV)
+aflibercept (SC)</fullName>
+                <default>false</default>
+                <label>aflibercept (IV)
+aflibercept (SC)</label>
+            </value>
+            <value>
+                <fullName>capecitabine
+oxaliplatin (IV)
+aflibercept (IV)</fullName>
+                <default>false</default>
+                <label>capecitabine
+oxaliplatin (IV)
+aflibercept (IV)</label>
+            </value>
+            <value>
+                <fullName>REGN-3918 (sc)</fullName>
+                <default>false</default>
+                <label>REGN-3918 (sc)</label>
+            </value>
+            <value>
+                <fullName>aflibercept</fullName>
+                <default>false</default>
+                <label>aflibercept</label>
+            </value>
+            <value>
+                <fullName>bevacizumab (intravitreal)
+aflibercept ophthalmic solution</fullName>
+                <default>false</default>
+                <label>bevacizumab (intravitreal)
+aflibercept ophthalmic solution</label>
+            </value>
+            <value>
+                <fullName>meningitis A/C/Y/W vaccine, Sanofi
+Tdap vaccine, unspecified
+dupilumab (SC)</fullName>
+                <default>false</default>
+                <label>meningitis A/C/Y/W vaccine, Sanofi
+Tdap vaccine, unspecified
+dupilumab (SC)</label>
+            </value>
+            <value>
+                <fullName>alirocumab (sc solution)
+alirocumab (sc lyophilized formulation)</fullName>
+                <default>false</default>
+                <label>alirocumab (sc solution)
+alirocumab (sc lyophilized formulation)</label>
+            </value>
+            <value>
+                <fullName>colchicine</fullName>
+                <default>false</default>
+                <label>colchicine</label>
+            </value>
+            <value>
+                <fullName>ranibizumab</fullName>
+                <default>false</default>
+                <label>ranibizumab</label>
+            </value>
+            <value>
+                <fullName>pozelimab</fullName>
+                <default>false</default>
+                <label>pozelimab</label>
+            </value>
+            <value>
+                <fullName>REGN-5093-M114</fullName>
+                <default>false</default>
+                <label>REGN-5093-M114</label>
+            </value>
+            <value>
+                <fullName>odronextamab
+cemiplimab</fullName>
+                <default>false</default>
+                <label>odronextamab
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>phototherapy
+dupilumab</fullName>
+                <default>false</default>
+                <label>phototherapy
+dupilumab</label>
+            </value>
+            <value>
+                <fullName>Neublastin (iv)</fullName>
+                <default>false</default>
+                <label>Neublastin (iv)</label>
+            </value>
+            <value>
+                <fullName>COVID-19 omicron variant, B.1.1.529, Regeneron</fullName>
+                <default>false</default>
+                <label>COVID-19 omicron variant, B.1.1.529, Regeneron</label>
+            </value>
+            <value>
+                <fullName>cemdisiran
+pozelimab (iv)</fullName>
+                <default>false</default>
+                <label>cemdisiran
+pozelimab (iv)</label>
+            </value>
+            <value>
+                <fullName>cemdisiran
+REGN-3918 (sc)</fullName>
+                <default>false</default>
+                <label>cemdisiran
+REGN-3918 (sc)</label>
+            </value>
+            <value>
+                <fullName>REGN-14284</fullName>
+                <default>false</default>
+                <label>REGN-14284</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+TSA/CD3 bispecific T-cell engagers, Regeneron</fullName>
+                <default>false</default>
+                <label>cemiplimab
+TSA/CD3 bispecific T-cell engagers, Regeneron</label>
+            </value>
+            <value>
+                <fullName>alirocumab
+cemiplimab</fullName>
+                <default>false</default>
+                <label>alirocumab
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>REGN-1154</fullName>
+                <default>false</default>
+                <label>REGN-1154</label>
+            </value>
+            <value>
+                <fullName>odronextamab
+TSA/CD28 bispecific T-cell engagers, Regeneron</fullName>
+                <default>false</default>
+                <label>odronextamab
+TSA/CD28 bispecific T-cell engagers, Regeneron</label>
+            </value>
+            <value>
+                <fullName>REGN-846</fullName>
+                <default>false</default>
+                <label>REGN-846</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+REGN-4659</fullName>
+                <default>false</default>
+                <label>cemiplimab
+REGN-4659</label>
+            </value>
+            <value>
+                <fullName>canakinumab (SC)</fullName>
+                <default>false</default>
+                <label>canakinumab (SC)</label>
+            </value>
+            <value>
+                <fullName>INO-9012
+cemiplimab
+INO-5401</fullName>
+                <default>false</default>
+                <label>INO-9012
+cemiplimab
+INO-5401</label>
+            </value>
+            <value>
+                <fullName>REGN-728</fullName>
+                <default>false</default>
+                <label>REGN-728</label>
+            </value>
+            <value>
+                <fullName>mibavademab</fullName>
+                <default>false</default>
+                <label>mibavademab</label>
+            </value>
+            <value>
+                <fullName>REGN-5458
+REGN-5459</fullName>
+                <default>false</default>
+                <label>REGN-5458
+REGN-5459</label>
+            </value>
+            <value>
+                <fullName>fasinumab (iv)</fullName>
+                <default>false</default>
+                <label>fasinumab (iv)</label>
+            </value>
+            <value>
+                <fullName>alirocumab (iv)</fullName>
+                <default>false</default>
+                <label>alirocumab (iv)</label>
+            </value>
+            <value>
+                <fullName>suptavumab</fullName>
+                <default>false</default>
+                <label>suptavumab</label>
+            </value>
+            <value>
+                <fullName>sonidegib (oral)
+cemiplimab</fullName>
+                <default>false</default>
+                <label>sonidegib (oral)
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>alirocumab</fullName>
+                <default>false</default>
+                <label>alirocumab</label>
+            </value>
+            <value>
+                <fullName>aflibercept (IV)
+nesvacumab</fullName>
+                <default>false</default>
+                <label>aflibercept (IV)
+nesvacumab</label>
+            </value>
+            <value>
+                <fullName>crotedumab</fullName>
+                <default>false</default>
+                <label>crotedumab</label>
+            </value>
+            <value>
+                <fullName>COVID-19 vaccine, Moderna
+casirivimab + imdevimab (intravenous)</fullName>
+                <default>false</default>
+                <label>COVID-19 vaccine, Moderna
+casirivimab + imdevimab (intravenous)</label>
+            </value>
+            <value>
+                <fullName>ubamatamab</fullName>
+                <default>false</default>
+                <label>ubamatamab</label>
+            </value>
+            <value>
+                <fullName>enoticumab</fullName>
+                <default>false</default>
+                <label>enoticumab</label>
+            </value>
+            <value>
+                <fullName>casirivimab + imdevimab</fullName>
+                <default>false</default>
+                <label>casirivimab + imdevimab</label>
+            </value>
+            <value>
+                <fullName>REGN-5381</fullName>
+                <default>false</default>
+                <label>REGN-5381</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+REGN-6569</fullName>
+                <default>false</default>
+                <label>cemiplimab
+REGN-6569</label>
+            </value>
+            <value>
+                <fullName>REGN-5668</fullName>
+                <default>false</default>
+                <label>REGN-5668</label>
+            </value>
+            <value>
+                <fullName>ARB-1598 (intratumoral)
+ARB-1598 (SC)</fullName>
+                <default>false</default>
+                <label>ARB-1598 (intratumoral)
+ARB-1598 (SC)</label>
+            </value>
+            <value>
+                <fullName>dapiclermin (sc)</fullName>
+                <default>false</default>
+                <label>dapiclermin (sc)</label>
+            </value>
+            <value>
+                <fullName>nesvacumab + aflibercept, Regeneron</fullName>
+                <default>false</default>
+                <label>nesvacumab + aflibercept, Regeneron</label>
+            </value>
+            <value>
+                <fullName>dupilumab
+itepekimab</fullName>
+                <default>false</default>
+                <label>dupilumab
+itepekimab</label>
+            </value>
+            <value>
+                <fullName>ALN-REGN4</fullName>
+                <default>false</default>
+                <label>ALN-REGN4</label>
+            </value>
+            <value>
+                <fullName>aflibercept (SC)</fullName>
+                <default>false</default>
+                <label>aflibercept (SC)</label>
+            </value>
+            <value>
+                <fullName>suptavumab (im)</fullName>
+                <default>false</default>
+                <label>suptavumab (im)</label>
+            </value>
+            <value>
+                <fullName>itepekimab</fullName>
+                <default>false</default>
+                <label>itepekimab</label>
+            </value>
+            <value>
+                <fullName>atoltivimab+ maftivimab + odesivimab-ebgn</fullName>
+                <default>false</default>
+                <label>atoltivimab+ maftivimab + odesivimab-ebgn</label>
+            </value>
+            <value>
+                <fullName>alirocumab (sc solution)
+alirocumab (SC suspension)</fullName>
+                <default>false</default>
+                <label>alirocumab (sc solution)
+alirocumab (SC suspension)</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+SAR-444245</fullName>
+                <default>false</default>
+                <label>cemiplimab
+SAR-444245</label>
+            </value>
+            <value>
+                <fullName>sarilumab</fullName>
+                <default>false</default>
+                <label>sarilumab</label>
+            </value>
+            <value>
+                <fullName>itepekimab (IV)
+itepekimab (SC)</fullName>
+                <default>false</default>
+                <label>itepekimab (IV)
+itepekimab (SC)</label>
+            </value>
+            <value>
+                <fullName>REGN-5093</fullName>
+                <default>false</default>
+                <label>REGN-5093</label>
+            </value>
+            <value>
+                <fullName>dupilumab</fullName>
+                <default>false</default>
+                <label>dupilumab</label>
+            </value>
+            <value>
+                <fullName>capecitabine
+cemiplimab</fullName>
+                <default>false</default>
+                <label>capecitabine
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>casirivimab + imdevimab (subcutaneous)</fullName>
+                <default>false</default>
+                <label>casirivimab + imdevimab (subcutaneous)</label>
+            </value>
+            <value>
+                <fullName>evinacumab (IV)
+evinacumab (SC)</fullName>
+                <default>false</default>
+                <label>evinacumab (IV)
+evinacumab (SC)</label>
+            </value>
+            <value>
+                <fullName>nesvacumab</fullName>
+                <default>false</default>
+                <label>nesvacumab</label>
+            </value>
+            <value>
+                <fullName>nirogacestat
+REGN-5458</fullName>
+                <default>false</default>
+                <label>nirogacestat
+REGN-5458</label>
+            </value>
+            <value>
+                <fullName>undisclosed - antidyslipidemic agent</fullName>
+                <default>false</default>
+                <label>undisclosed - antidyslipidemic agent</label>
+            </value>
+            <value>
+                <fullName>casirivimab + imdevimab (intravenous)</fullName>
+                <default>false</default>
+                <label>casirivimab + imdevimab (intravenous)</label>
+            </value>
+            <value>
+                <fullName>fasinumab (sc)</fullName>
+                <default>false</default>
+                <label>fasinumab (sc)</label>
+            </value>
+            <value>
+                <fullName>REGN1908-1909</fullName>
+                <default>false</default>
+                <label>REGN1908-1909</label>
+            </value>
+            <value>
+                <fullName>trevogrumab
+garetosmab</fullName>
+                <default>false</default>
+                <label>trevogrumab
+garetosmab</label>
+            </value>
+            <value>
+                <fullName>BNT-111
+cemiplimab</fullName>
+                <default>false</default>
+                <label>BNT-111
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>cemiplimab</fullName>
+                <default>false</default>
+                <label>cemiplimab</label>
+            </value>
+            <value>
+                <fullName>cemdisiran
+pozelimab (iv)
+REGN-3918 (sc)</fullName>
+                <default>false</default>
+                <label>cemdisiran
+pozelimab (iv)
+REGN-3918 (sc)</label>
+            </value>
+            <value>
+                <fullName>ALN-HSD</fullName>
+                <default>false</default>
+                <label>ALN-HSD</label>
+            </value>
+            <value>
+                <fullName>REGN-6490</fullName>
+                <default>false</default>
+                <label>REGN-6490</label>
+            </value>
+            <value>
+                <fullName>REGN-4461 (iv)
+REGN-4461 (sc)</fullName>
+                <default>false</default>
+                <label>REGN-4461 (iv)
+REGN-4461 (sc)</label>
+            </value>
+            <value>
+                <fullName>hyaluronidase
+aflibercept ophthalmic solution</fullName>
+                <default>false</default>
+                <label>hyaluronidase
+aflibercept ophthalmic solution</label>
+            </value>
+            <value>
+                <fullName>nesvacumab
+nesvacumab + aflibercept, Regeneron</fullName>
+                <default>false</default>
+                <label>nesvacumab
+nesvacumab + aflibercept, Regeneron</label>
+            </value>
+            <value>
+                <fullName>REGN-1400</fullName>
+                <default>false</default>
+                <label>REGN-1400</label>
+            </value>
+            <value>
+                <fullName>docetaxel
+aflibercept (IV)</fullName>
+                <default>false</default>
+                <label>docetaxel
+aflibercept (IV)</label>
+            </value>
+            <value>
+                <fullName>IL-4/13 Trap, Regeneron</fullName>
+                <default>false</default>
+                <label>IL-4/13 Trap, Regeneron</label>
+            </value>
+            <value>
+                <fullName>casirivimab + imdevimab (intravenous)
+casirivimab + imdevimab (subcutaneous)</fullName>
+                <default>false</default>
+                <label>casirivimab + imdevimab (intravenous)
+casirivimab + imdevimab (subcutaneous)</label>
+            </value>
+            <value>
+                <fullName>COVID-19 vaccine, Vyriad</fullName>
+                <default>false</default>
+                <label>COVID-19 vaccine, Vyriad</label>
+            </value>
+            <value>
+                <fullName>ASP-8374
+cemiplimab</fullName>
+                <default>false</default>
+                <label>ASP-8374
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>dupilumab (SC)
+itepekimab (SC)</fullName>
+                <default>false</default>
+                <label>dupilumab (SC)
+itepekimab (SC)</label>
+            </value>
+            <value>
+                <fullName>HPV vaccine (SC), ISA Pharmaceuticals</fullName>
+                <default>false</default>
+                <label>HPV vaccine (SC), ISA Pharmaceuticals</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+VSV IFNb NIS, Vyriad
+ipilimumab (iv)</fullName>
+                <default>false</default>
+                <label>cemiplimab
+VSV IFNb NIS, Vyriad
+ipilimumab (iv)</label>
+            </value>
+            <value>
+                <fullName>aflibercept (IV)</fullName>
+                <default>false</default>
+                <label>aflibercept (IV)</label>
+            </value>
+            <value>
+                <fullName>aflibercept ophthalmic solution
+rinucumab</fullName>
+                <default>false</default>
+                <label>aflibercept ophthalmic solution
+rinucumab</label>
+            </value>
+            <value>
+                <fullName>itepekimab (SC)</fullName>
+                <default>false</default>
+                <label>itepekimab (SC)</label>
+            </value>
+            <value>
+                <fullName>fasinumab (sc)
+fasinumab (iv)</fullName>
+                <default>false</default>
+                <label>fasinumab (sc)
+fasinumab (iv)</label>
+            </value>
+            <value>
+                <fullName>plerixafor (IV)
+cemiplimab</fullName>
+                <default>false</default>
+                <label>plerixafor (IV)
+cemiplimab</label>
+            </value>
+            <value>
+                <fullName>casirivimab + imdevimab
+REGN-14256
+imdevimab</fullName>
+                <default>false</default>
+                <label>casirivimab + imdevimab
+REGN-14256
+imdevimab</label>
+            </value>
+            <value>
+                <fullName>dupilumab (SC)</fullName>
+                <default>false</default>
+                <label>dupilumab (SC)</label>
+            </value>
+            <value>
+                <fullName>tocilizumab (IV)</fullName>
+                <default>false</default>
+                <label>tocilizumab (IV)</label>
+            </value>
+            <value>
+                <fullName>PEG-Axokine</fullName>
+                <default>false</default>
+                <label>PEG-Axokine</label>
+            </value>
+            <value>
+                <fullName>REGN-5678</fullName>
+                <default>false</default>
+                <label>REGN-5678</label>
+            </value>
+            <value>
+                <fullName>REGN-15160</fullName>
+                <default>false</default>
+                <label>REGN-15160</label>
+            </value>
+            <value>
+                <fullName>cemiplimab
+REGN-4336</fullName>
+                <default>false</default>
+                <label>cemiplimab
+REGN-4336</label>
+            </value>
+            <value>
+                <fullName>Phleum pratense grass tablet, ALK-Abello
+dupilumab (SC)</fullName>
+                <default>false</default>
+                <label>Phleum pratense grass tablet, ALK-Abello
+dupilumab (SC)</label>
+            </value>
+            <value>
+                <fullName>sarilumab (iv)</fullName>
+                <default>false</default>
+                <label>sarilumab (iv)</label>
+            </value>
+            <value>
+                <fullName>suptavumab (iv)
+suptavumab (im)</fullName>
+                <default>false</default>
+                <label>suptavumab (iv)
+suptavumab (im)</label>
+            </value>
+            <value>
+                <fullName>REGN-5458
+TSA/CD28 bispecific T-cell engagers, Regeneron</fullName>
+                <default>false</default>
+                <label>REGN-5458
+TSA/CD28 bispecific T-cell engagers, Regeneron</label>
+            </value>
+            <value>
+                <fullName>aspirin
+rivaroxaban</fullName>
+                <default>false</default>
+                <label>aspirin
+rivaroxaban</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

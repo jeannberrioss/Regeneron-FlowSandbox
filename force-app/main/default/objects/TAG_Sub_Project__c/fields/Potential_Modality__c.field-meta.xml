@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Modality__c</fullName>
+    <label>Potential Modality</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Antibody</fullName>
+                <default>false</default>
+                <label>Antibody</label>
+            </value>
+            <value>
+                <fullName>siRNA</fullName>
+                <default>false</default>
+                <label>siRNA</label>
+            </value>
+            <value>
+                <fullName>Small Molecule</fullName>
+                <default>false</default>
+                <label>Small Molecule</label>
+            </value>
+            <value>
+                <fullName>Bispec/ncADC/other</fullName>
+                <default>false</default>
+                <label>Bispec/ncADC/other</label>
+            </value>
+            <value>
+                <fullName>Gene Editing</fullName>
+                <default>false</default>
+                <label>Gene Editing</label>
+            </value>
+            <value>
+                <fullName>Approved Target</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Approved Target</label>
+            </value>
+            <value>
+                <fullName>Broad Status</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Broad Status</label>
+            </value>
+            <value>
+                <fullName>Development</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Development</label>
+            </value>
+            <value>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Discovery</label>
+            </value>
+            <value>
+                <fullName>Potential Target Nomination</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Potential Target Nomination</label>
+            </value>
+            <value>
+                <fullName>Target Deprioritized</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Target Deprioritized</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

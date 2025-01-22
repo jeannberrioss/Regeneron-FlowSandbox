@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assay__c</fullName>
+    <label>Assay</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GxS Twist</fullName>
+                <default>false</default>
+                <label>GxS Twist</label>
+            </value>
+            <value>
+                <fullName>IDT</fullName>
+                <default>false</default>
+                <label>IDT</label>
+            </value>
+            <value>
+                <fullName>GSA</fullName>
+                <default>false</default>
+                <label>GSA</label>
+            </value>
+            <value>
+                <fullName>VCRome</fullName>
+                <default>false</default>
+                <label>VCRome</label>
+            </value>
+            <value>
+                <fullName>OLINK</fullName>
+                <default>false</default>
+                <label>OLINK</label>
+            </value>
+            <value>
+                <fullName>Whole Genome Sequencing</fullName>
+                <default>false</default>
+                <label>Whole Genome Sequencing</label>
+            </value>
+            <value>
+                <fullName>RNAseq</fullName>
+                <default>false</default>
+                <label>RNAseq</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

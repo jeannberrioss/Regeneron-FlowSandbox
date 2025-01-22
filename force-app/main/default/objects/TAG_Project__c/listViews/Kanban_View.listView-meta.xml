@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kanban_View</fullName>
+    <columns>NAME</columns>
+    <columns>Total_Sub_Projects__c</columns>
+    <columns>Therapeutic_Area__c</columns>
+    <columns>TAG__c</columns>
+    <columns>Scientific_Champion__c</columns>
+    <columns>Project_Status__c</columns>
+    <columns>Phenotype__c</columns>
+    <columns>Broad_Phenotype__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Kanban View</label>
+</ListView>

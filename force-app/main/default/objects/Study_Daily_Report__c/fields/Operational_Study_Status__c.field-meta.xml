@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operational_Study_Status__c</fullName>
+    <label>Operational Study Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Close-Out</fullName>
+                <default>false</default>
+                <label>Close-Out</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Conduct</fullName>
+                <default>false</default>
+                <label>Conduct</label>
+            </value>
+            <value>
+                <fullName>Endorsed Scenario</fullName>
+                <default>false</default>
+                <label>Endorsed Scenario</label>
+            </value>
+            <value>
+                <fullName>Enrollment</fullName>
+                <default>false</default>
+                <label>Enrollment</label>
+            </value>
+            <value>
+                <fullName>Ongoing</fullName>
+                <default>false</default>
+                <label>Ongoing</label>
+            </value>
+            <value>
+                <fullName>On-Hold</fullName>
+                <default>false</default>
+                <label>On-Hold</label>
+            </value>
+            <value>
+                <fullName>Placeholder</fullName>
+                <default>false</default>
+                <label>Placeholder</label>
+            </value>
+            <value>
+                <fullName>Pre-Planning</fullName>
+                <default>false</default>
+                <label>Pre-Planning</label>
+            </value>
+            <value>
+                <fullName>Report-Out</fullName>
+                <default>false</default>
+                <label>Report-Out</label>
+            </value>
+            <value>
+                <fullName>Scenario</fullName>
+                <default>false</default>
+                <label>Scenario</label>
+            </value>
+            <value>
+                <fullName>Start-Up</fullName>
+                <default>false</default>
+                <label>Start-Up</label>
+            </value>
+            <value>
+                <fullName>TMF Lock Pending</fullName>
+                <default>false</default>
+                <label>TMF Lock Pending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

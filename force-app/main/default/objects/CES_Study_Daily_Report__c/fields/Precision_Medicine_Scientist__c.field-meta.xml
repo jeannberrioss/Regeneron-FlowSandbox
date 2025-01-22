@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Precision_Medicine_Scientist__c</fullName>
+    <label>Precision Medicine Scientist</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>_Precision Medicine Scientist (GEN)</fullName>
+                <default>false</default>
+                <label>_Precision Medicine Scientist (GEN)</label>
+            </value>
+            <value>
+                <fullName>Ana Gonzalez Ortiz</fullName>
+                <default>false</default>
+                <label>Ana Gonzalez Ortiz</label>
+            </value>
+            <value>
+                <fullName>Andrea Hooper</fullName>
+                <default>false</default>
+                <label>Andrea Hooper</label>
+            </value>
+            <value>
+                <fullName>Anita Boyapati</fullName>
+                <default>false</default>
+                <label>Anita Boyapati</label>
+            </value>
+            <value>
+                <fullName>Claire Wang</fullName>
+                <default>false</default>
+                <label>Claire Wang</label>
+            </value>
+            <value>
+                <fullName>Jennifer Hamilton</fullName>
+                <default>false</default>
+                <label>Jennifer Hamilton</label>
+            </value>
+            <value>
+                <fullName>Karoline Meagher</fullName>
+                <default>false</default>
+                <label>Karoline Meagher</label>
+            </value>
+            <value>
+                <fullName>Kerry Casey</fullName>
+                <default>false</default>
+                <label>Kerry Casey</label>
+            </value>
+            <value>
+                <fullName>Poulabi Banerjee</fullName>
+                <default>false</default>
+                <label>Poulabi Banerjee</label>
+            </value>
+            <value>
+                <fullName>Satyajit Karnik</fullName>
+                <default>false</default>
+                <label>Satyajit Karnik</label>
+            </value>
+            <value>
+                <fullName>Vladimir Jankovic</fullName>
+                <default>false</default>
+                <label>Vladimir Jankovic</label>
+            </value>
+            <value>
+                <fullName>Xiping Cheng</fullName>
+                <default>false</default>
+                <label>Xiping Cheng</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

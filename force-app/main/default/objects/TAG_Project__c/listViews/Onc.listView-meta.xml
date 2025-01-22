@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onc</fullName>
+    <columns>NAME</columns>
+    <columns>Therapeutic_Area_Global__c</columns>
+    <columns>TAG_Global__c</columns>
+    <columns>Total_Sub_Projects__c</columns>
+    <columns>Scientific_Champion__c</columns>
+    <columns>Project_Status__c</columns>
+    <columns>Phenotype__c</columns>
+    <columns>Broad_Phenotype__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TAG_Global__c</field>
+        <operation>equals</operation>
+        <value>Oncology</value>
+    </filters>
+    <label>Onc</label>
+</ListView>

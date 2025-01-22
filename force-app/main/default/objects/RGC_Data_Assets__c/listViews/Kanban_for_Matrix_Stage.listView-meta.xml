@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kanban_for_Matrix_Stage</fullName>
+    <columns>NAME</columns>
+    <columns>Clinical_Informatics_Lead__c</columns>
+    <columns>Collaborator_Phenotype_Data_Received__c</columns>
+    <columns>Priority_Flag__c</columns>
+    <columns>Matrix_Priority__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Kanban for Matrix Stage</label>
+</ListView>

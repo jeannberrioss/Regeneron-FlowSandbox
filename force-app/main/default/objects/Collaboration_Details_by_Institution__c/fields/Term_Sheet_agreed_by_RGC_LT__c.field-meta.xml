@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Sheet_agreed_by_RGC_LT__c</fullName>
+    <description>Formerly Term Sheet agreed by RGC LT JG 09.02.20</description>
+    <label>Term Sheet Agreed by RGC LT Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Technology__c</fullName>
+    <label>Technology</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alternative Antibody Format</fullName>
+                <default>false</default>
+                <label>Alternative Antibody Format</label>
+            </value>
+            <value>
+                <fullName>Analytical Platform</fullName>
+                <default>false</default>
+                <label>Analytical Platform</label>
+            </value>
+            <value>
+                <fullName>Antibody Discovery</fullName>
+                <default>false</default>
+                <label>Antibody Discovery</label>
+            </value>
+            <value>
+                <fullName>Cellular Immunity Rodents</fullName>
+                <default>false</default>
+                <label>Cellular Immunity Rodents</label>
+            </value>
+            <value>
+                <fullName>CRISPR</fullName>
+                <default>false</default>
+                <label>CRISPR</label>
+            </value>
+            <value>
+                <fullName>Gene Variants</fullName>
+                <default>false</default>
+                <label>Gene Variants</label>
+            </value>
+            <value>
+                <fullName>Precision Medicine</fullName>
+                <default>false</default>
+                <label>Precision Medicine</label>
+            </value>
+            <value>
+                <fullName>Recombineering Technologies</fullName>
+                <default>false</default>
+                <label>Recombineering Technologies</label>
+            </value>
+            <value>
+                <fullName>Retargeted Viruses</fullName>
+                <default>false</default>
+                <label>Retargeted Viruses</label>
+            </value>
+            <value>
+                <fullName>Rodent Disease and Biochemistry Models</fullName>
+                <default>false</default>
+                <label>Rodent Disease and Biochemistry Models</label>
+            </value>
+            <value>
+                <fullName>T Cell Technologies</fullName>
+                <default>false</default>
+                <label>T Cell Technologies</label>
+            </value>
+            <value>
+                <fullName>VelociHum Rodents</fullName>
+                <default>false</default>
+                <label>VelociHum Rodents</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

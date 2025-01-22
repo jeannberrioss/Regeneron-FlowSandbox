@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Potential_Agreemnets</fullName>
+    <columns>NAME</columns>
+    <columns>Collaboration_Description_Other__c</columns>
+    <columns>Collaboration_Opportunity_Name__c</columns>
+    <columns>Collaborator_Institution_Name__c</columns>
+    <columns>Total_Committed__c</columns>
+    <columns>Specific_Aims__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Collaboration_Stage__c</field>
+        <operation>notEqual</operation>
+        <value>7- Active</value>
+    </filters>
+    <filters>
+        <field>Collaboration_Status__c</field>
+        <operation>equals</operation>
+        <value>Potential</value>
+    </filters>
+    <label>Potential Agreemnets</label>
+</ListView>

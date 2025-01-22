@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Statistical_Programmer__c</fullName>
+    <label>Statistical Programmer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alice Wang-External</fullName>
+                <default>false</default>
+                <label>Alice Wang-External</label>
+            </value>
+            <value>
+                <fullName>Archana Gowdar-External</fullName>
+                <default>false</default>
+                <label>Archana Gowdar-External</label>
+            </value>
+            <value>
+                <fullName>Baole Fan</fullName>
+                <default>false</default>
+                <label>Baole Fan</label>
+            </value>
+            <value>
+                <fullName>Brijesh Ravi</fullName>
+                <default>false</default>
+                <label>Brijesh Ravi</label>
+            </value>
+            <value>
+                <fullName>Bryan (Hang) Zhu</fullName>
+                <default>false</default>
+                <label>Bryan (Hang) Zhu</label>
+            </value>
+            <value>
+                <fullName>Charan Veluri</fullName>
+                <default>false</default>
+                <label>Charan Veluri</label>
+            </value>
+            <value>
+                <fullName>Chiyou Ni</fullName>
+                <default>false</default>
+                <label>Chiyou Ni</label>
+            </value>
+            <value>
+                <fullName>Dale LeSueur</fullName>
+                <default>false</default>
+                <label>Dale LeSueur</label>
+            </value>
+            <value>
+                <fullName>Esther Wang</fullName>
+                <default>false</default>
+                <label>Esther Wang</label>
+            </value>
+            <value>
+                <fullName>Fan Xu (Ben)</fullName>
+                <default>false</default>
+                <label>Fan Xu (Ben)</label>
+            </value>
+            <value>
+                <fullName>Guanlong Ren</fullName>
+                <default>false</default>
+                <label>Guanlong Ren</label>
+            </value>
+            <value>
+                <fullName>Guodong Wei</fullName>
+                <default>false</default>
+                <label>Guodong Wei</label>
+            </value>
+            <value>
+                <fullName>Haixin Zhang</fullName>
+                <default>false</default>
+                <label>Haixin Zhang</label>
+            </value>
+            <value>
+                <fullName>Hui Jing</fullName>
+                <default>false</default>
+                <label>Hui Jing</label>
+            </value>
+            <value>
+                <fullName>Izabella Peszek-External</fullName>
+                <default>false</default>
+                <label>Izabella Peszek-External</label>
+            </value>
+            <value>
+                <fullName>Jia Li</fullName>
+                <default>false</default>
+                <label>Jia Li</label>
+            </value>
+            <value>
+                <fullName>Jianguo Wei</fullName>
+                <default>false</default>
+                <label>Jianguo Wei</label>
+            </value>
+            <value>
+                <fullName>Jimil Desai</fullName>
+                <default>false</default>
+                <label>Jimil Desai</label>
+            </value>
+            <value>
+                <fullName>Jingchun Yu</fullName>
+                <default>false</default>
+                <label>Jingchun Yu</label>
+            </value>
+            <value>
+                <fullName>Jinghua Yuan</fullName>
+                <default>false</default>
+                <label>Jinghua Yuan</label>
+            </value>
+            <value>
+                <fullName>Joo Young Yim</fullName>
+                <default>false</default>
+                <label>Joo Young Yim</label>
+            </value>
+            <value>
+                <fullName>Junjia Bai</fullName>
+                <default>false</default>
+                <label>Junjia Bai</label>
+            </value>
+            <value>
+                <fullName>Krishna Avula</fullName>
+                <default>false</default>
+                <label>Krishna Avula</label>
+            </value>
+            <value>
+                <fullName>Lu Zhang</fullName>
+                <default>false</default>
+                <label>Lu Zhang</label>
+            </value>
+            <value>
+                <fullName>Michael Klingler</fullName>
+                <default>false</default>
+                <label>Michael Klingler</label>
+            </value>
+            <value>
+                <fullName>Ming Yang</fullName>
+                <default>false</default>
+                <label>Ming Yang</label>
+            </value>
+            <value>
+                <fullName>Mi Young Kwon</fullName>
+                <default>false</default>
+                <label>Mi Young Kwon</label>
+            </value>
+            <value>
+                <fullName>Pu Wang</fullName>
+                <default>false</default>
+                <label>Pu Wang</label>
+            </value>
+            <value>
+                <fullName>Richard Senecal</fullName>
+                <default>false</default>
+                <label>Richard Senecal</label>
+            </value>
+            <value>
+                <fullName>Rohit Kamath</fullName>
+                <default>false</default>
+                <label>Rohit Kamath</label>
+            </value>
+            <value>
+                <fullName>Rujia Liu</fullName>
+                <default>false</default>
+                <label>Rujia Liu</label>
+            </value>
+            <value>
+                <fullName>Rupinder Singh</fullName>
+                <default>false</default>
+                <label>Rupinder Singh</label>
+            </value>
+            <value>
+                <fullName>Ryan Yu</fullName>
+                <default>false</default>
+                <label>Ryan Yu</label>
+            </value>
+            <value>
+                <fullName>Srinivas Koduru</fullName>
+                <default>false</default>
+                <label>Srinivas Koduru</label>
+            </value>
+            <value>
+                <fullName>Sri Vemuri</fullName>
+                <default>false</default>
+                <label>Sri Vemuri</label>
+            </value>
+            <value>
+                <fullName>Statistical Programmer (GEN)</fullName>
+                <default>false</default>
+                <label>Statistical Programmer (GEN)</label>
+            </value>
+            <value>
+                <fullName>Steve Chen</fullName>
+                <default>false</default>
+                <label>Steve Chen</label>
+            </value>
+            <value>
+                <fullName>Tingting Tian</fullName>
+                <default>false</default>
+                <label>Tingting Tian</label>
+            </value>
+            <value>
+                <fullName>Vishnu Battini</fullName>
+                <default>false</default>
+                <label>Vishnu Battini</label>
+            </value>
+            <value>
+                <fullName>Xiang Li - External</fullName>
+                <default>false</default>
+                <label>Xiang Li - External</label>
+            </value>
+            <value>
+                <fullName>Xinran Hu - External</fullName>
+                <default>false</default>
+                <label>Xinran Hu - External</label>
+            </value>
+            <value>
+                <fullName>Yanhui Yang</fullName>
+                <default>false</default>
+                <label>Yanhui Yang</label>
+            </value>
+            <value>
+                <fullName>Yilong Sun</fullName>
+                <default>false</default>
+                <label>Yilong Sun</label>
+            </value>
+            <value>
+                <fullName>Yun Zhang</fullName>
+                <default>false</default>
+                <label>Yun Zhang</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_Level_Classification__c</fullName>
+    <label>Top Level Classification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Manufacturing Technologies</fullName>
+                <default>false</default>
+                <label>Manufacturing Technologies</label>
+            </value>
+            <value>
+                <fullName>Rodent Technologies</fullName>
+                <default>false</default>
+                <label>Rodent Technologies</label>
+            </value>
+            <value>
+                <fullName>Platform Technologies (Non manufacturing/non-mouse)</fullName>
+                <default>false</default>
+                <label>Platform Technologies (Non manufacturing/non-mouse)</label>
+            </value>
+            <value>
+                <fullName>Therapeutics</fullName>
+                <default>false</default>
+                <label>Therapeutics</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

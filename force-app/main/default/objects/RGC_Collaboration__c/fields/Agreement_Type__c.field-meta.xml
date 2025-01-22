@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agreement_Type__c</fullName>
+    <label>Agreement Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>RCA - Research Collaboration Agreement</fullName>
+                <default>false</default>
+                <label>RCA - Research Collaboration Agreement</label>
+            </value>
+            <value>
+                <fullName>MTA - Material Transfer Agreements</fullName>
+                <default>false</default>
+                <label>MTA - Material Transfer Agreements</label>
+            </value>
+            <value>
+                <fullName>SA - Sequencing Agreement</fullName>
+                <default>false</default>
+                <label>SA - Sequencing Agreement</label>
+            </value>
+            <value>
+                <fullName>DSA - Data Sharing Agreement</fullName>
+                <default>false</default>
+                <label>DSA - Data Sharing Agreement</label>
+            </value>
+            <value>
+                <fullName>RSA - Results Sharing Agreement</fullName>
+                <default>false</default>
+                <label>RSA - Results Sharing Agreement</label>
+            </value>
+            <value>
+                <fullName>CA - Collaboration Agreement</fullName>
+                <default>false</default>
+                <label>CA - Collaboration Agreement</label>
+            </value>
+            <value>
+                <fullName>FA - Funding Agreement</fullName>
+                <default>false</default>
+                <label>FA - Funding Agreement</label>
+            </value>
+            <value>
+                <fullName>MCRU - Master Clinical Research Unit Agreement</fullName>
+                <default>false</default>
+                <label>MCRU - Master Clinical Research Unit Agreement</label>
+            </value>
+            <value>
+                <fullName>RPI - Regeneron Pharmaceuticals, Inc</fullName>
+                <default>false</default>
+                <label>RPI - Regeneron Pharmaceuticals, Inc</label>
+            </value>
+            <value>
+                <fullName>Consort - Consortium Agreement</fullName>
+                <default>false</default>
+                <label>Consort - Consortium Agreement</label>
+            </value>
+            <value>
+                <fullName>External Dataset</fullName>
+                <default>false</default>
+                <label>External Dataset</label>
+            </value>
+            <value>
+                <fullName>RCA - Other</fullName>
+                <default>false</default>
+                <label>RCA - Other</label>
+            </value>
+            <value>
+                <fullName>Other Agreement Type</fullName>
+                <default>false</default>
+                <label>Other Agreement Type</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

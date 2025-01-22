@@ -1,0 +1,1 @@
+SELECT ApexClassorTrigger.Name,ApexTestClass.Name,NumLinesCovered,NumLinesUncovered FROM ApexCodeCoverage 
