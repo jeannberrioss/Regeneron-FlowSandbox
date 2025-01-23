@@ -1,3 +1,19 @@
-SELECT Id, Name, Status, Disqualified_Reason__c, Location_Interest__c, ConvertedOpportunity.StageName
-FROM Lead WHERE (Status IN ('Disqualified') AND Disqualified_Reason__c IN ('Unresponsive'))
-OR (Location_Interest__c LIKE 'Brooklyn%' AND ConvertedOpportunity.StageName IN ('Cancelled')) OR (ConvertedOpportunity.StageName IN ('Seen'))
+SELECT Id, Name, Status, Disqualified_Reason__c, Location_Interest__c,  
+       ConvertedOpportunity.StageName, ConvertedOpportunity.Treatment_Occurred__c  
+FROM Lead  
+WHERE  
+  ConvertedOpportunityId != null  
+  AND (  
+    (  
+      Status = 'Disqualified'  
+      AND Disqualified_Reason__c = 'Unresponsive'  
+      AND Location_Interest__c LIKE 'Brooklyn%'  
+      AND ConvertedOpportunity.StageName = 'Cancelled'  
+    )  
+    OR  
+    (  
+      Location_Interest__c LIKE 'Brooklyn%'  
+      AND ConvertedOpportunity.StageName = 'Seen'  
+      AND ConvertedOpportunity.Treatment_Occurred__c NOT IN ('1')
+    )  
+  )  
