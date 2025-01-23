@@ -1,0 +1,3 @@
+SELECT Id, Name, Status, Disqualified_Reason__c, ConvertedOpportunity.Appointment_Location__r.Name, ConvertedOpportunity.StageName
+FROM Lead WHERE (Status IN ('Disqualified') AND Disqualified_Reason__c IN ('Unresponsive')) OR (ConvertedOpportunity.Appointment_Location__r.Name LIKE 'Brooklyn%' AND ConvertedOpportunity.StageName IN ('Cancelled'))
+ORDER BY ConvertedOpportunity.StageName DESC
