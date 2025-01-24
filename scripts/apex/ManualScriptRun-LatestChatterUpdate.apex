@@ -3,12 +3,13 @@ and update the Latest_Chatter_Post__c field for RGC_DATA_ASSETS__c. Below are th
 
 // Anonymous Apex (Run in Developer Console)
 Integer processedCount = 0;
-Integer batchSize = 200; // Adjust based on your org's limits
+Integer batchSize = 200; 
 Boolean hasMore = true;
 
 while (hasMore) {
+    // FIX 1: Include Latest_Chatter_Post__c in the query
     List<RGC_Data_Assets__c> assetsBatch = [
-        SELECT Id
+        SELECT Id, Latest_Chatter_Post__c // Added missing field
         FROM RGC_Data_Assets__c
         LIMIT :batchSize
         OFFSET :processedCount
@@ -39,14 +40,14 @@ while (hasMore) {
     for (RGC_Data_Assets__c asset : assetsBatch) {
         if (latestPosts.containsKey(asset.Id)) {
             String latestBody = latestPosts.get(asset.Id).Body;
-            if (asset.Latest_Chatter_Post__c != latestBody) {
+            // FIX 2: Now asset.Latest_Chatter_Post__c is accessible
+            if (asset.Latest_Chatter_Post__c != latestBody) { 
                 updates.add(new RGC_Data_Assets__c(
                     Id = asset.Id,
                     Latest_Chatter_Post__c = latestBody
                 ));
             }
         } else if (asset.Latest_Chatter_Post__c != null) {
-            // Clear field if no FeedItems exist
             updates.add(new RGC_Data_Assets__c(
                 Id = asset.Id,
                 Latest_Chatter_Post__c = null
