@@ -1,3 +1,12 @@
+// // This trigger will retrieve ALL historical Chatter Feed associated to each record.
+// Then it will determine the Chatter Feed (FeedItem Obj) based on 2 crtieria = TextPost(body=message) OR TrackedChange
+// Then it will determine the the TrackedChanges (if any) --> store them in a Map<k,v> collection
+// Then since Clinical_Informatics_Lead__c is a direct lookup() relation to RGC_Leads__c obj --> it will look up the Ids there.
+// Then it will use the Ids to get the actual names (string) by ID casting.
+// After it will perform multiple valitaion checks to ensure correctness (proof-based) that it will run correctly.
+// After all is okay within validation --> it will update only the most recent change from either TextPost OR TrackedChange.
+// Whichever was most recent is inputted into the "Latest_Chatter_Posts" field.
+
 // Anonymous Apex Script (Execute in Developer Console)
 List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
 
