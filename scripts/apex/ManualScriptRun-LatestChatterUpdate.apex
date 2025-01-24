@@ -1,50 +1,65 @@
 /* To handle existing records, you can use an anonymous Apex script to process all historical FeedItem records
 and update the Latest_Chatter_Post__c field for RGC_DATA_ASSETS__c. Below are the steps and implementation: */
 
-// Step 1: Query all RGC_DATA_ASSETS__c records
-// Step 1: Query all RGC_DATA_ASSETS__c records
-List<RGC_Data_Assets__c> allAssets = [
-    SELECT Id, Latest_Chatter_Post__c
-    FROM RGC_Data_Assets__c
-];
+// Anonymous Apex (Run in Developer Console)
+Integer processedCount = 0;
+Integer batchSize = 200; // Adjust based on your org's limits
+Boolean hasMore = true;
 
-// Step 2: Collect all ParentIds (RGC_DATA_ASSETS__c IDs)
-Set<Id> parentIds = new Set<Id>();
-for (RGC_Data_Assets__c asset : allAssets) {
-    parentIds.add(asset.Id);
-}
-
-// Step 3: Query historical FeedItems for these ParentIds
-List<FeedItem> historicalFeedItems = [
-    SELECT Id, Body, CreatedDate, ParentId
-    FROM FeedItem
-    WHERE ParentId IN :parentIds
-    ORDER BY ParentId, CreatedDate DESC
-];
-
-// Step 4: Determine the latest FeedItem for each RGC_DATA_ASSETS__c record
-Map<Id, FeedItem> latestPosts = new Map<Id, FeedItem>();
-for (FeedItem fi : historicalFeedItems) {
-    if (!latestPosts.containsKey(fi.ParentId)) { 
-        // Since FeedItems are sorted by CreatedDate DESC, the first one is the latest
-        latestPosts.put(fi.ParentId, fi);
+while (hasMore) {
+    List<RGC_Data_Assets__c> assetsBatch = [
+        SELECT Id
+        FROM RGC_Data_Assets__c
+        LIMIT :batchSize
+        OFFSET :processedCount
+    ];
+    
+    if (assetsBatch.isEmpty()) {
+        hasMore = false;
+        break;
     }
-}
-
-// Step 5: Update the Latest_Chatter_Post__c field on RGC_DATA_ASSETS__c
-List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
-for (RGC_Data_Assets__c asset : allAssets) {
-    if (latestPosts.containsKey(asset.Id)) {
-        FeedItem latestPost = latestPosts.get(asset.Id);
-        if (asset.Latest_Chatter_Post__c != latestPost.Body) {
-            // Update only if the latest post is different
-            asset.Latest_Chatter_Post__c = latestPost.Body;
-            assetsToUpdate.add(asset);
+    
+    Set<Id> assetIds = new Map<Id, RGC_Data_Assets__c>(assetsBatch).keySet();
+    
+    // Get latest FeedItem per asset
+    Map<Id, FeedItem> latestPosts = new Map<Id, FeedItem>();
+    for (FeedItem fi : [
+        SELECT ParentId, Body, CreatedDate
+        FROM FeedItem
+        WHERE ParentId IN :assetIds
+        ORDER BY CreatedDate DESC
+    ]) {
+        if (!latestPosts.containsKey(fi.ParentId)) {
+            latestPosts.put(fi.ParentId, fi);
         }
     }
+    
+    // Prepare updates
+    List<RGC_Data_Assets__c> updates = new List<RGC_Data_Assets__c>();
+    for (RGC_Data_Assets__c asset : assetsBatch) {
+        if (latestPosts.containsKey(asset.Id)) {
+            String latestBody = latestPosts.get(asset.Id).Body;
+            if (asset.Latest_Chatter_Post__c != latestBody) {
+                updates.add(new RGC_Data_Assets__c(
+                    Id = asset.Id,
+                    Latest_Chatter_Post__c = latestBody
+                ));
+            }
+        } else if (asset.Latest_Chatter_Post__c != null) {
+            // Clear field if no FeedItems exist
+            updates.add(new RGC_Data_Assets__c(
+                Id = asset.Id,
+                Latest_Chatter_Post__c = null
+            ));
+        }
+    }
+    
+    // Execute update
+    if (!updates.isEmpty()) {
+        update updates;
+        System.debug('Processed ' + updates.size() + ' records in this batch');
+    }
+    
+    processedCount += batchSize;
 }
-
-// Step 6: Perform the update
-if (!assetsToUpdate.isEmpty()) {
-    update assetsToUpdate;
-}
+System.debug('Total records processed: ' + processedCount);
