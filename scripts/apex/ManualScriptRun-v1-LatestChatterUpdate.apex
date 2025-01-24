@@ -1,7 +1,16 @@
 /* To handle existing records, you can use an anonymous Apex script to process all historical FeedItem records
 and update the Latest_Chatter_Post__c field for RGC_DATA_ASSETS__c. Below are the steps and implementation: */
 
-// Anonymous Apex (Run in Developer Console)
+/*
+
+Anonymous Apex (Run in Developer Console) 
+
+This code will process all historical FeedItem records
+and update the Latest_Chatter_Post__c field for RGC_DATA_ASSETS__c
+only IF the Latest_Chatter_Post__c field is different from the latest FeedItem body.
+
+*/
+
 Integer processedCount = 0;
 Integer batchSize = 200; 
 Boolean hasMore = true;
