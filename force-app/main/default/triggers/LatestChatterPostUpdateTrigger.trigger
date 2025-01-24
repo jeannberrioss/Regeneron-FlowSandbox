@@ -1,24 +1,10 @@
-trigger UpdateLatestChatterPost on FeedItem (after insert) {
-    // Map to store the latest post for each A1 record
+trigger UpdateLatestChatterPost on FeedItem (after insert, after update) {
+    // Map to track the most recent FeedItem for each RGC Data Asset
     Map<Id, FeedItem> latestPosts = new Map<Id, FeedItem>();
 
-    // Step 1: Query existing FeedItems for relevant A1 records
-    Set<Id> parentIds = new Set<Id>();
+    // Step 1: Gather new FeedItems
     for (FeedItem fi : Trigger.new) {
-        if (fi.ParentId != null && fi.Parent.Type == 'A1') {
-            parentIds.add(fi.ParentId);
-        }
-    }
-
-    if (!parentIds.isEmpty()) {
-        List<FeedItem> existingPosts = [
-            SELECT Id, ParentId, CreatedDate, Body
-            FROM FeedItem
-            WHERE ParentId IN :parentIds
-        ];
-
-        // Add existing FeedItems to the map
-        for (FeedItem fi : existingPosts) {
+        if (fi.ParentId != null && fi.Parent.Type == 'RGC_Data_Assets__c') {
             if (!latestPosts.containsKey(fi.ParentId) ||
                 fi.CreatedDate > latestPosts.get(fi.ParentId).CreatedDate) {
                 latestPosts.put(fi.ParentId, fi);
@@ -26,28 +12,33 @@ trigger UpdateLatestChatterPost on FeedItem (after insert) {
         }
     }
 
-    // Step 2: Process new FeedItems in Trigger.new
-    for (FeedItem fi : Trigger.new) {
-        if (fi.ParentId != null && fi.Parent.Type == 'A1') {
-            if (!latestPosts.containsKey(fi.ParentId) ||
-                fi.CreatedDate > latestPosts.get(fi.ParentId).CreatedDate) {
-                latestPosts.put(fi.ParentId, fi);
-            }
+    // Step 2: Query historical FeedItems for these records
+    Set<Id> parentIds = latestPosts.keySet();
+    List<FeedItem> historicalFeedItems = [
+        SELECT Id, Body, CreatedDate, ParentId
+        FROM FeedItem
+        WHERE ParentId IN :parentIds
+    ];
+
+    // Step 3: Determine the most recent FeedItem
+    for (FeedItem historical : historicalFeedItems) {
+        if (!latestPosts.containsKey(historical.ParentId) ||
+            historical.CreatedDate > latestPosts.get(historical.ParentId).CreatedDate) {
+            latestPosts.put(historical.ParentId, historical);
         }
     }
 
-    // Step 3: Update parent A1 records
-    List<A1__c> recordsToUpdate = new List<A1__c>();
+    // Step 4: Update the custom field on RGC Data Assets
+    List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
     for (Id parentId : latestPosts.keySet()) {
-        FeedItem latestPost = latestPosts.get(parentId);
-        recordsToUpdate.add(new A1__c(
+        RGC_Data_Assets__c asset = new RGC_Data_Assets__c(
             Id = parentId,
-            Latest_Chatter_Post_Content__c = latestPost.Body,
-            Latest_Chatter_Post_Date__c = latestPost.CreatedDate
-        ));
+            Latest_Chatter_Post__c = latestPosts.get(parentId).Body
+        );
+        assetsToUpdate.add(asset);
     }
 
-    if (!recordsToUpdate.isEmpty()) {
-        update recordsToUpdate;
+    if (!assetsToUpdate.isEmpty()) {
+        update assetsToUpdate;
     }
 }
