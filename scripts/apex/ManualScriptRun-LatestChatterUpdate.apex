@@ -2,8 +2,9 @@
 and update the Latest_Chatter_Post__c field for RGC_DATA_ASSETS__c. Below are the steps and implementation: */
 
 // Step 1: Query all RGC_DATA_ASSETS__c records
+// Step 1: Query all RGC_DATA_ASSETS__c records
 List<RGC_Data_Assets__c> allAssets = [
-    SELECT Id
+    SELECT Id, Latest_Chatter_Post__c
     FROM RGC_Data_Assets__c
 ];
 
@@ -18,25 +19,29 @@ List<FeedItem> historicalFeedItems = [
     SELECT Id, Body, CreatedDate, ParentId
     FROM FeedItem
     WHERE ParentId IN :parentIds
+    ORDER BY ParentId, CreatedDate DESC
 ];
 
 // Step 4: Determine the latest FeedItem for each RGC_DATA_ASSETS__c record
 Map<Id, FeedItem> latestPosts = new Map<Id, FeedItem>();
 for (FeedItem fi : historicalFeedItems) {
-    if (!latestPosts.containsKey(fi.ParentId) || 
-        fi.CreatedDate > latestPosts.get(fi.ParentId).CreatedDate) {
+    if (!latestPosts.containsKey(fi.ParentId)) { 
+        // Since FeedItems are sorted by CreatedDate DESC, the first one is the latest
         latestPosts.put(fi.ParentId, fi);
     }
 }
 
 // Step 5: Update the Latest_Chatter_Post__c field on RGC_DATA_ASSETS__c
 List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
-for (Id parentId : latestPosts.keySet()) {
-    RGC_Data_Assets__c asset = new RGC_Data_Assets__c(
-        Id = parentId,
-        Latest_Chatter_Post__c = latestPosts.get(parentId).Body
-    );
-    assetsToUpdate.add(asset);
+for (RGC_Data_Assets__c asset : allAssets) {
+    if (latestPosts.containsKey(asset.Id)) {
+        FeedItem latestPost = latestPosts.get(asset.Id);
+        if (asset.Latest_Chatter_Post__c != latestPost.Body) {
+            // Update only if the latest post is different
+            asset.Latest_Chatter_Post__c = latestPost.Body;
+            assetsToUpdate.add(asset);
+        }
+    }
 }
 
 // Step 6: Perform the update
