@@ -5,7 +5,7 @@ public class UpdateLatestChatterPostTest {
         // Step 1: Create test RGC Data Asset records
         RGC_Data_Assets__c asset1 = new RGC_Data_Assets__c(Name = 'Asset 1');
         RGC_Data_Assets__c asset2 = new RGC_Data_Assets__c(Name = 'Asset 2');
-        insert new List<RGC_DATA_ASSETS__c>{asset1, asset2};
+        insert new List<RGC_Data_Assets__c>{asset1, asset2};
 
         // Step 2: Create FeedItem posts
         FeedItem oldPost1 = new FeedItem(

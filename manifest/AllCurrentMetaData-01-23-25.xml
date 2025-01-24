@@ -67,6 +67,8 @@
         <members>PushPriceChangeNotificationTest</members>
         <members>RejectDuplicateFavoriteTest</members>
         <members>ResearchPlanSuccessfullyProcess_Test</members>
+        <members>SendVerificationEmailAction</members>
+        <members>SendVerificationEmailActionTest</members>
         <members>SiteLoginController</members>
         <members>SiteLoginControllerTest</members>
         <members>SiteRegisterController</members>
@@ -78,8 +80,6 @@
         <members>dlrs_Collaborator_Contact_RoleTest</members>
         <members>sampleReciviedProcessing</members>
         <members>sampleReciviedProcessingTest</members>
-        <members>SendVerificationEmailActionTest</members>
-        <members>SendVerificationEmailAction</members>
         <members>scheduledBatchable</members>
         <name>ApexClass</name>
     </types>
@@ -2422,6 +2422,7 @@
         <members>Opportunity_Record_Page</members>
         <members>Opportunity_Record_Page1</members>
         <members>Opportunity_Record_Page2</members>
+        <members>Phenotype_Request_Record_Page</members>
         <members>Property_Explorer</members>
         <members>Property_Record_Page</members>
         <members>RGC_Collaboration_Detail_Record_Page1</members>
@@ -3932,6 +3933,7 @@
         <members>Opportunity_Record_Page</members>
         <members>Opportunity_Record_Page1</members>
         <members>Opportunity_Record_Page2</members>
+        <members>Phenotype_Request_Record_Page</members>
         <members>Property_Explorer</members>
         <members>Property_Record_Page</members>
         <members>RGC_Collaboration_Detail_Record_Page1</members>
