@@ -5,7 +5,7 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>LatestChatterPostUpdateTrigger-WithTrackedChanges</members>
+        <members>RGCDataAssetFeedTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <version>62.0</version>
