@@ -2,14 +2,14 @@
 and update the Latest_Chatter_Post__c field for RGC_DATA_ASSETS__c. Below are the steps and implementation: */
 
 // Step 1: Query all RGC_DATA_ASSETS__c records
-List<RGC_DATA_ASSETS__c> allAssets = [
+List<RGC_Data_Assets__c> allAssets = [
     SELECT Id
-    FROM RGC_DATA_ASSETS__c
+    FROM RGC_Data_Assets__c
 ];
 
 // Step 2: Collect all ParentIds (RGC_DATA_ASSETS__c IDs)
 Set<Id> parentIds = new Set<Id>();
-for (RGC_DATA_ASSETS__c asset : allAssets) {
+for (RGC_Data_Assets__c asset : allAssets) {
     parentIds.add(asset.Id);
 }
 
@@ -30,9 +30,9 @@ for (FeedItem fi : historicalFeedItems) {
 }
 
 // Step 5: Update the Latest_Chatter_Post__c field on RGC_DATA_ASSETS__c
-List<RGC_DATA_ASSETS__c> assetsToUpdate = new List<RGC_DATA_ASSETS__c>();
+List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
 for (Id parentId : latestPosts.keySet()) {
-    RGC_DATA_ASSETS__c asset = new RGC_DATA_ASSETS__c(
+    RGC_Data_Assets__c asset = new RGC_Data_Assets__c(
         Id = parentId,
         Latest_Chatter_Post__c = latestPosts.get(parentId).Body
     );
