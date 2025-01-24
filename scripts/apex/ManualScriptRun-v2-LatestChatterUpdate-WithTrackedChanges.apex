@@ -1,80 +1,104 @@
-// Anonymous Apex (Run in Developer Console)
-Integer processedCount = 0;
-Integer batchSize = 200;
-Boolean hasMore = true;
+// Anonymous Apex Script (Execute in Developer Console)
+List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
 
-while (hasMore) {
-    List<RGC_Data_Assets__c> assetsBatch = [
-        SELECT Id, Latest_Chatter_Post__c, Clinical_Informatics_Lead__c 
-        FROM RGC_Data_Assets__c
-        LIMIT :batchSize
-        OFFSET :processedCount
-    ];
-    
-    if (assetsBatch.isEmpty()) {
-        hasMore = false;
-        break;
-    }
-    
-    Set<Id> assetIds = new Map<Id, RGC_Data_Assets__c>(assetsBatch).keySet();
-    
-    // CHANGED: Query additional fields for tracked changes
-    Map<Id, FeedItem> latestFeedItems = new Map<Id, FeedItem>();
-    for (FeedItem fi : [
-        SELECT ParentId, Body, Type, CreatedDate, 
-               FieldHistory, OldValue, NewValue  // Tracked change fields
-        FROM FeedItem
-        WHERE ParentId IN :assetIds
-        ORDER BY CreatedDate DESC
-    ]) {
-        if (!latestFeedItems.containsKey(fi.ParentId)) {
-            // NEW: Only consider valid posts
-            Boolean isValidTrackedChange = fi.Type == 'TrackedChange' && 
-                fi.FieldHistory.contains('Clinical_Informatics_Lead__c');
-            
-            if (fi.Type == 'TextPost' || isValidTrackedChange) {
-                latestFeedItems.put(fi.ParentId, fi);
+// 1. Query feed items with tracked changes (no field filtering in SOQL)
+List<FeedItem> allFeedItems = [
+    SELECT Id, ParentId, Body, Type, CreatedDate, 
+    (SELECT OldValue, NewValue FROM FeedTrackedChanges)
+    FROM FeedItem 
+    WHERE Parent.Type = 'RGC_Data_Assets__c' 
+    AND (Type = 'TextPost' OR Type = 'TrackedChange')
+    ORDER BY CreatedDate DESC
+];
+
+// 2. Identify relevant changes and collect lead IDs
+Map<Id, FeedItem> validTrackedChanges = new Map<Id, FeedItem>();
+Set<Id> leadIds = new Set<Id>();
+
+for(FeedItem fi : allFeedItems) {
+    if(fi.Type == 'TrackedChange') {
+        Boolean isOurField = false;
+        for(FeedTrackedChange ftc : fi.FeedTrackedChanges) {
+            // Check if values are in RGC_Lead__c format
+            try {
+                Id oldId = (Id)ftc.OldValue;
+                Id newId = (Id)ftc.NewValue;
+                
+                if(oldId != null && oldId.getSobjectType() == RGC_Lead__c.SObjectType) {
+                    leadIds.add(oldId);
+                    isOurField = true;
+                }
+                if(newId != null && newId.getSobjectType() == RGC_Lead__c.SObjectType) {
+                    leadIds.add(newId);
+                    isOurField = true;
+                }
+            } catch(Exception e) {
+                // Not our field's change
             }
         }
+        if(isOurField) validTrackedChanges.put(fi.ParentId, fi);
     }
-    
-    List<RGC_Data_Assets__c> updates = new List<RGC_Data_Assets__c>();
-    for (RGC_Data_Assets__c asset : assetsBatch) {
-        if (latestFeedItems.containsKey(asset.Id)) {
-            FeedItem latest = latestFeedItems.get(asset.Id);
-            String displayValue;
-            
-            // NEW: Handle tracked changes
-            if (latest.Type == 'TrackedChange') {
-                // Format: "Clinical Informatics Lead changed from Old Value to New Value"
-                displayValue = 'Clinical Informatics Lead changed from ' +
-                    (latest.OldValue != null ? String.valueOf(latest.OldValue) : 'null') +
-                    ' to ' + 
-                    (latest.NewValue != null ? String.valueOf(latest.NewValue) : 'null');
-            } else {
-                // Regular chatter post
-                displayValue = latest.Body;
-            }
-            
-            if (asset.Latest_Chatter_Post__c != displayValue) {
-                updates.add(new RGC_Data_Assets__c(
-                    Id = asset.Id,
-                    Latest_Chatter_Post__c = displayValue
-                ));
-            }
-        } else if (asset.Latest_Chatter_Post__c != null) {
-            updates.add(new RGC_Data_Assets__c(
-                Id = asset.Id,
-                Latest_Chatter_Post__c = null
-            ));
-        }
-    }
-    
-    if (!updates.isEmpty()) {
-        update updates;
-        System.debug('Processed ' + updates.size() + ' records in this batch');
-    }
-    
-    processedCount += batchSize;
 }
-System.debug('Total records processed: ' + processedCount);
+
+// 3. Get lead names
+Map<Id, RGC_Lead__c> leadMap = new Map<Id, RGC_Lead__c>([
+    SELECT Id, Name FROM RGC_Lead__c WHERE Id IN :leadIds
+]);
+
+// 4. Process latest activities
+Map<Id, FeedItem> latestActivities = new Map<Id, FeedItem>();
+for(FeedItem fi : allFeedItems) {
+    Id parentId = fi.ParentId;
+    if(fi.Type == 'TrackedChange' && !validTrackedChanges.containsKey(parentId)) continue;
+    
+    if(!latestActivities.containsKey(parentId)) {
+        latestActivities.put(parentId, fi);
+    }
+}
+
+// 5. Build update records
+for(Id parentId : latestActivities.keySet()) {
+    FeedItem latest = latestActivities.get(parentId);
+    String message;
+    
+    if(latest.Type == 'TextPost') {
+        message = latest.Body;
+    } else {
+        for(FeedTrackedChange ftc : latest.FeedTrackedChanges) {
+            try {
+                Id oldId = (Id)ftc.OldValue;
+                Id newId = (Id)ftc.NewValue;
+                
+                String oldName = (oldId != null && leadMap.containsKey(oldId)) 
+                               ? leadMap.get(oldId).Name : 'None';
+                String newName = (newId != null && leadMap.containsKey(newId)) 
+                               ? leadMap.get(newId).Name : 'None';
+                               
+                message = 'Clinical Informatics Lead changed from ' + oldName + ' to ' + newName;
+                break;
+            } catch(Exception e) {
+                // Skip non-matching changes
+            }
+        }
+    }
+    
+    if(String.isNotBlank(message)) {
+        assetsToUpdate.add(new RGC_Data_Assets__c(
+            Id = parentId,
+            Latest_Chatter_Post__c = message.abbreviate(255)
+        ));
+    }
+}
+
+// 6. Execute update with error handling
+if(!assetsToUpdate.isEmpty()) {
+    Database.SaveResult[] results = Database.update(assetsToUpdate, false);
+    for(Database.SaveResult sr : results) {
+        if(!sr.isSuccess()) {
+            System.debug('Error updating record: ' + sr.getErrors()[0].getMessage());
+        }
+    }
+    System.debug('Processed ' + assetsToUpdate.size() + ' records');
+} else {
+    System.debug('No records to update');
+}
