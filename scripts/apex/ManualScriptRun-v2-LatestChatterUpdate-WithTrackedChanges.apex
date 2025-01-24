@@ -46,8 +46,8 @@ while (hasMore) {
             
             // NEW: Handle tracked changes
             if (latest.Type == 'TrackedChange') {
-                // Format: "Clinical Lead changed from Old Value to New Value"
-                displayValue = 'Clinical Lead changed from ' +
+                // Format: "Clinical Informatics Lead changed from Old Value to New Value"
+                displayValue = 'Clinical Informatics Lead changed from ' +
                     (latest.OldValue != null ? String.valueOf(latest.OldValue) : 'null') +
                     ' to ' + 
                     (latest.NewValue != null ? String.valueOf(latest.NewValue) : 'null');
