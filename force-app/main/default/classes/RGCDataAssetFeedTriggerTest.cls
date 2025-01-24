@@ -7,7 +7,11 @@ private class RGCDataAssetFeedTriggerTest {
         RGC_Lead__c lead2 = new RGC_Lead__c(Name = 'Lead B');
         insert new List<RGC_Lead__c>{lead1, lead2};
         
-        RGC_Data_Assets__c asset = new RGC_Data_Assets__c(Name = 'Test Asset');
+        // Create RGC_Data_Assets__c record with required fields
+        RGC_Data_Assets__c asset = new RGC_Data_Assets__c(
+            Name = 'Test Asset',
+            RGC_Collaboration_Detail__c = 'Test Collaboration Detail' // Include required field
+        );
         insert asset;
     }
     
