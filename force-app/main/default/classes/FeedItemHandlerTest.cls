@@ -2,16 +2,13 @@
 private class FeedItemHandlerTest {
     @testSetup
     static void setup() {
-        // Create collaboration record (CORRECT OBJECT: RGC_Collaboration__c)
-        RGC_Collaboration__c collaboration = new RGC_Collaboration__c(
-            Name = 'Test Collaboration'
-        );
+        // Create collaboration record (auto-number name)
+        RGC_Collaboration__c collaboration = new RGC_Collaboration__c();
         insert collaboration;
 
         // Create asset with lookup to collaboration
         RGC_Data_Assets__c asset = new RGC_Data_Assets__c(
-            Name = 'Test Asset',
-            RGC_Collaboration_Detail__c = collaboration.Id // Lookup field remains RGC_Collaboration_Detail__c
+            RGC_Collaboration_Detail__c = collaboration.Id
         );
         insert asset;
 
@@ -96,15 +93,12 @@ private class FeedItemHandlerTest {
     @isTest
     static void testBulkProcessing() {
         // Create bulk collaboration record
-        RGC_Collaboration__c bulkCollaboration = new RGC_Collaboration__c(
-            Name = 'Bulk Collaboration'
-        );
+        RGC_Collaboration__c bulkCollaboration = new RGC_Collaboration__c();
         insert bulkCollaboration;
 
         List<RGC_Data_Assets__c> assets = new List<RGC_Data_Assets__c>();
         for(Integer i=0; i<10; i++) {
             assets.add(new RGC_Data_Assets__c(
-                Name = 'Asset '+i,
                 RGC_Collaboration_Detail__c = bulkCollaboration.Id
             ));
         }
@@ -115,7 +109,7 @@ private class FeedItemHandlerTest {
             posts.add(new FeedItem(
                 ParentId = asset.Id,
                 Type = 'TextPost',
-                Body = 'Post for '+asset.Name
+                Body = 'Post for '+asset.Id
             ));
         }
         
