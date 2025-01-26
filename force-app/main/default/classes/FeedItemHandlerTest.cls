@@ -2,11 +2,11 @@
 private class FeedItemHandlerTest {
     @testSetup
     static void setup() {
-        // Create collaboration record (auto-number name)
+        // Create collaboration record
         RGC_Collaboration__c collaboration = new RGC_Collaboration__c();
         insert collaboration;
 
-        // Create asset with lookup to collaboration
+        // Create asset with lookup
         RGC_Data_Assets__c asset = new RGC_Data_Assets__c(
             RGC_Collaboration_Detail__c = collaboration.Id
         );
@@ -44,7 +44,8 @@ private class FeedItemHandlerTest {
         insert new FeedItem(
             ParentId = asset.Id,
             Type = 'LinkPost',
-            Body = 'https://salesforce.com'
+            Body = 'https://salesforce.com',
+            LinkUrl = 'https://salesforce.com' // REQUIRED FOR LINKPOST
         );
         Test.stopTest();
         
@@ -74,25 +75,26 @@ private class FeedItemHandlerTest {
     }
 
     @isTest
-    static void testTrackedChangeWithNoValidChanges() {
+    static void testValidTrackedChange() {
         RGC_Data_Assets__c asset = [SELECT Id FROM RGC_Data_Assets__c LIMIT 1];
+        RGC_Lead__c lead = [SELECT Id FROM RGC_Lead__c LIMIT 1];
         
         Test.startTest();
-        insert new FeedItem(
-            ParentId = asset.Id,
-            Type = 'TrackedChange'
-        );
+        // Simulate field change that creates TrackedChange
+        asset.RGC_Lead__c = lead.Id; // ASSUMING THIS IS A TRACKED FIELD
+        update asset;
         Test.stopTest();
         
+        // Verify processing
         RGC_Data_Assets__c result = [SELECT Latest_Chatter_Post__c 
                                    FROM RGC_Data_Assets__c 
                                    WHERE Id = :asset.Id];
-        System.assertEquals(null, result.Latest_Chatter_Post__c);
+        System.assert(result.Latest_Chatter_Post__c.contains('Lead A'),
+                    'Should detect lead change');
     }
 
     @isTest
     static void testBulkProcessing() {
-        // Create bulk collaboration record
         RGC_Collaboration__c bulkCollaboration = new RGC_Collaboration__c();
         insert bulkCollaboration;
 
@@ -132,6 +134,7 @@ private class FeedItemHandlerTest {
                 ParentId = asset.Id,
                 Type = 'LinkPost',
                 Body = 'https://old.com',
+                LinkUrl = 'https://old.com',
                 CreatedDate = System.now().addHours(-2)
             ),
             new FeedItem(
