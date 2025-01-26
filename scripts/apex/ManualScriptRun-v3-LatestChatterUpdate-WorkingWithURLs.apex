@@ -1,9 +1,9 @@
 // This code will process all historical FeedItem records and post most recent change to LCP custom field.
-// but include checks for these FeedItem 'Types' = TextPost,TrackedChange,LinkPost,LinkURL (URL Link Post)
+// but include checks for these FeedItem 'Types' = TextPost,TrackedChange,LinkPost (URL Link Post)
 
 List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
 List<FeedItem> allFeedItems = [
-    SELECT Id, ParentId, Body, Type, CreatedDate, LinkUrl, // Added LinkUrl
+    SELECT Id, ParentId, Body, Type, CreatedDate,
     (SELECT OldValue, NewValue FROM FeedTrackedChanges)
     FROM FeedItem 
     WHERE Parent.Type = 'RGC_Data_Assets__c' 
@@ -11,7 +11,7 @@ List<FeedItem> allFeedItems = [
     ORDER BY CreatedDate DESC
 ];
 
-// TrackedChange handling remains unchanged
+// TrackedChange handling (unchanged)
 Map<Id, FeedItem> validTrackedChanges = new Map<Id, FeedItem>();
 Set<Id> leadIds = new Set<Id>();
 for(FeedItem fi : allFeedItems) {
@@ -42,7 +42,7 @@ Map<Id, RGC_Lead__c> leadMap = new Map<Id, RGC_Lead__c>([
     SELECT Id, Name FROM RGC_Lead__c WHERE Id IN :leadIds
 ]);
 
-// Latest activity determination remains unchanged
+// Latest activity determination
 Map<Id, FeedItem> latestActivities = new Map<Id, FeedItem>();
 for(FeedItem fi : allFeedItems) {
     Id parentId = fi.ParentId;
@@ -53,24 +53,15 @@ for(FeedItem fi : allFeedItems) {
     }
 }
 
-// Enhanced LinkPost handling
+// Simplified message processing
 for(Id parentId : latestActivities.keySet()) {
     FeedItem latest = latestActivities.get(parentId);
     String message;
     
-    if(latest.Type == 'TextPost') {
-        message = latest.Body;
+    if(latest.Type == 'TextPost' || latest.Type == 'LinkPost') {  // Combined handling
+        message = latest.Body;  // Direct body usage for both types
     } 
-    else if(latest.Type == 'LinkPost') {
-        // Combine Body + LinkUrl with line break
-        String baseMessage = String.isNotBlank(latest.Body) 
-            ? latest.Body + '\n' 
-            : '';
-            
-        message = baseMessage + latest.LinkUrl;
-    }
     else if(latest.Type == 'TrackedChange') {
-        // Existing TrackedChange logic
         for(FeedTrackedChange ftc : latest.FeedTrackedChanges) {
             try {
                 Id oldId = (Id)ftc.OldValue;
