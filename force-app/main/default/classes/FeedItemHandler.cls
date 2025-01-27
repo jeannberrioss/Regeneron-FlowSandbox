@@ -1,89 +1,97 @@
 public class FeedItemHandler {
-    public static void processFeedItems(List<FeedItem> newFeedItems) {
+    
+    // This method processes FeedItems and updates the Latest_Chatter_Post__c field on RGC_Data_Assets__c records.
+    public static void processFeedItems(List<FeedItem> feedItems, Map<Id, FeedItem> oldFeedItemsMap, Boolean isDelete) {
         Set<Id> parentAssetIds = new Set<Id>();
-        Set<Id> relevantFeedItemIds = new Set<Id>();
         
         // Identify relevant feed items (1st filter)
-        for(FeedItem fi : [
+        for (FeedItem fi : [
             SELECT Id, ParentId, Type 
             FROM FeedItem 
-            WHERE Id IN :newFeedItems 
+            WHERE Id IN :feedItems 
             AND Parent.Type = 'RGC_Data_Assets__c'
-            AND Type IN ('TextPost','TrackedChange','LinkPost')
+            AND Type IN ('TextPost', 'TrackedChange', 'LinkPost')
         ]) {
             parentAssetIds.add(fi.ParentId);
-            relevantFeedItemIds.add(fi.Id);
         }
         
-        if(parentAssetIds.isEmpty()) return;
+        // If it's a delete operation, we need to consider the old FeedItems
+        if (isDelete && oldFeedItemsMap != null) {
+            for (FeedItem fi : oldFeedItemsMap.values()) {
+                if (fi.Parent.Type == 'RGC_Data_Assets__c' && fi.Type IN ('TextPost', 'TrackedChange', 'LinkPost')) {
+                    parentAssetIds.add(fi.ParentId);
+                }
+            }
+        }
+        
+        // Exit if no relevant parent assets are found
+        if (parentAssetIds.isEmpty()) return;
 
-        // Full query pattern from original code
+        // Query all relevant FeedItems for the parent assets
         List<FeedItem> allFeedItems = [
             SELECT Id, ParentId, Body, Type, CreatedDate,
             (SELECT OldValue, NewValue FROM FeedTrackedChanges)
             FROM FeedItem 
             WHERE ParentId IN :parentAssetIds 
-            AND Type IN ('TextPost','TrackedChange','LinkPost')
+            AND Type IN ('TextPost', 'TrackedChange', 'LinkPost')
             ORDER BY CreatedDate DESC
         ];
 
-        // Original processing logic
+        // TrackedChange validation
         Map<Id, FeedItem> validTrackedChanges = new Map<Id, FeedItem>();
         Set<Id> leadIds = new Set<Id>();
         
-        // TrackedChange validation
-        for(FeedItem fi : allFeedItems) {
-            if(fi.Type == 'TrackedChange') {
+        for (FeedItem fi : allFeedItems) {
+            if (fi.Type == 'TrackedChange') {
                 Boolean isOurField = false;
-                for(FeedTrackedChange ftc : fi.FeedTrackedChanges) {
+                for (FeedTrackedChange ftc : fi.FeedTrackedChanges) {
                     try {
-                        Id oldId = (Id)ftc.OldValue;
-                        Id newId = (Id)ftc.NewValue;
+                        Id oldId = (Id) ftc.OldValue;
+                        Id newId = (Id) ftc.NewValue;
                         
-                        if(oldId?.getSobjectType() == RGC_Lead__c.SObjectType) {
+                        if (oldId?.getSobjectType() == RGC_Lead__c.SObjectType) {
                             leadIds.add(oldId);
                             isOurField = true;
                         }
-                        if(newId?.getSobjectType() == RGC_Lead__c.SObjectType) {
+                        if (newId?.getSobjectType() == RGC_Lead__c.SObjectType) {
                             leadIds.add(newId);
                             isOurField = true;
                         }
-                    } catch(Exception e) { /* Non-ID field */ }
+                    } catch (Exception e) { /* Skip non-ID fields */ }
                 }
-                if(isOurField) validTrackedChanges.put(fi.ParentId, fi);
+                if (isOurField) validTrackedChanges.put(fi.ParentId, fi);
             }
         }
 
-        // Lead mapping
+        // Query RGC_Lead__c records for mapping
         Map<Id, RGC_Lead__c> leadMap = new Map<Id, RGC_Lead__c>([
             SELECT Id, Name FROM RGC_Lead__c WHERE Id IN :leadIds
         ]);
 
-        // Latest activity determination
+        // Determine the latest FeedItem for each parent asset
         Map<Id, FeedItem> latestActivities = new Map<Id, FeedItem>();
-        for(FeedItem fi : allFeedItems) {
+        for (FeedItem fi : allFeedItems) {
             Id parentId = fi.ParentId;
-            if(fi.Type == 'TrackedChange' && !validTrackedChanges.containsKey(parentId)) continue;
+            if (fi.Type == 'TrackedChange' && !validTrackedChanges.containsKey(parentId)) continue;
             
-            if(!latestActivities.containsKey(parentId)) {
+            if (!latestActivities.containsKey(parentId)) {
                 latestActivities.put(parentId, fi);
             }
         }
 
-        // Message construction
+        // Construct the message and prepare RGC_Data_Assets__c records for update
         List<RGC_Data_Assets__c> assetsToUpdate = new List<RGC_Data_Assets__c>();
-        for(Id parentId : latestActivities.keySet()) {
+        for (Id parentId : latestActivities.keySet()) {
             FeedItem latest = latestActivities.get(parentId);
             String message;
             
-            if(latest.Type == 'TextPost' || latest.Type == 'LinkPost') {
+            if (latest.Type == 'TextPost' || latest.Type == 'LinkPost') {
                 message = latest.Body?.left(255); // Truncate to field length
-            } 
-            else if(latest.Type == 'TrackedChange') {
-                for(FeedTrackedChange ftc : latest.FeedTrackedChanges) {
+            } else if (latest.Type == 'TrackedChange') {
+                for (FeedTrackedChange ftc : latest.FeedTrackedChanges) {
                     try {
-                        Id oldId = (Id)ftc.OldValue;
-                        Id newId = (Id)ftc.NewValue;
+                        Id oldId = (Id) ftc.OldValue;
+                        Id newId = (Id) ftc.NewValue;
                         
                         String oldName = leadMap.get(oldId)?.Name ?? 'None';
                         String newName = leadMap.get(newId)?.Name ?? 'None';
@@ -91,11 +99,11 @@ public class FeedItemHandler {
                         message = 'Clinical Informatics Lead changed from ' + 
                                 oldName + ' to ' + newName;
                         break;
-                    } catch(Exception e) { /* Skip non-ID changes */ }
+                    } catch (Exception e) { /* Skip non-ID changes */ }
                 }
             }
             
-            if(String.isNotBlank(message)) {
+            if (String.isNotBlank(message)) {
                 assetsToUpdate.add(new RGC_Data_Assets__c(
                     Id = parentId,
                     Latest_Chatter_Post__c = message
@@ -103,8 +111,8 @@ public class FeedItemHandler {
             }
         }
 
-        // Update with error handling
-        if(!assetsToUpdate.isEmpty()) {
+        // Update RGC_Data_Assets__c records with error handling
+        if (!assetsToUpdate.isEmpty()) {
             Database.update(assetsToUpdate, false);
         }
     }
