@@ -3,22 +3,30 @@ public class FeedItemHandler {
     // This method processes FeedItems and updates the Latest_Chatter_Post__c field on RGC_Data_Assets__c records.
     public static void processFeedItems(List<FeedItem> feedItems, Map<Id, FeedItem> oldFeedItemsMap, Boolean isDelete) {
         Set<Id> parentAssetIds = new Set<Id>();
+        Set<Id> feedItemIds = new Set<Id>();
+        Set<String> validPostTypes = new Set<String>{'TextPost', 'TrackedChange', 'LinkPost'}; // Define valid types
+        
+        // Extract FeedItem IDs for the SOQL query
+        for (FeedItem fi : feedItems) {
+            feedItemIds.add(fi.Id);
+        }
         
         // Identify relevant feed items (1st filter)
         for (FeedItem fi : [
             SELECT Id, ParentId, Type 
             FROM FeedItem 
-            WHERE Id IN :feedItems 
+            WHERE Id IN :feedItemIds
             AND Parent.Type = 'RGC_Data_Assets__c'
-            AND Type IN ('TextPost', 'TrackedChange', 'LinkPost')
+            AND Type IN :validPostTypes // Use the Set here for SOQL
         ]) {
             parentAssetIds.add(fi.ParentId);
         }
         
-        // If it's a delete operation, we need to consider the old FeedItems
+        // If it's a delete operation, check old FeedItems
         if (isDelete && oldFeedItemsMap != null) {
             for (FeedItem fi : oldFeedItemsMap.values()) {
-                if (fi.Parent.Type == 'RGC_Data_Assets__c' && fi.Type IN ('TextPost', 'TrackedChange', 'LinkPost')) {
+                // Use validPostTypes.contains() instead of IN for Apex logic
+                if (fi.Parent.Type == 'RGC_Data_Assets__c' && validPostTypes.contains(fi.Type)) {
                     parentAssetIds.add(fi.ParentId);
                 }
             }
@@ -33,7 +41,7 @@ public class FeedItemHandler {
             (SELECT OldValue, NewValue FROM FeedTrackedChanges)
             FROM FeedItem 
             WHERE ParentId IN :parentAssetIds 
-            AND Type IN ('TextPost', 'TrackedChange', 'LinkPost')
+            AND Type IN :validPostTypes // Use the Set here for SOQL
             ORDER BY CreatedDate DESC
         ];
 
