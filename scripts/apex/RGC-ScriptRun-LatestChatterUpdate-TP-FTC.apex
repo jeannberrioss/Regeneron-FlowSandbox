@@ -3,7 +3,7 @@
 Sumamary --> Apex Trigger Automation (Developer Console Script)
 
 This apex trigger automation will retrieve ALL historical Chatter FeedItems associated to each record on the custom obj. RGC_Data_Assets__c
-& then determine the FeedItem "type" based on 2 crtieria = TextPost(body=message) OR TrackedChange types.
+& then determine the FeedItem "type" based on 2 crtieria = TextPost(body=message) OR FeedTrackedChange types.
 Then it will determine if there are changes on the record for FeedItems & if there is --> save each FeedItem type on seperate lists (TextPost OR TrackedChange)
 Then update whichever FeedItem type (TextPost OR TrackedChange) is the latest for each record on Latest_Chatter_Post__c field.
 
