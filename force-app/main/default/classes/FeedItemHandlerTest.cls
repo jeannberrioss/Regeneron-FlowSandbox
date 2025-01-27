@@ -81,7 +81,7 @@ private class FeedItemHandlerTest {
         
         Test.startTest();
         // Simulate field change that creates TrackedChange
-        asset.RGC_Lead__c = lead.Id; // ASSUMING THIS IS A TRACKED FIELD
+        asset.Clinical_Informatics_Lead__c = lead.Id; // USE CORRECT FIELD NAME
         update asset;
         Test.stopTest();
         
