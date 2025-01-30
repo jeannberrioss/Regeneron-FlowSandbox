@@ -2,9 +2,15 @@
 
 Anonymous Apex (Run in Developer Console) 
 
-This code will process all historical FeedItem records
-and update the Latest_Chatter_Post__c field ON RGC_DATA_ASSETS__c
-only IF the FeedItem 'TextPost' type has been updated or upon new insert (AfterUpdate OR AfterInsert)
+1. This code should trigger ONLY IF the FeedItem 'TextPost' type has been updated, insered or deleted on a 'RGC_Data_Assets__c' record.
+2. Once triggered, this code should query the 'RGC_Data_Assets__c' record that was updated, inserted or deleted to obtain the latest 'TextPost' FeedItem.
+3. Then, depending on the context event (AfterUpdate, AfterInsert, AfterDelete), the code should update the 'Latest_Chatter_Post__c' field on the 'RGC_Data_Assets__c' record with the latest 'TextPost' FeedItem value.
+4. It is important to remember that IF the 'TextPost' FeedItem is deleted on a record, the 'Latest_Chatter_Post__c' field should be set to the value that it had before the 'TextPost' FeedItem was deleted.
+5. It is also importent to rememebr that IF the 'TextPost' FeedItem is deleted on a record && there is no other 'TextPost' FeedItem on the record, the 'Latest_Chatter_Post__c' field should be set to NULL.
+
+*/
+only IF the FeedItem 'TextPost' type has been updated or upon these context events:
+AfterUpdate OR AfterInsert OR AfterDelete
 
 */
 
