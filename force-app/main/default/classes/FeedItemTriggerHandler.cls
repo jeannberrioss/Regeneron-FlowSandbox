@@ -103,7 +103,7 @@ public class FeedItemTriggerHandler {
     }
 
     // --- Helper Method to handle After Delete logic ---
-    private static void handleAfterDelete(List<FeedItem> feedItems) {
+     private static void handleAfterDelete(List<FeedItem> feedItems) {
         Set<Id> parentIds = new Set<Id>();
         for (FeedItem fi : feedItems) {
             if (fi.Type == 'TextPost' && fi.ParentId != null) {
@@ -147,24 +147,11 @@ public class FeedItemTriggerHandler {
                         ));
                     }
                 } else {
-                    // No TextPosts remaining after deletion
-                    if (previousPost != null) {
-                        // Revert to the previous value if it existed
-                        if (asset.Latest_Chatter_Post__c != previousPost) {
-                            assetsToUpdate.add(new RGC_Data_Assets__c(
-                                Id = asset.Id,
-                                Latest_Chatter_Post__c = previousPost
-                            ));
-                        }
-                    } else {
-                        // No previous value and no current TextPosts, set to NULL
-                        if (asset.Latest_Chatter_Post__c != null) {
-                            assetsToUpdate.add(new RGC_Data_Assets__c(
-                                Id = asset.Id,
-                                Latest_Chatter_Post__c = null
-                            ));
-                        }
-                    }
+                    // No TextPosts remaining after deletion - ALWAYS set to NULL
+                    assetsToUpdate.add(new RGC_Data_Assets__c(
+                        Id = asset.Id,
+                        Latest_Chatter_Post__c = null
+                    ));
                 }
             }
 
@@ -172,6 +159,6 @@ public class FeedItemTriggerHandler {
                 update assetsToUpdate;
             }
         }
-        previousLatestChatterPosts.clear(); // Clear the map after processing to avoid issues in subsequent transactions
+        previousLatestChatterPosts.clear(); // Clear the map after processing
     }
-}
+ }

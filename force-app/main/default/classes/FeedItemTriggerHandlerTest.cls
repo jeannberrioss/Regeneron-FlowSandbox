@@ -31,4 +31,99 @@ private class FeedItemTriggerHandlerTest {
         RGC_Data_Assets__c updatedDataAsset = [SELECT Id, Latest_Chatter_Post__c FROM RGC_Data_Assets__c WHERE Id = :dataAsset.Id];
         System.assertEquals('This is a test text post.', updatedDataAsset.Latest_Chatter_Post__c, 'Latest_Chatter_Post__c should be updated with the new TextPost body.');
     }
+        @isTest
+    static void testDeleteLastTextPost() {
+        // 1. Setup Test Data
+        RGC_Collaboration__c collaboration = new RGC_Collaboration__c();
+        insert collaboration;
+
+        RGC_Data_Assets__c dataAsset = new RGC_Data_Assets__c(
+            Name = 'Test Data Asset',
+            RGC_Collaboration_Detail__c = collaboration.Id
+        );
+        insert dataAsset;
+
+        FeedItem textPost = new FeedItem(
+            ParentId = dataAsset.Id,
+            Type = 'TextPost',
+            Body = 'This is the only text post.'
+        );
+        insert textPost;
+
+        // 2. Perform Test Action - Delete the TextPost (Trigger Fires)
+        Test.startTest();
+        delete textPost;
+        Test.stopTest();
+
+        // 3. Assertion
+        RGC_Data_Assets__c updatedDataAsset = [SELECT Id, Latest_Chatter_Post__c FROM RGC_Data_Assets__c WHERE Id = :dataAsset.Id];
+        Assert.isNULL(updatedDataAsset.Latest_Chatter_Post__c, 'Latest_Chatter_Post__c should be set to NULL after deleting the last TextPost.');
+    }
+        @isTest
+    static void testUpdateExistingTextPost() {
+        // 1. Setup Test Data
+        RGC_Collaboration__c collaboration = new RGC_Collaboration__c();
+        insert collaboration;
+
+        RGC_Data_Assets__c dataAsset = new RGC_Data_Assets__c(
+            Name = 'Test Data Asset',
+            RGC_Collaboration_Detail__c = collaboration.Id
+        );
+        insert dataAsset;
+
+        FeedItem textPost = new FeedItem(
+            ParentId = dataAsset.Id,
+            Type = 'TextPost',
+            Body = 'Original text post body.'
+        );
+        insert textPost;
+
+        // 2. Perform Test Action - Update the TextPost body (Trigger Fires)
+        textPost.Body = 'Updated text post body.'; // Modify the body
+        Test.startTest();
+        update textPost; // Perform the update
+        Test.stopTest();
+
+        // 3. Assertion
+        RGC_Data_Assets__c updatedDataAsset = [SELECT Id, Latest_Chatter_Post__c FROM RGC_Data_Assets__c WHERE Id = :dataAsset.Id];
+        Assert.areEqual('Updated text post body.', updatedDataAsset.Latest_Chatter_Post__c, 'Latest_Chatter_Post__c should be updated with the new TextPost body.');
+    }
+        @isTest
+    static void testDeleteTextPostWithExistingPosts() {
+        // 1. Setup Test Data
+        RGC_Collaboration__c collaboration = new RGC_Collaboration__c();
+        insert collaboration;
+
+        RGC_Data_Assets__c dataAsset = new RGC_Data_Assets__c(
+            Name = 'Test Data Asset',
+            RGC_Collaboration_Detail__c = collaboration.Id
+        );
+        insert dataAsset;
+
+        // Create two TextPosts, ensuring different CreatedDates for ordering
+        FeedItem olderTextPost = new FeedItem(
+            ParentId = dataAsset.Id,
+            Type = 'TextPost',
+            Body = 'Older text post.',
+            CreatedDate = System.now().addHours(-1) // Set older CreatedDate
+        );
+        insert olderTextPost;
+
+        FeedItem latestTextPost = new FeedItem(
+            ParentId = dataAsset.Id,
+            Type = 'TextPost',
+            Body = 'Latest text post.',
+            CreatedDate = System.now() // Latest CreatedDate
+        );
+        insert latestTextPost;
+
+        // 2. Perform Test Action - Delete the LATEST TextPost (Trigger Fires)
+        Test.startTest();
+        delete latestTextPost; // Delete the latest one
+        Test.stopTest();
+
+        // 3. Assertion
+        RGC_Data_Assets__c updatedDataAsset = [SELECT Id, Latest_Chatter_Post__c FROM RGC_Data_Assets__c WHERE Id = :dataAsset.Id];
+        Assert.areEqual('Older text post.', updatedDataAsset.Latest_Chatter_Post__c, 'Latest_Chatter_Post__c should be updated to the body of the older TextPost.');
+    }
 }
